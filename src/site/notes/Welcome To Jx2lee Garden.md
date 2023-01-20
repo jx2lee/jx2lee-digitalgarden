@@ -9,7 +9,10 @@
 ## datahub
 - [[data_engineer/datahub/datahub-catalog\|datahub-catalog]]
 - documents
-	- [[data_engineer/datahub/__docs/architecture/datahub-architecture-overview\|datahub-architecture-overview]]
-	- 
+	- architecture
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-overview\|datahub-architecture-overview]]
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-components\|datahub-architecture-components]]
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-ingestion-framework\|datahub-architecture-ingestion-framework]]
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture\|datahub-architecture-serving-architecture]]
 
 
