@@ -4,8 +4,6 @@
 
 #datahub #architecture
 
-```toc
-```
 
 ![](https://datahubproject.io/assets/images/datahub-architecture-30b34a888241e0780c72b7f618137fe4.png)
 
