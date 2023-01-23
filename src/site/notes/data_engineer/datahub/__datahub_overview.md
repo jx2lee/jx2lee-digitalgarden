@@ -21,7 +21,6 @@
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-components\|datahub-architecture-components]]
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-ingestion-framework\|datahub-architecture-ingestion-framework]]
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture\|datahub-architecture-serving-architecture]]
-- [[data_engineer/datahub/datahub-coinone-env\|datahub-coinone-env]]
 
 ## 🫣 ingest metadata
 - [[data_engineer/datahub/datahub-recipe-example\|datahub-recipe-example]]
