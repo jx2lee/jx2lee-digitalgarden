@@ -13,7 +13,7 @@
 [[data_engineer/datahub/__datahub_overview\|__datahub_overview]]
 
 # language
-## ⒿⒶⓋⒶ
+## ⓙⓐⓥⓐ
 - [[etc/Java/Statement & Expression\|Statement & Expression]]
 
-## ⓟⓨⓣⓗⓄⓝ
+## ⓟⓨⓣⓗⓞⓝ
