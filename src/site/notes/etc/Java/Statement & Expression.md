@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/etc/Java/Statement & Expression/","dgPassFrontmatter":true}
 ---
 
+
 # Statement
 - 의역: 자연어의 문장과 거의 동일하다. Statement 는 완전한 실행 단위를 형성한다. 세미콜론(;)으로 Statement 를 종료하여 명령문으로 만들 수 있다.
 - `프로그램의 문장으로, 한 개 값으로 도출할 수 없는` 단위이다.
