@@ -14,6 +14,6 @@
 
 # language
 ## ⓙⓐⓥⓐ
-- [[etc/Java/Statement & Expression\|Statement & Expression]]
+- [[etc/Java/Statement and Expression\|Statement and Expression]]
 
 ## ⓟⓨⓣⓗⓞⓝ
