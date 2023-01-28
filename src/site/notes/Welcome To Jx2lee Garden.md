@@ -1,5 +1,5 @@
 ---
-{"dg-home":true,"dg-publish":true,"permalink":"/Welcome To Jx2lee Garden/","tags":["gardenEntry"],"dgPassFrontmatter":true}
+{"dg-home":true,"dg-publish":true,"dg-show-toc":false,"dg-show-local-graph":false,"dg-link-preview":false,"permalink":"/Welcome To Jx2lee Garden/","tags":["gardenEntry"],"dgShowLocalGraph":false,"dgShowToc":false,"dgLinkPreview":false,"dgPassFrontmatter":true}
 ---
 
 
