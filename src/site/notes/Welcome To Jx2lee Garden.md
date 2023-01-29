@@ -21,3 +21,6 @@
 - [[etc/Java/Statement and Expression\|Statement and Expression]]
 
 ## ⓟⓨⓣⓗⓞⓝ
+
+# ETC
+- [[g\|g]]
