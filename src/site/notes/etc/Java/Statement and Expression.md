@@ -14,7 +14,7 @@
 # **Difference**
 - Statement 는 Expression 을 포함하고 있다.
 	- `Expression ⊂ Statement`
-- 한 개 값으로 도출할 수 있는 구문을 Expression, 없는 것을 Statement 라고 이해하자.
+- 값으로 도출할 수 있는 구문을 Expression, 없는 것을 Statement 라고 이해하자.
 - java if-else 는 Statement, 삼항 연산자는 Statement 면서 Expression 이다.
 	- kotlin 에서는 if-else 가 Expression 이며 삼항 연산자를 제공하지 않는다.
 # Ref
