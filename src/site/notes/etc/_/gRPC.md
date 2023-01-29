@@ -41,6 +41,9 @@
 ## Java
 
 # reference
-- [https://grpc.io/docs/what-is-grpc/introduction/](https://grpc.io/docs/what-is-grpc/introduction/)
+- [Introduction to gRPC](https://grpc.io/docs/what-is-grpc/introduction/)
+- [Protocol Buffers Documentation](https://protobuf.dev)
 - [What’s the Difference Between RPC and REST?](https://nordicapis.com/whats-the-difference-between-rpc-and-rest/)
-- [gRPC 1 - gRPC란?](https://chacha95.github.io/2020-06-15-gRPC1/)
+- kr
+	- [gRPC 1 - gRPC란?](https://chacha95.github.io/2020-06-15-gRPC1/)
+	- [gRPC 훑어보기](https://meetup.nhncloud.com/posts/261)
