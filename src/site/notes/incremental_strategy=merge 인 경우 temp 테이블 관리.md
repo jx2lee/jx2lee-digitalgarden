@@ -19,7 +19,7 @@
 
 > 일부 adapter 에 incremental_strategy 옵션은 dbt가 증분 모델(incremental model)을 빌드하는 데 코드를 제어한다. 데이터 양, unique_key의 신뢰성 또는 가용성에 따라 접근 방식이 다를 수 있다.
 
-dbt 에서 제공하는 incremental 모델을 이용할 때 사용하는 옵션이다. dbt model 은 기본적으로 full-refresh 전략을 취한다. 이는 모델 빌드 시 destination 테이블을 삭제하고 새롭게 생성하는데, 자세한 내용과 advantages 는 아래 그림의 링크를 참고하자.
+dbt 에서 제공하는 incremental 모델을 이용할 때 사용하는 옵션이다. dbt model 은 기본적으로 full-refresh 전략을 취한다. 이는 모델 빌드 시 destination 테이블을 삭제하고 새롭게 생성하는데, 자세한 내용과 advantage & disadvantage 는 아래 그림의 링크를 참고한다. 아래는 full refresh 전략으로 생성한 모델의 흐름을 나타낸다.
 
 ![](https://i.imgur.com/N8N5mUZ.png)
 
