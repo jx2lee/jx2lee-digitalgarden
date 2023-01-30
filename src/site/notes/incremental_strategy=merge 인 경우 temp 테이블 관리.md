@@ -38,4 +38,17 @@ merge 옵션으로 incremental 모델을 생성할 때 기존 destination 모델
 코드 예시로 회사에서 작성 예정
 ```
 
-혹시나 merge strategy 시 temp table 을 삭제하지 않는 원인이 궁금하여 커뮤니티에 [질문](https://getdbt.slack.com/archives/CBSQTAPLG/p1674915934074389)해보았다.
+혹시나 merge strategy 시 temp table 을 삭제하지 않는 원인이 궁금하여 커뮤니티에 [질문](https://getdbt.slack.com/archives/CBSQTAPLG/p1674915934074389)해보았다. 하루가 걸려 두 개 답변을 확인할 수 있었다. 첫번째는 specific 한 부분으로 해당 git repo 에 issue 를 생성해보는 것이 좋겠다고 하였다. 두번째가 메인인데, adapter 코드를 직접 확인하면 로직 파악이 쉬울것이며 현재 진행중인 이슈번호([#184](https://github.com/dbt-labs/dbt-bigquery/issues/184))를 남겨주었다. 해당 이슈를 트래킹 해보자.
+
+## #184
+![](https://i.imgur.com/nENgYHM.png)
+
+글보다 캡쳐로 설명하는게 좋을 것 같다. 위 오프너와 동일하게 on_schema_change 를 fail 로 변경해도 동일하게 temp 테이블이 삭제되지 않았다. [#154](https://github.com/dbt-labs/dbt-bigquery/issues/154) 이슈와 비슷한 사례로 보이며 on_schema_change 측면에서는 [#163](https://github.com/dbt-labs/dbt-bigquery/issues/163) 이슈와 동일할 것 같으니 확인해보라는 답변했지만, 오프너는 공유해준 이슈와는 다른 케이스라며 삭제되지 않은 temp table 로 인해 자신의 target database 가 오염되고 있다고 주장했다. 이후 동일한 현상이 발생한 유저와 airbyte 이슈에 멘션되면서 추가 답변은 달리지 않았다.
+
+## #154
+
+## #163
+
+# referenece
+- [Incremental models](https://docs.getdbt.com/docs/build/incremental-models)
+- [Understanding dbt Incremental Strategies part 1/2](https://medium.com/indiciumtech/understanding-dbt-incremental-strategies-part-1-2-22bd97c7eeb5)
