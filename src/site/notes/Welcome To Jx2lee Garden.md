@@ -15,12 +15,13 @@
 ## 🛣️ ETL
 - [[data_engineer/dbt/__dbt_overview\|dbt]]
 
-
 # language
 ## ⓙⓐⓥⓐ
 - [[etc/Java/Statement and Expression\|Statement and Expression]]
 
 ## ⓟⓨⓣⓗⓞⓝ
+- 파이썬 코딩의 기술
+	- [[etc/파이썬 코딩의 기술/python-better-way-14\|14. None 반환보다는 예외를 일으키자]]
 
 # ETC
 - [[etc/_/gRPC\|gRPC]]
