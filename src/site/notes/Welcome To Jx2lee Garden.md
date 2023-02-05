@@ -7,13 +7,13 @@
 
 # data
 ## 🔫 workflow
-[[data_engineer/airflow/__airflow_overview\|__airflow_overview]]
+- [[data_engineer/airflow/__airflow_overview\|airflow]]
 
 ## 🔑 catalog
-[[data_engineer/datahub/__datahub_overview\|__datahub_overview]]
+- [[data_engineer/datahub/__datahub_overview\|datahub]]
 
 ## 🛣️ ETL
-[[data_engineer/dbt/__dbt_overview\|__dbt_overview]]
+- [[data_engineer/dbt/__dbt_overview\|dbt]]
 
 
 # language
