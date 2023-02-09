@@ -21,6 +21,8 @@
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-components\|datahub-architecture-components]]
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-ingestion-framework\|datahub-architecture-ingestion-framework]]
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture\|datahub-architecture-serving-architecture]]
+- glossary
+	- [[datahub-mxe-processing-jobs\|MXE Processing Jobs]]
 
 ## 🫣 ingest metadata
 - [[data_engineer/datahub/datahub-recipe-example\|datahub-recipe-example]]
