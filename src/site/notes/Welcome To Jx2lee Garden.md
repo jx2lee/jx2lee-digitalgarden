@@ -6,17 +6,10 @@
 > since 2023.01.21
 
 # data
-## 🔫 workflow
 - [[data_engineer/airflow/__airflow_overview\|airflow]]
-
-## 🔑 catalog
 - [[data_engineer/datahub/__datahub_overview\|datahub]]
-
-## 🛣️ ETL
 - [[data_engineer/dbt/__dbt_overview\|dbt]]
-
-## 💿 database
-[[data_engineer/rdb/_overview\|rdb]]
+- [[data_engineer/rdb/_overview\|rdb]]
 
 # language
 ## ⓙⓐⓥⓐ
