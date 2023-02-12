@@ -4,8 +4,6 @@
 
 #dbt #overview 
 
-```toc
-```
 ---
 
 # 📚 Knowledge
