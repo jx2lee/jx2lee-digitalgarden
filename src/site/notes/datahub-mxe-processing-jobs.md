@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/datahub-mxe-processing-jobs/","dgPassFrontmatter":true}
 ---
 
-#datahub #glossary #내가헷갈리는용어를정리하자`
+#datahub #glossary #내가헷갈리는용어를정리하자 
 
 ---
 
