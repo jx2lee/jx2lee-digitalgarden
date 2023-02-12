@@ -4,9 +4,6 @@
 
 #overview #datahub 
 
-```toc
-```
-
 ---
 
 # 📚 Knowledge
