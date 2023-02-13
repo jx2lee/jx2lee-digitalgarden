@@ -32,10 +32,6 @@ dbt 에서 제공하는 incremental 모델을 이용할 때 사용하는 옵션�
 
 merge 옵션으로 incremental 모델을 생성할 때 기존 destination 모델을 이용해 temp 테이블을 생성한다 (with `__dbt_tmp` suffix). strategy 가 insert_overwrite 인 경우에는 생성한 temp 테이블을 삭제하는 쿼리가 컴파일로 확인가능하지만, merge 인 경우 생성한 temp 테이블을 Drop 하는 쿼리를 확인할 수 없었다.
 
-```
-example
-```
-
 혹시나 merge strategy 시 temp table 을 삭제하지 않는 원인이 궁금하여 커뮤니티에 [질문](https://getdbt.slack.com/archives/CBSQTAPLG/p1674915934074389)해보았다. 하루가 걸려 두 개 답변을 확인할 수 있었다. 첫번째는 specific 한 부분으로 해당 git repo 에 issue 를 생성해보는 것이 좋겠다고 하였다. 두번째, adapter 코드를 직접 확인하면 로직 파악이 쉬울것이며 현재 진행중인 이슈번호([#184](https://github.com/dbt-labs/dbt-bigquery/issues/184))를 남겨주었다. 해당 이슈를 간단히 정리하면 다음과 같다.
 
 ## #184
@@ -49,59 +45,59 @@ example
 
 prep_app_log 모델 생성 시 일어나는 과정을 디버깅했다. dbt 커맨드의 `--debug` 플래그를 추가하면 실행한 SQL 문을 상세히 확인할 수 있다.
 - 파티션 키로 설정한 event_created_at 의 최댓값을 변수로 선언한다.
-	```sql
-	declare _dbt_max_partition timestamp default (
-		  select max(event_created_at) from `******`.``******`.`prep_app_log`
-		  where event_created_at is not null
-		);
-	```
+```sql
+declare _dbt_max_partition timestamp default (
+	  select max(event_created_at) from `******`.``******`.`prep_app_log`
+	  where event_created_at is not null
+	);
+```
 - prep_app_log__dbt_tmp 테이블을 생성한다. (`crete or replace`)
 	- incremental 모델 생성을 위한 SQL 기반(*예제에서는 prep_app_log.sql*)으로 생성한다.
 	- expired timestamp: 12 hour
-	```sql
-	    create or replace table `******`.`******`.`prep_app_log__dbt_tmp`
-	    partition by timestamp_trunc(event_created_at, day)
-	    
-	    OPTIONS(
-	      description="""******""",
-	    
-	      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
-	    )
-	    as (
-	-- 이하 prep_app_log.sql 에 작성한 SQL
-	with stg_analytics as (
-		...
-		...
-	),
-	prep_app_log as (
-	    select * from renamed 
-	),
-	final as (
-	    select * from prep_app_log
+```sql
+	create or replace table `******`.`******`.`prep_app_log__dbt_tmp`
+	partition by timestamp_trunc(event_created_at, day)
+	
+	OPTIONS(
+	  description="""******""",
+	
+	  expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
 	)
-	select * from final
-	    );
-	```
+	as (
+-- 이하 prep_app_log.sql 에 작성한 SQL
+with stg_analytics as (
+	...
+	...
+),
+prep_app_log as (
+	select * from renamed 
+),
+final as (
+	select * from prep_app_log
+)
+select * from final
+	);
+```
 - tmp 테이블과 prep_app_log 테이블을 merge 한다.
-	```sql
-	    merge into `coinone-data-dev`.`dbt_metric`.`prep_app_log` as DBT_INTERNAL_DEST
-	        using (
-	          select * from `coinone-data-dev`.`dbt_metric`.`prep_app_log__dbt_tmp`
-	        ) as DBT_INTERNAL_SOURCE
-	        on 
-	                DBT_INTERNAL_SOURCE.log_id = DBT_INTERNAL_DEST.log_id
-	            
+```sql
+	merge into `coinone-data-dev`.`dbt_metric`.`prep_app_log` as DBT_INTERNAL_DEST
+		using (
+		  select * from `coinone-data-dev`.`dbt_metric`.`prep_app_log__dbt_tmp`
+		) as DBT_INTERNAL_SOURCE
+		on 
+				DBT_INTERNAL_SOURCE.log_id = DBT_INTERNAL_DEST.log_id
+			
+
 	
-	    
-	    when matched then update set
-	        `log_id` = DBT_INTERNAL_SOURCE.`log_id`,..., `********` = DBT_INTERNAL_SOURCE.`********`
-	    
+	when matched then update set
+		`log_id` = DBT_INTERNAL_SOURCE.`log_id`,..., `********` = DBT_INTERNAL_SOURCE.`********`
 	
-	    when not matched then insert
-	        (`log_id`, ..., `********`)
-	    values
-	        (`log_id`, ..., `********`)
-	```
+
+	when not matched then insert
+		(`log_id`, ..., `********`)
+	values
+		(`log_id`, ..., `********`)
+```
 
 위 내용을 토대로 이해한 incremental model & merge 전략의 실행과정은 다음과 같다.
 - partition key 의 max 값을 구하고 이를 기준으로 dbt__tmp 임시 테이블을 생성한다.
@@ -111,17 +107,17 @@ prep_app_log 모델 생성 시 일어나는 과정을 디버깅했다. dbt 커�
 # solution
 구글링 & chatgpt & 커뮤니티(*비슷한 질문이 [slack 채널](https://getdbt.slack.com/archives/CBSQTAPLG/p1671160243056179)에 있어 공유한다*)를 검색하고 고민한 결과 **테이블 정리 작업을 위해 post-hook 을 사용**하기로 결정했다. 모든 merge 모델들을 검색하고 config 에 post-hook 하는 방법 대신, root 폴더의 dbt_project.yml 에 post-hook 을 추가하여 모델 생성 이후 `DROP {type} IF EXISTS` 쿼리가 실행될 수 있도록 macro 를 만들었다. 설정 과정은 다음과 같다.
 - macro: `delete_tmp_table.sql`
-	```python
-	{% macro delete_tmp_table() %}  
-	    {% for relation in relations_to_drop %}  
-	        {% set drop_command -%}  
-	            DROP {{ relation.type }} IF EXISTS {{ relation }};  
-	        {%- endset %}  
-	        {% do log(drop_command, info=True) %}  
-	        {% do run_query(drop_command) %}  
-	    {% endfor %}  
-	{% endmacro %}
-	```
+```python
+{% macro delete_tmp_table() %}  
+	{% for relation in relations_to_drop %}  
+		{% set drop_command -%}  
+			DROP {{ relation.type }} IF EXISTS {{ relation }};  
+		{%- endset %}  
+		{% do log(drop_command, info=True) %}  
+		{% do run_query(drop_command) %}  
+	{% endfor %}  
+{% endmacro %}
+```
 - 작성한 매크로를 프로젝트 root 폴더 dbt_project.yml 내 post-hook 으로 등록한다.
 ```yml
 models:  
