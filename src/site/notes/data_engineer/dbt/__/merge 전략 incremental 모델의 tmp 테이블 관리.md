@@ -46,7 +46,7 @@ prep_app_log 모델 생성 시 일어나는 과정을 디버깅했다. dbt 커�
 - 파티션 키로 설정한 event_created_at 의 최댓값을 변수로 선언한다.
 ```sql
 declare _dbt_max_partition timestamp default (
-	  select max(event_created_at) from `******`.``******`.`prep_app_log`
+	  select max(event_created_at) from `******`.`******`.`prep_app_log`
 	  where event_created_at is not null
 	);
 ```
