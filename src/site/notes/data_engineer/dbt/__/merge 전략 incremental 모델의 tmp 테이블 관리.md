@@ -13,7 +13,7 @@
 - bigquery 혹은 카탈로그 서비스를 이용하는 사용자들의 위 테이블 문의가 증가하고 있다.
 - 따라서 incremental 모델 중 merge 전략은 취한 경우 temp 테이블 관리가 필요해졌다.
 
-# [incremental strategy](https://docs.getdbt.com/docs/build/incremental-models#about-incremental_strategy)
+# incremental strategy
 
 > 일부 adapter 에 incremental_strategy 옵션은 dbt가 증분 모델(incremental model)을 빌드하는 데 코드를 제어한다. 데이터 양, unique_key의 신뢰성 또는 가용성에 따라 접근 방식이 다를 수 있다. 본문에서는 target DW 를 bigquery 인 케이스를 다룬다.
 
