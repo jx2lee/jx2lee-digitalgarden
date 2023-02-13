@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/data_engineer/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리/","dgPassFrontmatter":true}
 ---
 
+
 #dbt #troubleshooting 
 
 ---
@@ -79,23 +80,23 @@ select * from final
 ```
 - tmp 테이블과 prep_app_log 테이블을 merge 한다.
 ```sql
-	merge into `coinone-data-dev`.`dbt_metric`.`prep_app_log` as DBT_INTERNAL_DEST
-		using (
-		  select * from `coinone-data-dev`.`dbt_metric`.`prep_app_log__dbt_tmp`
-		) as DBT_INTERNAL_SOURCE
-		on 
-				DBT_INTERNAL_SOURCE.log_id = DBT_INTERNAL_DEST.log_id
-			
+merge into `********`.`********`.`prep_app_log` as DBT_INTERNAL_DEST
+	using (
+	  select * from `********`.`********`.`prep_app_log__dbt_tmp`
+	) as DBT_INTERNAL_SOURCE
+	on 
+			DBT_INTERNAL_SOURCE.log_id = DBT_INTERNAL_DEST.log_id
+		
 
-	
-	when matched then update set
-		`log_id` = DBT_INTERNAL_SOURCE.`log_id`,..., `********` = DBT_INTERNAL_SOURCE.`********`
-	
 
-	when not matched then insert
-		(`log_id`, ..., `********`)
-	values
-		(`log_id`, ..., `********`)
+when matched then update set
+	`log_id` = DBT_INTERNAL_SOURCE.`log_id`,..., `********` = DBT_INTERNAL_SOURCE.`********`
+
+
+when not matched then insert
+	(`log_id`, ..., `********`)
+values
+	(`log_id`, ..., `********`)
 ```
 
 위 내용을 토대로 이해한 incremental model & merge 전략의 실행과정은 다음과 같다.
