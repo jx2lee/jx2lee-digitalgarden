@@ -111,10 +111,10 @@ values
 {% macro delete_tmp_table() %}
 {% for relation in relations_to_drop %}
 	{% set drop_command -%}
-		DROP {{ relation.type }} IF EXISTS {{ relation }};
+--		DROP {{ relation.type }} IF EXISTS {{ relation }};
 	{%- endset %}
---	{% do log(drop_command, info=True) %}
---	{% do run_query(drop_command) %}
+	{% do log(drop_command, info=True) %}
+	{% do run_query(drop_command) %}
 {% endfor %}
 {% endmacro %}
 ```
