@@ -119,7 +119,7 @@ select * from final
 {% endmacro %}
 ```
 - 작성한 매크로를 프로젝트 root 폴더 dbt_project.yml 내 post-hook 으로 등록한다.
-```yml
+```yaml
 models:  
   ...
 	...
