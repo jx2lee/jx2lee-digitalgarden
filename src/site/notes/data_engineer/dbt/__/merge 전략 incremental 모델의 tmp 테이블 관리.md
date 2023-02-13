@@ -107,11 +107,11 @@ select * from final
 # solution
 구글링 & chatgpt & 커뮤니티(*비슷한 질문이 [slack 채널](https://getdbt.slack.com/archives/CBSQTAPLG/p1671160243056179)에 있어 공유한다*)를 검색하고 고민한 결과 **테이블 정리 작업을 위해 post-hook 을 사용**하기로 결정했다. 모든 merge 모델들을 검색하고 config 에 post-hook 하는 방법 대신, root 폴더의 dbt_project.yml 에 post-hook 을 추가하여 모델 생성 이후 `DROP {type} IF EXISTS` 쿼리가 실행될 수 있도록 macro 를 만들었다. 설정 과정은 다음과 같다.
 - macro: `delete_tmp_table.sql`
-```python
+```
 {% macro delete_tmp_table() %}  
 	{% for relation in relations_to_drop %}  
 		{% set drop_command -%}  
-			DROP {{ relation.type }} IF EXISTS {{ relation }};  
+			DROP {{ relation.type }} IF EXISTS {{ relation }};
 		{%- endset %}  
 		{% do log(drop_command, info=True) %}  
 		{% do run_query(drop_command) %}  
@@ -119,7 +119,7 @@ select * from final
 {% endmacro %}
 ```
 - 작성한 매크로를 프로젝트 root 폴더 dbt_project.yml 내 post-hook 으로 등록한다.
-```yaml
+```
 models:  
   ...
 	...
