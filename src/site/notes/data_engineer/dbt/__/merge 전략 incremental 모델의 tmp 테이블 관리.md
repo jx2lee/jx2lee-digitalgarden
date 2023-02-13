@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/data_engineer/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리/","dgPassFrontmatter":true}
 ---
 
-
 #dbt #troubleshooting 
 
 ---
