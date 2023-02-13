@@ -12,7 +12,7 @@
 - [[data_engineer/dbt/dbt-cicd-overview\|dbt-cicd-overview]]
 
 ## 🚨 troubleshooting
-- [[data_engineer/dbt/__/incremental_strategy=merge 인 경우 temp 테이블 관리\|incremental_strategy=merge 인 경우 temp 테이블 관리]]
+- [[data_engineer/dbt/__/merge 전략의 incremental 모델의 tmp 테이블 관리\|merge 전략의 incremental 모델의 tmp 테이블 관리]]
 
 ## 👂 etc
 - [[data_engineer/dbt/run_results.json\|run_results.json]]
