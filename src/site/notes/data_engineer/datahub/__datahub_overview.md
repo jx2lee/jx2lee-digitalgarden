@@ -35,7 +35,7 @@
 - [[data_engineer/datahub/__troubleshooting/ingestion 중 GMS 401 unauthorized error\|ingestion 중 GMS 401 unauthorized error]]
 
 ## 👟 action item
-- [[data_engineer/datahub/datahub-with-GA4\|datahub-with-GA4]]
+- [[data_engineer/datahub/datahub-with-GTM\|datahub-with-GTM]]
 - [[data_engineer/datahub/__actions/Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)\|Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)]]
 	- support in v0.9.5
 - [[data_engineer/datahub/__actions/어드민 페이지를 만들어보는 건 어떨까?\|어드민 페이지를 만들어보는 건 어떨까?]]
