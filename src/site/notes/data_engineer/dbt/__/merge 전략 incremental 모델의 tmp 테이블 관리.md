@@ -47,8 +47,8 @@ prep_app_log 모델 생성 시 일어나는 과정을 디버깅했다. dbt 커�
 - 파티션 키로 설정한 event_created_at 의 최댓값을 변수로 선언한다.
 ```sql
 declare _dbt_max_partition timestamp default (
-	  select max(event_created_at) from `******`.`******`.`prep_app_log`
-	  where event_created_at is not null
+	select max(event_created_at) from `******`.`******`.`prep_app_log`
+	where event_created_at is not null
 	);
 ```
 - prep_app_log__dbt_tmp 테이블을 생성한다. (`crete or replace`)
@@ -59,9 +59,9 @@ declare _dbt_max_partition timestamp default (
 	partition by timestamp_trunc(event_created_at, day)
 	
 	OPTIONS(
-	  description="""******""",
+	description="""******""",
 	
-	  expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+	expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
 	)
 	as (
 -- 이하 prep_app_log.sql 에 작성한 SQL
@@ -82,7 +82,7 @@ select * from final
 ```sql
 merge into `********`.`********`.`prep_app_log` as DBT_INTERNAL_DEST
 	using (
-	  select * from `********`.`********`.`prep_app_log__dbt_tmp`
+	select * from `********`.`********`.`prep_app_log__dbt_tmp`
 	) as DBT_INTERNAL_SOURCE
 	on 
 			DBT_INTERNAL_SOURCE.log_id = DBT_INTERNAL_DEST.log_id
@@ -108,23 +108,23 @@ values
 구글링 & chatgpt & 커뮤니티(*비슷한 질문이 [slack 채널](https://getdbt.slack.com/archives/CBSQTAPLG/p1671160243056179)에 있어 공유한다*)를 검색하고 고민한 결과 **테이블 정리 작업을 위해 post-hook 을 사용**하기로 결정했다. 모든 merge 모델들을 검색하고 config 에 post-hook 하는 방법 대신, root 폴더의 dbt_project.yml 에 post-hook 을 추가하여 모델 생성 이후 `DROP {type} IF EXISTS` 쿼리가 실행될 수 있도록 macro 를 만들었다. 설정 과정은 다음과 같다.
 - macro: `delete_tmp_table.sql`
 ```python
-{% macro delete_tmp_table() %}  
-{% for relation in relations_to_drop %}  
-	{% set drop_command -%}  
+{% macro delete_tmp_table() %}
+{% for relation in relations_to_drop %}
+	{% set drop_command -%}
 		DROP {{ relation.type }} IF EXISTS {{ relation }};
-	{%- endset %}  
-	{% do log(drop_command, info=True) %}  
-	{% do run_query(drop_command) %}  
-{% endfor %}  
+	{%- endset %}
+	{% do log(drop_command, info=True) %}
+	{% do run_query(drop_command) %}
+{% endfor %}
 {% endmacro %}
 ```
 
 - 작성한 매크로를 프로젝트 root 폴더 dbt_project.yml 내 post-hook 으로 등록한다.
 ```
-models:  
-  ...
+models:
+...
 	...
-      +post-hook: "{{ delete_tmp_table() }}"
++post-hook: "{{ delete_tmp_table() }}"
 ```
 - dbt run 커맨드를 실행하며 tmp 테이블들을 삭제하는 쿼리를 확인하고 DW 에 오염된 테이블이 있는지 확인한다.
 
