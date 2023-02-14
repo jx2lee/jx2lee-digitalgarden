@@ -9,7 +9,7 @@
 # 📚 Knowledge
 
 ## 👔 concept
-- [[data_engineer/datahub/datahub-catalog\|datahub-catalog]]
+- [[data_engineer/datahub/datahub-catalog\|catalog to discovery]]
 
 ## 📄 documents
 - what is datahub?
