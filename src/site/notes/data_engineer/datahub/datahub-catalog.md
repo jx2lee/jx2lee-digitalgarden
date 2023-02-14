@@ -4,8 +4,6 @@
 
 #datahub #catalog 
 
-```toc
-```
 ---
 
 > 아래 내용들은 Monte Carlo CEO 인 Barr Moses 가 작성한 글을 토대로 작성하였다. 나름 문맥에 맞게 수정했지만 글을 완전히 이해하는데 어려울 수 있다. [socar 기술블로그: 데이터 디스커버리 플랫폼 도입기](https://tech.socarcorp.kr/data/2022/02/25/data-discovery-platform-01.html) 가 잘 읽히기 때문에 먼저 기술블로그 내용을 보시고 본 글을 읽어보는 것을 권장한다.
