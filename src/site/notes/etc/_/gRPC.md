@@ -4,9 +4,6 @@
 
 #grpc
 
-```toc
-```
-
 ---
 
 # [protocol buffer](https://protobuf.dev)
@@ -35,6 +32,15 @@
 # gRPC
 ![https://grpc.io/img/landing-2.svg](https://i.imgur.com/axS04Bx.png)
 
+- 고성능의 오픈소스 범용 RPC 프레임워크
+	- 높은 생산성과 효율적인 유지보수
+		- IDL 로 protobuf 를 사용하여 잘 정의한 IDL 만 있다면 메세지에 대한 소스코드를 자동으로 생성한다.
+		- 이를 통해 개발자들은 사용 언어에 휘둘리지 않고 정해진 규칙을 공통으로 사용해 의사소통 비용을 낮출 수 있다.
+	- 다양한 언어와 플랫폼 지원
+		- 2023.02.20 기준 아래 언어를 제공하고 있다.
+			- ![](https://i.imgur.com/WOwaUV8.png)
+	- 높은 메세지 압축률
+		- 내부적으로 HTTP2 를 사용해 header 압축률을 높이고 protobuf 로 통신시점 바이너리로 교환하기 때문에 메시지 크기가 작다. (`HTTP2 로 인한 양방향 스트림 지원`)
 
 # QuickStart
 ## Python
