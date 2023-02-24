@@ -39,7 +39,7 @@
 - [[data_engineer/datahub/__actions/Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)\|Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)]]
 	- support in v0.9.5
 - [[data_engineer/datahub/__actions/어드민 페이지를 만들어보는 건 어떨까?\|어드민 페이지를 만들어보는 건 어떨까?]]
-- [[data_engineer/datahub/__actions/actions-framework-test\|Action Framework 테스트 후기]]
+- [[data_engineer/datahub/__actions/actions-framework-test\|Action Framework 실험]]
 
 # 🔍 reference
 
