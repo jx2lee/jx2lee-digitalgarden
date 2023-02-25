@@ -9,15 +9,15 @@
 # 📚 Knowledge
 
 ## 👔 concept
-- [[data_engineer/datahub/datahub-catalog\|catalog to discovery]]
+- [[data_engineer/datahub/datahub-catalog\|Data Discovery: The Future of Data Catalogs for Data Lakes]]
 
 ## 📄 documents
 - what is datahub?
 	- architecture
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-overview\|datahub-architecture-overview]]
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-components\|datahub-architecture-components]]
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-ingestion-framework\|datahub-architecture-ingestion-framework]]
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture\|datahub-architecture-serving-architecture]]
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-overview\|overview]]
+		- [[datahub-architecture-components}\|Components]]
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-ingestion-framework\|Ingestion Framework]]
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture\|Serving Tier]]
 - glossary
 	- [[data_engineer/datahub/__docs/datahub-mxe-processing-jobs\|MXE Processing Jobs]]
 
