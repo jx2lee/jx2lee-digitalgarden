@@ -102,7 +102,5 @@
 
 # reference
 
-- [https://towardsdatascience.com/the-missing-piece-of-data-discovery-and-observability-platforms-open-standard-for-metadata-37dac2d0503](https://towardsdatascience.com/the-missing-piece-of-data-discovery-and-observability-platforms-open-standard-for-metadata-37dac2d0503)
 - [https://towardsdatascience.com/data-discovery-the-future-of-data-catalogs-for-data-lakes-7b50e2e8cb28](https://towardsdatascience.com/data-discovery-the-future-of-data-catalogs-for-data-lakes-7b50e2e8cb28)
-	- data observability 플랫폼 제공하는 Monte Carlo CEO (**Barr Moses**) article
-	- 시리즈 D 투자 회사 (130억 달러)
+- [https://towardsdatascience.com/the-missing-piece-of-data-discovery-and-observability-platforms-open-standard-for-metadata-37dac2d0503](https://towardsdatascience.com/the-missing-piece-of-data-discovery-and-observability-platforms-open-standard-for-metadata-37dac2d0503)
