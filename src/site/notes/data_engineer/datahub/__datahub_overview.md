@@ -15,7 +15,7 @@
 - what is datahub?
 	- architecture
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-overview\|overview]]
-		- [[datahub-architecture-components}\|Components]]
+		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-components\|Components]]
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-ingestion-framework\|Ingestion Framework]]
 		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture\|Serving Tier]]
 - glossary
