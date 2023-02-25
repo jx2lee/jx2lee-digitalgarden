@@ -13,8 +13,6 @@
 	- stack: Atlasian Bamboo, Docker, Airflow
 
 # overview
-## as-is
-
 1. dev branch push 발생
 	- stash repository trigger 로 build plan 을 실행한다.
 		- dev 브랜치를 기반으로 container image 를 빌드하고 푸시한다.
@@ -31,15 +29,14 @@
 4. dev/main 작업 시 모든 모델들은 full build 로 빌드된다.
 	- **변경한 모델만 빌드하지 않고 모든 모델들을 빌드한다.**
 
-### problem
+# problem
 - Atlasian build/deployment 에 대한 허들이 높다.
 	- dbt 모델을 관리하는 분석가가 쉽게 build/deployment 수정하기에 접근이 어렵다. (~~gitlab 도입해줘요 휴먼~~)
 - 한 가지 모델을 변경한 경우에도 모든 모델을 다시 빌드한다.
 	- 의존하지 않는 모델들도 모두 재생성하기 때문에 비용이 더 발생한다.
 	- 모델이 많아질수록 빌드시간이 오래걸린다.
 
-## to-be
-
+# to-be
 1. dev branch push 발생
 	- 아래와 같이 build plan 을 실행한다.
 		- dev 브랜치 기반 container image 를 빌드하고 ECR repository 로 push 한다.
@@ -58,8 +55,7 @@
 		- dbt full build 로 전사 지표에 사용하는 모델들을 업데이트 한다.
 4. 변경 사항만 실행하는 slim build 를 이용하고 지표 활용에 필요한 오전 8시 스케쥴 빌드는 full build 를 이용한다.
 
-## improvements
-
+# improvements
 - slim CI 를 이용해 변경한 모델들만 실행하도록 변경하여 빌드 속도를 개선했다.
 	- 이전 (full build): 206.439s
 	- 변경 후: 77.8919s
