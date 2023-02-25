@@ -8,7 +8,7 @@
 
 # 📚 Knowledge
 
-## 👟 action item
+## 👟 action
 - [[dbt-cicd-overview \|저희가 사용하는 DBT CI/CD 는요 🥲]]
 
 ## 🚨 troubleshooting
