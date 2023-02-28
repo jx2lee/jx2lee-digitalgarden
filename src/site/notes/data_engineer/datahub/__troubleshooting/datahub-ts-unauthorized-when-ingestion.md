@@ -61,12 +61,12 @@ data:
 - 이는 어플리케이션을 삭제 후 재설치 한다면 siginig key 값이 변경될 여지가 있을 것 같다.
 - <u>(가정) 애플리케이션을 삭제 -> 재 배포하면 signing key 가 변경될 것이다.</u>
 - 결과
-	- helm 차트를 변경할 일이 있어 새로운 브랜치로 재 생성해보니 signing_key & salt 값이 변경되어 있었다.
+	- **helm 차트를 변경할 일이 있어 새로운 브랜치로 재 생성해보니 signing_key & salt 값이 변경되었다.**
 	- 따라서 token 생성에 사용하는 키값 변경으로 인해 ingestions 이 실패한 것이었다.
 	- gms pod 에서 확인한 key 값
 		- token_service_signing_key: HrFxxxx...xxxx
 		- token_service_salt: S6axxxx...xxxx
-		- **다르다!**
+		- **다르다?!**
 - **secret template 문법을 해석해보면 다음과 같다.**
 	- lookup 함수로 datahub-auth-secrets 시크릿이 존재한다면, secret 변수로 할당한다.
 	- secret 변수가 존재한다면 시크릿 데이터를 data 변수로 담고, 없다면 빈 dictionary 를 생성한다.
