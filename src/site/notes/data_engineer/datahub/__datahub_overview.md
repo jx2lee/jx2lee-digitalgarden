@@ -32,7 +32,7 @@
 
 ## 🚨 troubleshooting
 - [[data_engineer/datahub/__troubleshooting/ingestion 수행중 aws role 권한 문제\|ingestion 수행중 aws role 권한 문제]]
-- [[data_engineer/datahub/__troubleshooting/ingestion 중 GMS 401 unauthorized error\|ingestion 중 GMS 401 unauthorized error]]
+- [[data_engineer/datahub/__troubleshooting/datahub-ts-unauthorized-when-ingetion\|ingestion 중 GMS 401 unauthorized error]]
 
 ## 👟 action item
 - [[data_engineer/datahub/datahub-with-GTM\|datahub-with-GTM]]
@@ -40,6 +40,7 @@
 	- support in v0.9.5
 - [[data_engineer/datahub/__actions/어드민 페이지를 만들어보는 건 어떨까?\|어드민 페이지를 만들어보는 건 어떨까?]]
 - [[data_engineer/datahub/__actions/actions-framework-test\|Action Framework 실험]]
+- [[data_engineer/datahub/__actions/ingestion-mssql\|MSSQL 소스 수집기 개발]]
 
 # 🔍 reference
 
