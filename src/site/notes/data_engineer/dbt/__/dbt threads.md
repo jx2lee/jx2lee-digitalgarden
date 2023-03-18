@@ -4,6 +4,7 @@
 
 
 # definition
+
 dbt가 실행되면 모델 간 링크의 DAG 이 생성된다.
 `thread` 는 dbt가 한 번에 작업할 수 있는 그래프의 최대 경로 수를 나타내며, 수를 늘리면 프로젝트의 런타임을 최소화할 수 있다. 기본값은 4이다.
 
@@ -11,6 +12,7 @@ dbt가 실행되면 모델 간 링크의 DAG 이 생성된다.
 - 실제 작업할 수 있는 모델 수는 종속성 그래프에서 사용 가능한 경로에 의해 제한될 수 있다.
 
 # Considerations
+
 설정할 수 있는 최대 `thread` 는 제한이 없다. `thread` 수를 늘리면 실행 시간이 단축되지만 고려해야 할 사항이 많다.
 
 - `thread` 를 늘리면 데이터 웨어하우스의 부하가 증가하여 다른 도구에 영향을 미칠 수 있다. 예를 들어, BI 도구가 dbt와 동일한 컴퓨팅 리소스를 사용하는 경우 **dbt 실행 중에 해당 쿼리가 큐에 대기**될 수 있다.
@@ -20,4 +22,5 @@ dbt가 실행되면 모델 간 링크의 DAG 이 생성된다.
 dbt 명령을 실행할 때 --threads 옵션을 사용하여 대상에 정의된 값과 다른 스레드 수를 사용할 수 있습니다.
 
 # references
+
 [Understanding threads​](https://docs.getdbt.com/docs/core/connection-profiles#understanding-threads "Direct link to heading")
