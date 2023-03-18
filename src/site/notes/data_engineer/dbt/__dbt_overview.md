@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/data_engineer/dbt/__dbt_overview/","dgPassFrontmatter":true}
 ---
 
+
 #dbt #overview 
 
 ---
@@ -17,6 +18,8 @@
 ## 👂 etc
 - [[data_engineer/dbt/run_results.json\|run_results.json]]
 - [[data_engineer/dbt/dbt-cli\|dbt-cli]]
+- [[data_engineer/dbt/__/metric\|metric(작성중)]]
+- [[data_engineer/dbt/__/dbt threads\|dbt threads (작성중)]]
 
 # 🔍 reference
 - use case
