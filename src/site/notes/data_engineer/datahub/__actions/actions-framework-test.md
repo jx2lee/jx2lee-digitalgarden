@@ -133,7 +133,6 @@ column description 에 특정 키워드를 포함하면 tag 를 자동으로 붙
 			- 관리가 어렵다.
 		- 쉽게 관리할 수 있는 방안이 필요하다. 커뮤니티에 문의해봐도 좋을 듯 싶다.
 	- [develop action](https://datahubproject.io/docs/actions/guides/developing-an-action)
-		- [[data_engineer/datahub/__actions/datahub-develop-action\|action 개발]]
 
 # reference
 - 실험에 사용한 ingestion file 예시
