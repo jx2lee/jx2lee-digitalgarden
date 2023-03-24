@@ -1,7 +1,4 @@
 body {
-  @charset "utf-8";
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-
   /***
     ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
     IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
@@ -17,6 +14,7 @@ body {
   --font-text-override: "JetBrains Mono", D2Coding, monospace;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 @font-face {
   font-family: 'D2Coding';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
