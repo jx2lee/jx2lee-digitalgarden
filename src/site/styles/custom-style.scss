@@ -1,13 +1,25 @@
 body {
-    /***
-      ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+  @charset "utf-8";
+  @font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+  /***
+    ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
+    IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
+ ***/
+  //  background-color: white;
+  //  .content {
+  //   font-size: 14px;
+  //  }
+  //  h1 {
+  //   color: black;
+  //  }
+  font-family: ;
+  --font-default: "JetBrains Mono", "D2Coding", monospace;
+  --font-monospace-default: "JetBrains Mono", "D2Coding", monospace;
 }
