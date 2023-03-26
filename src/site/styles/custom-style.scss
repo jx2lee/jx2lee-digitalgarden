@@ -4,13 +4,15 @@ body {
     IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
  ***/
   //  background-color: white;
-  //  .content {
-  //   font-size: 14px;
-  //  }
+    .content {
+      .cm-s-obsidian {
+        --default-font: 'Jetbrains Mono', monospace;
+        //font-family: "Jetbrains Mono", monospace;
+      }
+    }
   //  h1 {
   //   color: black;
   //  }
-  --default-font: "Jetbrains Mono";
 }
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
