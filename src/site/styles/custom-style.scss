@@ -4,13 +4,22 @@ body {
     IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
  ***/
   //  background-color: white;
-  //  .content {
-  //   font-size: 14px;
-  //  }
   //  h1 {
   //   color: black;
   //  }
-  --default-font: "Jetbrains Mono";
+  p, li, a, div.foldername-wrapper {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .content.cm-s-obsidian {
+    h1, h2, h3, h4 {
+      font-family: "JetBrains Mono", monospace;
+    }
+  }
+
+  div.navbar-inner.a {
+    font-family: "JetBrains Mono", monospace;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
