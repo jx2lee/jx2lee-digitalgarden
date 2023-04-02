@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/파이썬 코딩의 기술/python-better-way-14/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/파이썬 코딩의 기술/python-better-way-14/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 
