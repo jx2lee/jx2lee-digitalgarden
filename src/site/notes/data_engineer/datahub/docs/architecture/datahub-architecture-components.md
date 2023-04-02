@@ -4,11 +4,6 @@
 
 #datahub #architecture 
 
-```toc
-```
-
----
-
 DataHub 플랫폼은 아래 다이어그램에 표시된 구성 요소로 이루어져있다.
 
 ![](https://datahubproject.io/assets/images/datahub-components-ac4e0a67fb78387ac6efc0a5d66515c6.png)
