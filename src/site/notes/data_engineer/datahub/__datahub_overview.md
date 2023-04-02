@@ -9,41 +9,41 @@
 # 📚 Knowledge
 
 ## 👔 concept
-- [[data_engineer/datahub/datahub-catalog\|Data Discovery: The Future of Data Catalogs for Data Lakes]]
+- [[data_engineer/datahub/__/datahub-catalog\|Data Discovery: The Future of Data Catalogs for Data Lakes]]
 
 ## 📄 documents
 - what is datahub?
 	- architecture
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-overview\|overview]]
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-components\|Components]]
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-ingestion-framework\|Ingestion Framework]]
-		- [[data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture\|Serving Tier]]
+		- [[data_engineer/datahub/docs/architecture/datahub-architecture-overview\|overview]]
+		- [[data_engineer/datahub/docs/architecture/datahub-architecture-components\|Components]]
+		- [[data_engineer/datahub/docs/architecture/datahub-architecture-ingestion-framework\|Ingestion Framework]]
+		- [[data_engineer/datahub/docs/architecture/datahub-architecture-serving-architecture\|Serving Tier]]
 - glossary
-	- [[data_engineer/datahub/__docs/datahub-mxe-processing-jobs\|MXE Processing Jobs]]
+	- [[data_engineer/datahub/docs/datahub-mxe-processing-jobs\|MXE Processing Jobs]]
 
 ## 🫣 ingest metadata
-- [[data_engineer/datahub/datahub-recipe-example\|datahub-recipe-example]]
+- [[data_engineer/datahub/__/datahub-recipe-example\|datahub-recipe-example]]
 
 ## action framework
-- [[data_engineer/datahub/__actions/actions-framework-test\|Action Framework 실험]]
-	- [[data_engineer/datahub/__actions/datahub-develop-action\|Action 개발기]]
+- [[data_engineer/datahub/__/actions-framework-test\|Action Framework 실험]]
+	- [[data_engineer/datahub/__/datahub-develop-action\|Action 개발기]]
 
 ## 📊 graphql
-- [[data_engineer/datahub/datahub-graphql\|datahub-graphql]]
+- [[data_engineer/datahub/__/datahub-graphql\|datahub-graphql]]
 
 ## use-case
-- [[data_engineer/datahub/datahub-search\|datahub-search]]
+- [[data_engineer/datahub/__/datahub-search\|datahub-search]]
 
 ## 🚨 troubleshooting
-- [[data_engineer/datahub/__troubleshooting/ingestion 수행중 aws role 권한 문제\|ingestion 수행중 aws role 권한 문제]]
-- [[data_engineer/datahub/__troubleshooting/datahub-ts-unauthorized-when-ingestion\|ingestion 중 GMS 401 unauthorized error]]
+- [[data_engineer/datahub/__/ingestion 수행중 aws role 권한 문제\|ingestion 수행중 aws role 권한 문제]]
+- [[data_engineer/datahub/__/datahub-ts-unauthorized-when-ingestion\|ingestion 중 GMS 401 unauthorized error]]
 
 ## 👟 action item
-- [[data_engineer/datahub/datahub-with-GTM\|datahub-with-GTM]]
-- [[data_engineer/datahub/__actions/Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)\|Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)]]
+- [[data_engineer/datahub/__/datahub-with-GTM\|datahub-with-GTM]]
+- [[data_engineer/datahub/__/Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)\|Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)]]
 	- support in v0.9.5
-- [[data_engineer/datahub/__actions/어드민 페이지를 만들어보는 건 어떨까?\|어드민 페이지를 만들어보는 건 어떨까?]]
-- [[data_engineer/datahub/__actions/ingestion-mssql\|MSSQL 소스 수집기 개발]]
+- [[data_engineer/datahub/__/어드민 페이지를 만들어보는 건 어떨까?\|어드민 페이지를 만들어보는 건 어떨까?]]
+- [[data_engineer/datahub/__/ingestion-mssql\|MSSQL 소스 수집기 개발]]
 
 # 🔍 reference
 
