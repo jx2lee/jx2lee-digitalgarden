@@ -4,10 +4,6 @@
 
 #datahub #architecture #ingestion-framework
 
-```toc
-```
----
-
 **DataHub 는 push/pull, 비동기 및 동기 모델을 지원하는 유연한 수집 아키텍처를 제공**한다. 아래 그림은 DataHub 의 ingestion framework 를 간략히 표현하였다.
 
 ![https://datahubproject.io/assets/images/ingestion-architecture-cd631d7c4a648ceb82908ce25b9f93b9.png](https://datahubproject.io/assets/images/ingestion-architecture-cd631d7c4a648ceb82908ce25b9f93b9.png)
