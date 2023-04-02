@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/dbt/__dbt_overview/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data_engineer/dbt/__dbt_overview/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 
