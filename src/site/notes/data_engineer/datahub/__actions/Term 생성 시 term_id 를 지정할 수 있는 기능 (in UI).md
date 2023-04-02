@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/datahub/__actions/Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data_engineer/datahub/__actions/Term 생성 시 term_id 를 지정할 수 있는 기능 (in UI)/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 #datahub #contribution
