@@ -1,10 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/etc/파이썬 코딩의 기술/python-better-way-14/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/etc/파이썬 코딩의 기술/python-better-way-14/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
-
-```toc
-```
 
 함수를 이용해 None을 반환하기보다는 예외를 일으키는 방법에 대해 알아본다.
 파이썬 프로그래머들은 보통 None값에 특별한 의미를 부여하는 경우가 있다. 예를 들어 나눗셈을 수행하는 헬퍼함수를 생각해보자. 0으로 나누는 경우는 존재하지 않기 때문에 None을 반환하는 게 자연스럽다.
