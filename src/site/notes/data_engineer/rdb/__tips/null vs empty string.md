@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/rdb/__tips/null vs empty string/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data_engineer/rdb/__tips/null vs empty string/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 #database #mysql
