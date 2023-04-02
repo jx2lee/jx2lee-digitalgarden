@@ -4,10 +4,6 @@
 
 #datahub #architecture #serving-tier
 
-```toc
-```
----
-
 **DataHub Serving Tier에 대한 개략적인 다이어그램은 아래와 같다.**
 
 ![https://datahubproject.io/assets/images/datahub-serving-0a1f223ecb2d809052fd1eed539b0b3a.png](https://datahubproject.io/assets/images/datahub-serving-0a1f223ecb2d809052fd1eed539b0b3a.png)
