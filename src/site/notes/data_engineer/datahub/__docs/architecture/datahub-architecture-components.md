@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/datahub/__docs/architecture/datahub-architecture-components/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data_engineer/datahub/__docs/architecture/datahub-architecture-components/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 #datahub #architecture 
