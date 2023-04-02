@@ -4,8 +4,6 @@
 
 #datahub #glossary #내가헷갈리는용어를정리하자 
 
----
-
 > **MXE 는 datahub 에서 사용하는 MAE & MCE 를 함께 부르기 위해 가운데 문자를 X 로 표현했다.**
 
 
