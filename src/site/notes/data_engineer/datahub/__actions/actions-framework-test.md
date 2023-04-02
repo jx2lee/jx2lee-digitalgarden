@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/datahub/__actions/actions-framework-test/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data_engineer/datahub/__actions/actions-framework-test/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 #datahub #action #test 
