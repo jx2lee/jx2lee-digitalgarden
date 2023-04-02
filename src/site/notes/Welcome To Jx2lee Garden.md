@@ -9,7 +9,7 @@
 - [[data_engineer/airflow/__airflow_overview\|airflow]]
 - [[data_engineer/datahub/__datahub_overview\|datahub]]
 - [[data_engineer/dbt/__dbt_overview\|dbt]]
-- [[data_engineer/rdb/_overview\|rdb]]
+- [[data_engineer/rdb/__rdb_overview\|rdb]]
 
 # language
 ## ⓙⓐⓥⓐ
