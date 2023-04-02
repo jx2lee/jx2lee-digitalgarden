@@ -1,23 +1,39 @@
 body {
-  /***
-    ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
-    IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
- ***/
-  //  background-color: white;
-  //  h1 {
-  //   color: black;
-  //  }
   p, li, a, div.foldername-wrapper {
     font-family: "JetBrains Mono", monospace;
   }
 
   .content.cm-s-obsidian {
-    h1, h2, h3, h4 {
+    //h1, h2, h3, h4 {
+    //  font-family: "JetBrains Mono", monospace;
+    //}
+    h1 {
       font-family: "JetBrains Mono", monospace;
+      font-size: 2em;
+      font-weight: bolder;
     }
+
+    h2 {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1.5em;
+      font-weight: bolder;
+    }
+
+    h3 {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1.17em;
+      font-weight: bolder;
+    }
+
+    h4 {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1em;
+      font-weight: bolder;
+    }
+
   }
 
-  div.navbar-inner.a {
+  div.navbar-inner.a, nav.filetree-sidebar.a.h1 {
     font-family: "JetBrains Mono", monospace;
   }
 }
