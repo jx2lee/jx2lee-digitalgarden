@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/rdb/__tips/mysql privilege/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data_engineer/rdb/__tips/mysql privilege/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 
