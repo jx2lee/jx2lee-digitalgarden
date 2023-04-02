@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/data_engineer/datahub/__docs/architecture/datahub-architecture-serving-architecture/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #datahub #architecture #serving-tier
