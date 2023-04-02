@@ -3,7 +3,7 @@
 ---
 
 
-> since 2023.01.21
+![](https://i.imgur.com/7dlsgVl.jpg)
 
 # data
 - [[data_engineer/airflow/__airflow_overview\|airflow]]
@@ -11,13 +11,6 @@
 - [[data_engineer/dbt/__dbt_overview\|dbt]]
 - [[data_engineer/rdb/__rdb_overview\|rdb]]
 
-# language
-## ⓙⓐⓥⓐ
-- [[etc/Java/Statement and Expression\|Statement and Expression]]
+# [[etc/__overview\|etc]]
 
-## ⓟⓨⓣⓗⓞⓝ
-- 파이썬 코딩의 기술
-	- [[etc/파이썬 코딩의 기술/python-better-way-14\|14. None 반환보다는 예외를 일으키자]]
-
-# ETC
-- [[etc/_/gRPC\|gRPC]]
+> since 2023.01.21
