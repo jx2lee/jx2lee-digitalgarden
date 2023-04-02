@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data_engineer/rdb/__tips/auto incremental vs identity/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/data_engineer/rdb/__tips/auto incremental vs identity/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #rdb #autoincremental #iddentity
