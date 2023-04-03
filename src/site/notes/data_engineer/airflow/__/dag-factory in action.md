@@ -6,8 +6,12 @@
 # intro
 [dag-factory](https://github.com/ajbosco/dag-factory) 라는 yaml 기반 동적 DAG 생성 프로젝트를 간단히 살펴본다.
 
+dag-factory는 YAML 로 Apache Airflow DAG를 동적으로 생성하기 위한 라이브러리이다. ([참고](https://github.com/ajbosco/dag-factory#dag-factory))
+
+
+
 # prerequisites
-- airflow with docker
+- airflow
 	- [[data_engineer/airflow/__/airflow-local-with-docker\|참고]]
 - curiosity
 
@@ -104,13 +108,17 @@ yaml 로 정의한 그래프가 잘 보인다.
 - 작업하면서 느낀 장점과 단점은 다음과 같다.
 	- 장점
 		- yaml 기반 관리로 효율 증가
-		- DAG 중복코드가 보이지 않고 수정/삭제도 편리
-		- custom operator 및 plugin 지원
-		- 멋
+		- DAG 중복코드를 방지하고 수정/삭제가 편리하다.
+		- custom operator 및 plugin 을 지원한다.
+		- **멋**
 	- 단점
-		- 우리 환경에서 적용이 가능한지 검증이 필요함
-		- 안정화된건지.. 관심이 없는건지.. 최근 커밋이 존재하지 않음
-		- 양날의 검 with yaml
+		- 현재 환경에 마이그레이션이 가능한 지 검토가 필요하다.
+		- 안정화된건지.. 관심이 없는건지.. 최근 커밋이 존재하지 않는다.
+		- 배보다 배꼽이 커질 수 있다. (yaml 이 커지면 커질수록 관리가 더 힘들어질 수 있다.)
+
+# reference
+- [repo](https://github.com/ajbosco/dag-factory#dag-factory)
+- [dag-factory​](https://docs.astronomer.io/learn/dynamically-generating-dags#dag-factory "Direct link to dag-factory")
 
 ---
 *end of document*
