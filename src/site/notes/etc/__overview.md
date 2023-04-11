@@ -14,8 +14,13 @@
 	- [[etc/파이썬 코딩의 기술/python-better-way-14\|14. None 반환보다는 예외를 일으키자]]
 
 # refactoring
-- [[etc/refactoring/decompose-conditional\|decompose-conditional]]
-- [[etc/refactoring/replace-conditional-with-polymorphism\|replace-conditional-with-polymorphism]]
+[https://refactoring.com/catalog/](https://refactoring.com/catalog/)
+
+- simplify-conditional-logic
+	- [[etc/refactoring/decompose-conditional\|decompose-conditional]]
+	- [[etc/refactoring/replace-conditional-with-polymorphism\|replace-conditional-with-polymorphism]]
+- moving-features
+	- [[etc/refactoring/split-loop\|split-loop]]
 
 # [[etc/_/Token Store\|Token Store]]
 
