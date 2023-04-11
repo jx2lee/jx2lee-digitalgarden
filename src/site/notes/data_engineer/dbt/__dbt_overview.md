@@ -11,7 +11,7 @@
 
 ## 👟 action
 - [[data_engineer/dbt/__/dbt-cicd-overview\|저희가 사용하는 DBT CI/CD 는요 🥲]]
-- [[data_engineer/dbt/__/monitoring-dbt\|dbt 모니터링을 개선했개선했어요]]
+- [[data_engineer/dbt/__/monitoring-dbt\|dbt 모니터링을 개선했어요]]
 
 ## 🚨 troubleshooting
 - [[data_engineer/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리\|merge 전략 incremental 모델의 tmp 테이블 관리]]
