@@ -14,7 +14,8 @@
 	- [[etc/파이썬 코딩의 기술/python-better-way-14\|14. None 반환보다는 예외를 일으키자]]
 
 # refactoring
-- [[decompose-conditional\|decompose-conditional]]
+- [[etc/refactoring/decompose-conditional\|decompose-conditional]]
+- [[etc/refactoring/replace-conditional-with-polymorphism\|replace-conditional-with-polymorphism]]
 
 # [[etc/_/Token Store\|Token Store]]
 
