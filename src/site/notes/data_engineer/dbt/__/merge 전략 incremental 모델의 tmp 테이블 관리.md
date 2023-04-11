@@ -118,4 +118,5 @@ values
 # referenece
 - [Incremental models](https://docs.getdbt.com/docs/build/incremental-models)
 - [Understanding dbt Incremental Strategies part 1/2](https://medium.com/indiciumtech/understanding-dbt-incremental-strategies-part-1-2-22bd97c7eeb5)
+- [Understanding dbt Incremental Strategies part 2/2](https://medium.com/indiciumtech/understanding-dbt-incremental-strategies-part-2-2-add59889ea17)
 - [dbt-utils: get_relations_by_pattern-source](https://github.com/dbt-labs/dbt-utils#get_relations_by_pattern-source)
