@@ -7,7 +7,7 @@
 ---
 
 # basic
-- [[data_engineer/airflow/__/Airflow Task\|Airflow Task]]
+- [[data_engineer/airflow/__/airflow-task\|Task]]
 
 # etc
 - [[data_engineer/airflow/__/airflow-local-with-docker\|airflow-local-with-docker]]
