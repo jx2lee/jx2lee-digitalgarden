@@ -21,6 +21,7 @@
 - [[data_engineer/dbt/__/dbt-cli\|dbt-cli]]
 - [[data_engineer/dbt/__/metric\|metric(작성중)]]
 - [[data_engineer/dbt/__/dbt threads\|dbt threads]]
+- [[snapshot-model-process\|snapshot-model-process]]
 
 # 🔍 reference
 - use case
