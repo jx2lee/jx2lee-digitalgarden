@@ -8,6 +8,7 @@
 
 # basic
 - [[data_engineer/airflow/__/airflow-task\|Task]]
+- [[data_engineer/airflow/__/airflow-landing-time\|Landing Times]]
 
 # etc
 - [[data_engineer/airflow/__/airflow-local-with-docker\|airflow-local-with-docker]]
