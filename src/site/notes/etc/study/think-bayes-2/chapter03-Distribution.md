@@ -54,7 +54,7 @@ def update_dice(pmf, data):
 - empiricaldist는 pandas 를 기반으로 하며, Pmf 클래스는 Series 클래스를 상속하고 확률 질량 함수에 특화된 추가 기능을 제공한다.
 	- 이 책에서는 코드를 간소화하고 가독성을 높이기 위해 empiricaldist의 Pmf 및 기타 클래스를 사용할 예정이다. 하지만 pandas 로 직접 동일한 작업을 수행할 수도 있다.
 - 이전 장에서 살펴본 쿠키 문제와 주사위 문제를 푸는 데 Pmf를 사용했다. Pmf를 사용하면 여러 데이터 조각으로 순차적 업데이트를 쉽게 수행할 수 있다.
-- 또한 두 개의 그릇이 아닌 101개의 그릇을 사용하여 보다 일반적인 버전의 쿠키 문제도 해결했다. 그런 다음 사후 확률이 가장 높은 수량인 MAP를 계산했다.
+- 또한 두 개의 그릇이 아닌 101개의 그릇을 사용하여 보다 일반적인 버전의 쿠키 문제도 해결했다. 그런 다음 사후 확률이 가장 높은 MAP를 계산했다.
 
 # reference
 - [Distributions](http://allendowney.github.io/ThinkBayes2/chap03.html)
