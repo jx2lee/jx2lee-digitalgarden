@@ -6,3 +6,4 @@
 # [[etc/study/think-bayes-2/chapter01-Probability\|chapter01-Probability]]
 # [[etc/study/think-bayes-2/chapter02-Bayes's-Theorem\|chapter02-Bayes's-Theorem]]
 # [[etc/study/think-bayes-2/chapter03-Distribution\|chapter03-Distribution]]
+# [[etc/study/think-bayes-2/chaptoer04-Estimating-Proportions\|chaptoer04-Estimating-Proportions]]
