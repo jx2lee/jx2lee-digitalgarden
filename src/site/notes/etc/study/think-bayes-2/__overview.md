@@ -8,3 +8,4 @@
 # [[etc/study/think-bayes-2/chapter03-Distribution\|chapter03-Distribution]]
 # [[etc/study/think-bayes-2/chapter04-Estimating-Proportions\|chapter04-Estimating-Proportions]]
 # [[etc/study/think-bayes-2/chapter05-Estimating-Counts\|chapter05-Estimating-Counts]]
+# [[etc/study/think-bayes-2/chapter06-Odds-and-Addends\|chapter06-Odds-and-Addends]]
