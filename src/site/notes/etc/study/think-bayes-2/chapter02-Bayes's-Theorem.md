@@ -6,9 +6,9 @@
 
 ---
 
-이전 챕터에서 General Social Suvery 데이터는 베이즈 정리를 이용해 계산이 쉬웠다. 이렇게 완전한 데이터 집합을 가지고 있는 경우 굳이 베이즈 정리를 사용하지 않아도 좋다.
+이전 챕터에서 General Social Suvery 데이터는 베이즈 정리를 이용해 계산이 쉬웠다. 이렇게 완전한 데이터 집합을 가지고 있는 경우 굳이 베이즈 정리를 사용하지 않아도 된다.
 
-즉, 완전하지 않은 데이터에 베이즈 정리를 유용하게 사용할 수 있다.
+즉, **완전하지 않은 데이터에 베이즈 정리를 유용하게 사용할 수 있다.**
 
 # The Cookie Problem
 [Urn Problem](https://en.wikipedia.org/wiki/Urn_problem)
@@ -20,10 +20,10 @@ $$P(V) = (1/2)~(3/4) ~+~ (1/2)~(1/2) = 5/8$$
 - 두 그릇을 선택할 확률이 같고 두 그릇에 같은 수의 쿠키가 들어 있기 때문에 어떤 쿠키를 선택할 확률도 같다. 따라서 위와같은 계산 말고 총 80개 쿠키 중 바닐라 쿠키를 고를 확률로 계산해도 동일하다. $P(V) = 5/8$.
 - 마지막으로 베이즈 정리(정리 2)를 이용해 확률은 다음과 같이 계산할 수 있다. $$P(B_1|V) = (1/2)~(3/4)~/~(5/8) = 3/5$$
 
-# Diachronic Bayes
+# Diachronic Bayes (통시적 Bayes)
 베이지안 정리를 다른 관점에서 생각해볼 수 있다. 어떤 데이터(D)가 주어졌을 때 가설(H)의 확률을 업데이트할 수 있는 방법을 알려준다.
 
-이 해석은 "통시적"이라는 의미로, "시간에 따른 변화와 관련이 있다"는 뜻이며, 이 경우 새로운 데이터를 볼 때마다 가설의 확률이 달라진다.
+이 해석은 "통시적"이라는 의미로, "시간에 따른 변화와 관련이 있다"는 뜻이다. 새로운 데이터를 볼 때마다 가설의 확률이 달라진다.
 
 $$P(H|D) = \frac{P(H)~P(D|H)}{P(D)}$$
 - $P(H)$ is the probability of the hypothesis before we see the data, called the prior probability, or just **prior**.
@@ -34,10 +34,14 @@ $$P(H|D) = \frac{P(H)~P(D|H)}{P(D)}$$
 	- [likelihood](http://rstudio-pubs-static.s3.amazonaws.com/204928_c2d6c62565b74a4987e935f756badfba.html)
 - $P(D)$ is the **total probability of the data**, under any hypothesis.
 
+> likelihood 와 probability 의 차이를 찾아보다 두 개념의 차이를 설명하는 링크를 공유한다.
+> - [https://wikidocs.net/9088](https://wikidocs.net/9088)
+> - [https://esj205.oopy.io/719db4cb-89c2-4420-af5d-c467dfdfa86e](https://esj205.oopy.io/719db4cb-89c2-4420-af5d-c467dfdfa86e)
+
 total probability 를 여러 가설에 적용하면 P(D) 는 다음과 같이 계산할 수 있다.
 $$P(D) = P(H_1)~P(D|H_1) + P(H_2)~P(D|H_2)$$
 $$P(D) = \sum_i P(H_i)~P(D|H_i)$$
-D 와 사전 확률(P(H|D))를 이용해 사후 확률을 계산하는 과정을 Bayesian update 라고 부른다.
+데이터 와 사전 확률($P(H)$)를 이용해 사후 확률을 계산하는 과정을 **Bayesian update** 라고 한다.
 
 # Bayes Table
 
@@ -60,7 +64,7 @@ Bowl 2    0.5        0.50
 - 이전과 다르게 모든 가설($B_{1}$/$B_{2}$) 에 대한 확률을 계산한다.
 	- The chance of getting a vanilla cookie from Bowl 1 is 3/4.
 	- The chance of getting a vanilla cookie from Bowl 2 is 1/2.
-- likelihood 의 총 합은 1이 되지 않아도 문제될 것이 없다.
+- likelihood 의 총 합은 1이 되지 않아도 된다.
 
 ```python
 >>> table['unnorm'] = table['prior'] * table['likelihood']
@@ -81,14 +85,39 @@ $$P(B_1)~P(D|B_1) + P(B_2)~P(D|B_2) = P(D)$$
 # 0.625 = 5/8
 ```
 
-보울 1의 사후 확률은 0.6이며, 이는 베이지의 정리를 명시적으로 사용하여 얻은 것이다. 보너스로 보울 2의 사후 확률도 구했다.(0.4)
+그릇 1의 사후 확률은 0.6이며, 이는 베이지의 정리를 명시적으로 사용하여 얻었다. 보너스로 그릇 2의 사후 확률 0.4 이다.
   
-정규화되지 않은 posteriors 를 더하고 나누면 posteriors 가 1이 되도록 강제한다. 이 과정을 "정규화"라고 하며, 이 때문에 데이터의 총 확률을 "정규화 상수"라고도 한다.
+정규화되지 않은 posteriors 를 더하고 나누면 posteriors 가 1이 되도록 강제한다. 이 과정을 "**정규화**"라고 하며, 이 때문에 데이터의 총 확률을 "정규화 상수(normalizing constant)"라고도 한다.
 
 # The Dice Problem
 Bayes Table 을 이용해 다음 주사위 문제를 쉽게 풀 수 있다.
 
-> Suppose I have a box with a 6-sided die, an 8-sided die, and a 12-sided die. I choose one of the dice at random, roll it, and report that the outcome is a 1. What is the probability that I chose the 6-sided die?
+> 6면 주사위, 8면 주사위, 12면 주사위가 들어 있는 상자가 있다고 가정합니다. 주사위 중 하나를 무작위로 선택하여 굴린 후 결과가 1이라고 보고합니다. 6면 주사위를 선택했을 확률은 얼마인가요?
+
+```python
+>>> table2 = pd.DataFrame(index=[6, 8, 12])
+>>>
+>>> from fractions import Fraction
+>>> table2['prior'] = Fraction(1, 3)
+>>> table2['likelihood'] = Fraction(1, 6), Fraction(1, 8), Fraction(1, 12)
+>>> table2
+```
+
+![](https://i.imgur.com/ozsN9Xu.png)
+
+update 함수를 다음과 같이 정의할 수 있다.
+```python
+def update(table):
+    """Compute the posterior probabilities."""
+    table['unnorm'] = table['prior'] * table['likelihood']
+    prob_data = table['unnorm'].sum()
+    table['posterior'] = table['unnorm'] / prob_data
+    return prob_data
+>>> prob_data = update(table2)
+>>> table2
+```
+
+![](https://i.imgur.com/PhHEJTS.png)
 
 # The Monty Hall Problem
 다음으로 베이지안 테이블을 사용하여 확률에서 가장 논쟁의 여지가 있는 문제 중 하나를 해결해보자.
