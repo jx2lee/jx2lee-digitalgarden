@@ -30,3 +30,4 @@
 - [[etc/_/gRPC\|gRPC]]
 - [[etc/Why I Prefer Regular Merge Commits Over Squash Commits\|Why I Prefer Regular Merge Commits Over Squash Commits]]
 - [[etc/study/think-bayes-2/__overview\|스터디: 파이썬을 이용한 베이지안 통계]]
+- [[etc/_/Cache\|cache]]
