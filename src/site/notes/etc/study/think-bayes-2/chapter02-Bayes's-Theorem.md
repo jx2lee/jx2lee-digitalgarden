@@ -23,7 +23,7 @@ $$P(V) = (1/2)~(3/4) ~+~ (1/2)~(1/2) = 5/8$$
 # Diachronic Bayes (통시적 Bayes)
 베이지안 정리를 다른 관점에서 생각해볼 수 있다. 어떤 데이터(D)가 주어졌을 때 가설(H)의 확률을 업데이트할 수 있는 방법을 알려준다.
 
-이 해석은 "통시적"이라는 의미로, "시간에 따른 변화와 관련이 있다"는 뜻이다. 새로운 데이터를 볼 때마다 가설의 확률이 달라진다.
+Diachronic 은 "통시적"이라는 의미로, 시간에 따른 변화와 관련이 있다는 의미이다. 새로운 데이터를 볼 때마다 가설의 확률이 달라진다.
 
 $$P(H|D) = \frac{P(H)~P(D|H)}{P(D)}$$
 - $P(H)$ is the probability of the hypothesis before we see the data, called the prior probability, or just **prior**.
