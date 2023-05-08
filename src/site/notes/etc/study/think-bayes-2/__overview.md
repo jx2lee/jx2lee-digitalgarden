@@ -13,3 +13,4 @@
 # [[etc/study/think-bayes-2/chapter05-Estimating-Counts\|chapter05-Estimating-Counts]]
 # [[etc/study/think-bayes-2/chapter06-Odds-and-Addends\|chapter06-Odds-and-Addends]]
 # [[etc/study/think-bayes-2/chapter07-Minimum,Maximum,Mixture\|chapter07-Minimum,Maximum,Mixture]]
+# [[etc/study/think-bayes-2/chapter08-Poisson-Processes\|chapter08-Poisson-Processes]]
