@@ -41,7 +41,7 @@ $$P(H|D) = \frac{P(H)~P(D|H)}{P(D)}$$
 total probability 를 여러 가설에 적용하면 P(D) 는 다음과 같이 계산할 수 있다.
 $$P(D) = P(H_1)~P(D|H_1) + P(H_2)~P(D|H_2)$$
 $$P(D) = \sum_i P(H_i)~P(D|H_i)$$
-데이터 와 사전 확률($P(H)$)를 이용해 사후 확률을 계산하는 과정을 **Bayesian update** 라고 한다.
+데이터와 사전 확률($P(H)$)를 이용해 사후 확률을 계산하는 과정을 **Bayesian update** 라고 한다.
 
 # Bayes Table
 
