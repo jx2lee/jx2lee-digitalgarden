@@ -15,9 +15,8 @@
 # Culmulative Distribution Functions
 지금까지는 확률 질량 함수(pmf)를 사용하여 분포를 표현했다. pmf 대안으로 누적 분포 함수(CDF)를 사용할 수 있다.
 
-예를 들어, <<\_BayesianEstimation>>에서 계산한 유로 문제의 사후 분포를 사용해본다.
-
-다음은 우리가 사용한 uniform prior 다.
+BayesianEstimation 의 유로 문제의 posterior 분포를 사용해보자
+우리가 사용한 uniform prior 은 다음과 같다.
 ```python
 >>> import numpy as np
 >>> from empiricaldist import Pmf
@@ -27,7 +26,7 @@
 >>> data = 140, 250
 ```
 
-update 는 다음과 같이 진행한다.
+update 는 다음과 같다.
 ```python
 from scipy.stats import binom
 
@@ -62,17 +61,15 @@ Name: , Length: 101, dtype: float64
 
 ![](https://i.imgur.com/ppnDYcm.png)
 
-CDF의 범위는 항상 0에서 1 사이다. (*최대값이 임의의 확률이 될 수 있는 PMF와 대조된다*)
+CDF의 범위는 항상 0에서 1 사이다. (*최대값이 임의의 확률이 될 수 있는 PMF와 대조*)
 
-cumsum의 결과는 판다 시리즈이므로 괄호 연산자를 사용하여 요소를 선택할 수 있다.
-
+cumsum의 결과는 시리즈이므로 괄호 연산자를 이용해 인덱싱 할 수 있다.
 ```python
 >>> cumulative[0.61]
 0.9638303193984255
 ```
 
-- 해석
-	- 결과는 약 0.96으로, 모든 수량이 0.61보다 작거나 같을 확률이 총 96%임을 의미합니다.
+- 0.61 보다 작거나 같을 확률이 총 96% 임을 의미한다.
 
 다른 방법으로, 확률을 조회하고 해당 사분위수를 구하려면 보간법(interpolation)을 사용하면 된다.
 
@@ -87,8 +84,7 @@ cumsum의 결과는 판다 시리즈이므로 괄호 연산자를 사용하여 �
 array(0.60890171)
 ```
 
-- 해석
-	- 결과는 약 0.61이므로 이 분포의 96 백분위수가 0.61 이다.
+- 이 분포의 96 백분위수는 0.61 이다.
 
 empiricaldist 는 누적 분포 함수를 나타내는 Cdf 클래스를 제공한다. Pmf가 주어지면 다음과 같이 Cdf를 계산할 수 있다.
 
@@ -124,13 +120,13 @@ Cdf는 또한 주어진 확률을 포함하는 신뢰구간을 계산하는 `cre
 array([0.51, 0.61])
 ```
 
-CDF와 PMF는 동일한 정보를 제공한다는 점에서 동일하며, 언제든지 둘 중 하나에서 다른 것으로 변환할 수 있다. CDF가 주어지면 다음과 같이 동등한 PMF를 얻을 수 있다.
+CDF와 PMF는 동일한 정보를 제공한다는 점에서 동일하며, 언제든지 둘 중 하나에서 다른 것으로 변환할 수 있다. CDF가 주어지면 PMF 를 얻을 수 있다.
 
 ```python
 >>> pmf = cdf.make_pmf()
 ```
 
-make_pmf는 np.diff를 사용하여 연속 누적 확률 간 차이를 계산하여 pmf 를 반환한다. 
+make_pmf는 np.diff 를 사용하여 연속 누적 확률 간 차이를 계산하여 pmf 를 반환한다. 
   
 Cdf 객체가 유용한 이유 중 하나는 사분위수를 효율적으로 계산하기 때문이다. 또 다른 이유는 다음 섹션에서 살펴볼 것처럼 최대값 또는 최소값의 분포를 쉽게 계산할 수 있다.
 
