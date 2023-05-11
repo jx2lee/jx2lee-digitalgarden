@@ -14,3 +14,8 @@
 # [[etc/study/think-bayes-2/chapter06-Odds-and-Addends\|chapter06-Odds-and-Addends]]
 # [[etc/study/think-bayes-2/chapter07-Minimum,Maximum,Mixture\|chapter07-Minimum,Maximum,Mixture]]
 # [[etc/study/think-bayes-2/chapter08-Poisson-Processes\|chapter08-Poisson-Processes]]
+
+---
+
+# [[etc/study/think-bayes-2/chapter09-Decision-Analysis\|chapter09-Decision-Analysis]]
+# [[chapter10-Testing\|chapter10-Testing]]
