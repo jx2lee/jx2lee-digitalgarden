@@ -18,4 +18,6 @@
 ---
 
 # [[etc/study/think-bayes-2/chapter09-Decision-Analysis\|chapter09-Decision-Analysis]]
-# [[chapter10-Testing\|chapter10-Testing]]
+# [[etc/study/think-bayes-2/chapter10-Testing\|chapter10-Testing]]
+# [[etc/study/think-bayes-2/chapter11-Comparison\|chapter11-Comparison]]
+# [[etc/study/think-bayes-2/chapter12-Classification\|chapter12-Classification]]
