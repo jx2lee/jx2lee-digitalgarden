@@ -6,10 +6,10 @@
 ![](https://i.imgur.com/7dlsgVl.jpg)
 
 # data
-- [[data_engineer/airflow/__airflow_overview\|airflow]]
-- [[data_engineer/datahub/__datahub_overview\|datahub]]
-- [[data_engineer/dbt/__dbt_overview\|dbt]]
-- [[data_engineer/rdb/__rdb_overview\|rdb]]
+- [[data/airflow/__airflow_overview\|airflow]]
+- [[data/datahub/__datahub_overview\|datahub]]
+- [[data/dbt/__dbt_overview\|dbt]]
+- [[data/rdb/__rdb_overview\|rdb]]
 
 # [[etc/__overview\|etc]]
 
