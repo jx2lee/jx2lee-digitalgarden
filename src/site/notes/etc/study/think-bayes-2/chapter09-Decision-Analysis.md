@@ -40,7 +40,11 @@
 - 마지막 두 열은 실제 값과 입찰가의 차이
 
 # Kernel Density Estimation
-이 샘플을 사용하여 상품가격의 prior 분포를 추정할 수 있다. 이를 수행하는 한 가지 방법은 [커널 밀도 추정(KDE)](https://mathisonian.github.io/kde/)으로, 샘플을 사용하여 평활 분포(smooth distribution)를 추정하는 것이다.
+이 샘플을 사용하여 상품가격의 prior 분포를 추정할 수 있다. 이를 수행하는 방법은 [커널 밀도 추정(KDE)](https://mathisonian.github.io/kde/)으로, 샘플을 사용하여 평활 분포(smooth distribution)를 추정하는 것이다.
+
+> kernel density estimation 은 kernel 이라는 함수(원점을 중심으로 대칭이며 적분값이 1)로 밀도를 추정하는 방법 중 하나이다.
+> - https://blog.mathpresso.com/mathpresso-%EB%A8%B8%EC%8B%A0-%EB%9F%AC%EB%8B%9D-%EC%8A%A4%ED%84%B0%EB%94%94-14-%EB%B0%80%EB%8F%84-%EC%B6%94%EC%A0%95-density-estimation-38fd7ef729bb
+> - https://en.wikipedia.org/wiki/Kernel_density_estimation
 
 다음 함수는 샘플을 가져와 KDE를 만들고, 주어진 수량 시퀀스(qs)에서 평가한 후 결과를 정규화된 PMF로 반환한다.
 ```python
