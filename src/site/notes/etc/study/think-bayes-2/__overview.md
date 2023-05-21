@@ -21,3 +21,10 @@
 # [[etc/study/think-bayes-2/chapter10-Testing\|chapter10-Testing]]
 # [[etc/study/think-bayes-2/chapter11-Comparison\|chapter11-Comparison]]
 # [[etc/study/think-bayes-2/chapter12-Classification\|chapter12-Classification]]
+
+---
+
+# [[etc/study/think-bayes-2/chapter13-Inference\|chapter13-Inference]]
+# [[chapter14-Survival-Analysis\|chapter14-Survival-Analysis]]
+# [[chapter15-Mark-and-Recapture\|chapter15-Mark-and-Recapture]]
+# [[chapter16-Logistic-Regression\|chapter16-Logistic-Regression]]
