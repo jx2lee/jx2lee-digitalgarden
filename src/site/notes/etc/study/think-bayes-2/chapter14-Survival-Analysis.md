@@ -4,6 +4,8 @@
 
 #think-bayes #probability #study 
 
+---
+
 특정 사건이 지속되는 시간을 구하는 통계적 방법인 survival analysis 에 대해 설명한다.
 
 > bayesian methods 는 불완전한 데이터를 사용해야 하는 경우 특히 좋은 선택이라고 한다.
