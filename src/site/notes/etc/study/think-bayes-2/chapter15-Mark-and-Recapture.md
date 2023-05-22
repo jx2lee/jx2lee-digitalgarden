@@ -4,6 +4,8 @@
 
 #think-bayes #probability #study 
 
+---
+
 ==overview==
 - 모집단(population)에서 표본을 추출해 특정 표식(mark)을 하고 다시 표본을 추출하는 방식(=mark and recapture)
 	- 두번째 추출에서 mark 된 표본을 통해 모집단 크기를 추정할 수 있음
