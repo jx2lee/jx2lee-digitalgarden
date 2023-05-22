@@ -4,6 +4,8 @@
 
 #think-bayes #probability #study
 
+---
+
 # Inference (추론)
 
 > p-value 는 어쩌고?
