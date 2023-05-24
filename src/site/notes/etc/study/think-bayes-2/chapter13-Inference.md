@@ -192,7 +192,7 @@ len(pmf_mean_treated), len(pmf_mean_control), len(pmf_diff)
 
 ![](https://i.imgur.com/iBTeRlD.png)
 
-제약조건을 해소할 두 가지 방법 중 하나는 CDF 를 그리는 것
+제약조건(*외적 시 데이터의 크기가 많이 커진다 & pmf 를 도식화 할 때 지저분하다*)을 해소할 두 가지 방법 중 하나는 CDF 를 그리는 것
 ![](https://i.imgur.com/EftqbMb.png)
 
 다른 방법은 KDE 를 이용해 PDF 의 smooth approximation 을 구하는 것
@@ -214,10 +214,6 @@ kde_diff = kde_from_pmf(pmf_diff)
 
 ![](https://i.imgur.com/6rXWxDN.png)
 
-- 시험 점수 평균이 45점 일 때 분포의 평균은 약 10점이므로 상당한 효과를 거두었다 볼 수 있음
-	- 이해되지 않음. 45점은 어디서 나온 숫자?
-- credible interval 에 따르면 2 -> 17.4 를 올리는 효과가 있었다고 볼 수 있음
-
 ```python
 pmf_diff.mean()
 9.954413088940848
@@ -225,6 +221,10 @@ pmf_diff.mean()
 pmf_diff.credible_interval(0.9)
 array([ 2.4, 17.4])
 ```
+
+- 시험 점수 평균이 45점 일 때 분포의 평균은 약 10점이므로 상당한 효과를 거두었다 볼 수 있음
+	- **45점은 어디서 나온 숫자인가요? 주어진 데이터의 시험점수 평균이 대략 46 이기 때문에 around 45 라고 이야기한건가요?**
+- credible interval 에 따르면 2 -> 17.4 를 올리는 효과가 있었다고 볼 수 있음
 
 # Using Summary Statistics
 - 만약 우리가 더 큰 데이터를 다룬다면..
@@ -249,9 +249,8 @@ mathematical statistics (수리통계) 을 이용해 likelhood 를 계산할 수
 2. 𝑠의 분포는 더 복잡하지만 𝑡=𝑛𝑠2/𝜎2 변환을 계산하면 𝑡의 분포는 매개 변수 𝑛-1 을 사용한 카이제곱분포가 된다.
 3. Basu 정리에 따르면 m 와 s 는 독립적이다.
 
-위 내용을 가지고 python 으로 계산해본다.
 ```python
-dist_m = norm(mu, sigma/np.sqrt(n)) #1
+dist_m = norm(mu, sigma/np.sqrt(n)) # 평균의 표본 분포 (sampling distribution of mean)
 like1 = dist_m.pdf(m)
 like1
 0.10137915138497372
