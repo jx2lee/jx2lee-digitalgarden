@@ -8,7 +8,7 @@
 
 특정 사건이 지속되는 시간을 구하는 통계적 방법인 survival analysis 에 대해 설명한다.
 
-> bayesian methods 는 불완전한 데이터를 사용해야 하는 경우 특히 좋은 선택이라고 한다.
+> bayesian methods 는 불완전한 데이터를 사용해야 하는 경우 특히 좋은 선택이라고 한다. (저자왈)
 
 # The Weibull Distribution (베이불 분포, 웨이불 분포)
 - 생존 분석에 사용하는 분포
@@ -27,9 +27,8 @@ actual_dist = weibull_dist(lam, k)
 
 ![](https://i.imgur.com/lpCxqRk.png)
 
-크기 n 만큼 random sampling 하는 함수를 제공
 ```python
-data = actual_dist.rvs(10)
+data = actual_dist.rvs(10) # rvs: argument 만큼 random sampling 하는 함수
 data
 array([ 0.31758457, 17.35490262,  7.9886383 ,  0.89713818,  0.29910551,
         3.50907964,  1.04786533,  0.07217011,  0.90204999,  3.49996289])
@@ -96,9 +95,12 @@ posterior = update_weibull(prior, data)
 
 ![](https://i.imgur.com/8wgOK4k.png)
 
+- sample 을 통해 lambda 와 k 를 추정했다.
+	- 대략 1~4 사이 분포하고(처음 3이 여기 포함) k 도 (0.5, 1.5) 에 0.8 존재
+
 # Incomplete Data (불완전 데이터)
-- 유기견 보호소에 유기견이 드러온 후 입양되는 데까지 걸리는 시간을  추정해보자
-- 8주 동안 10마리 개가 입양된 것을 확인했다고 하자. 개가 들어오는 시간은 균등분포를 따른다고 가정하고 문제를 풀어보자.
+- 유기견 보호소에 유기견이 드러온 후 입양되는 데까지 걸리는 시간을 추정한다.
+- 8주 동안 10마리 개가 입양된 것을 확인했다고 하자. 개가 들어오는 시간은 균등분포를 따른다고 가정한다.
 
 ```python
 start = np.random.uniform(0, 8, size=10)
@@ -149,7 +151,7 @@ data2 = obs.loc[censored, 'T']
 ```python
 posterior1 = update_weibull(prior, data1)
 
-# update weibull with sf
+# update weibull with incomplete data
 def update_weibull_incomplete(prior, data):
     """Update the prior using incomplete data."""
     lam_mesh, k_mesh, data_mesh = np.meshgrid(
@@ -169,7 +171,8 @@ posterior2 = update_weibull_incomplete(posterior1, data2)
 
 ![](https://i.imgur.com/a2t1yzo.png)
 
-- 가능한 람다 값의 범위가 넓어졌다. marginal dist 를 구해보고 명확히 확인해본다.
+- 람다 값의 범위가 넓어졌다.
+- marginal dist 를 구해보고 확인한다.
 
 ```python
 posterior_lam2 = marginal(posterior2, 0)
@@ -178,7 +181,7 @@ posterior_k2 = marginal(posterior2, 1)
 
 ![](https://i.imgur.com/7faLCDt.png)
 
-- posterior dist 의 pd 는 아무리가도 0이 되지 않음
+- posterior dist 의 density 는 0이 되지 않음
 - 분포를 정확히 만들고 싶다면 prior 분포를 최대한 넓게 선정하고 update 하면 된다고 한다.
 	- 직접 해보진 않았다. 혹시 해보신 분 분포를 그려보면 0 으로 되는지 확인해주세요.
 
@@ -189,7 +192,7 @@ posterior_k2 = marginal(posterior2, 1)
 
 # Light Bulbs (전구)
 > 정격 40W, 220V(AC)의 필립스(인도) 램프 50개를 수평 방향으로 가져와 설치한 후 11m x 7m의 실험실 공간에 균일하게 배치했습니다.  
-> 이 어셈블리를 12시간 간격으로 정기적으로 모니터링하여 고장을 확인했습니다. 고장이 발생한 순간을 [기록]하고 마지막 전구까지 고장이 발생하도록 총 32개의 데이터 포인트를 확보했습니다.
+> 이 어셈블리를 12시간 간격으로 정기적으로 모니터링하여 고장을 확인했습니다. 고장이 발생한 순간을 기록하고 마지막 전구까지 고장이 발생하도록 총 32개의 데이터 포인트를 확보했습니다.
 
 ```python
 # load data
@@ -271,7 +274,7 @@ prob_dead = weibull_dist(lam, k).cdf(t)
 prob_dead
 0.14381685899960547
 
-# 100개 전구, 방전된 전구 수는 binomial 을 따른다고 가정
+# 100개 전구, 방전된 전구 수는 binomial 을 따른다고 가정한다.
 from utils import make_binomial
 
 n = 100
