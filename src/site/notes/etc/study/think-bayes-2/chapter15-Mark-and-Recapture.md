@@ -45,7 +45,7 @@ ps = hypergeom(N, K, n).pmf(ks)
 
 ![](https://i.imgur.com/5lWeqKw.png)
 
-그럼 K, n, k 이 주어졌을 때 N 은 어떻게 추정할 수 있을까? 에 대한 대답을 확인해보자
+그럼 K, n, k 이 주어졌을 때 N 은 어떻게 추정할 수 있을까?
 
 # The update
 곰의 개체수는 50~500 사이이고 범위 내 확률은 모두 동일하다고 가정한다.
