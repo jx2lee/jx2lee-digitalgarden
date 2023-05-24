@@ -138,7 +138,7 @@ obs['T'] = obs['end'] - obs['start']
 ```
 
 # Using Incomplete Data
-complete & incomplete 한 데이터를 모두 이용해 임보 시간의 분포에 대한 param 을 추정해본다.
+complete & incomplete 한 데이터를 모두 이용해 임보 시간의 분포에 대한 param 을 추정한다.
 
 ```python
 # data1/data2
@@ -187,8 +187,8 @@ posterior_k2 = marginal(posterior2, 1)
 
 ![](https://i.imgur.com/UoY9u6J.png)
 
-- incomplete 데이터를 사용한 margin dist 가 왼쪽으로 움직임
-- 일반적으로 불완전한 데이터를 사용한 경우 정보가 부족해져 posterior 폭이 넓어짐
+- incomplete 데이터를 사용한 margin dist 가 왼쪽으로 이동
+- 일반적으로 불완전한 데이터를 사용한 경우 정보가 부족해서 posterior 폭이 넓음
 
 # Light Bulbs (전구)
 > 정격 40W, 220V(AC)의 필립스(인도) 램프 50개를 수평 방향으로 가져와 설치한 후 11m x 7m의 실험실 공간에 균일하게 배치했습니다.  
