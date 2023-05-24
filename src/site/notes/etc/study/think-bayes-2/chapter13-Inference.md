@@ -61,6 +61,7 @@ decorate(xlabel='Score',
 
 - **겹치는 부분은 있으나 Treated (실험군) 가 점수가 높다.**
 - 두 집단 모두 완벽한 정규분포는 이루고 있지 않지만 정규분포를 사용해도 무방
+	- *CDF 모양이 S 자를 따르고 있다. 이는 정규분포의 CDF 와 유사하므로 저자는 정규분포임을 보여주지 않고 빠르게 넘어간 듯 하다.*
 - 학생 모집단에서 점수의 분포는 정규분포를 이루고 아직 평균과 표준편차는 모른다고 가정
 	- mu, sigma
 	- **이 값을 추정(estimate)하기 위해 bayesian update**
@@ -104,9 +105,8 @@ data.shape
 ```
 
 # Likelihood (가능도)
-
-mu & sigma 값의 각 쌍에 대한 점수별 확률을 살펴본다.
 ```python
+# mu & sigma 값의 각 쌍에 대한 점수별 확률을 살펴본다.
 mu_mesh, sigma_mesh, data_mesh = np.meshgrid(
     prior.columns, prior.index, data) # x: mu, y: sigma, z: data
 
