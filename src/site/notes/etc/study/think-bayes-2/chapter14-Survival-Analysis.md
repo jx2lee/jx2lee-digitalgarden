@@ -75,8 +75,8 @@ posterior = prior * likelihood
 normalize(posterior)
 ```
 
-하나씩 살펴봤던 과정을 하나의 함수로 묶어본다.
 ```python
+# 하나씩 살펴봤던 과정을 하나의 함수로 묶어본다.
 def update_weibull(prior, data):
     """Update the prior based on data."""
     lam_mesh, k_mesh, data_mesh = np.meshgrid(
@@ -318,6 +318,6 @@ post_pred = make_mixture(posterior_series, pmf_seq)
 - use joint dist about weibull param 
 	- lifetime 을
 		- 정확히 아는 경우
-		- 최쇠 범위를 아는 경우
+		- 최소 범위를 아는 경우
 		- 주어진 구간 내 있는 경우
 - complete/incomplete 한 데이터로 bayesian 적용
