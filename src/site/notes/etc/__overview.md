@@ -4,10 +4,12 @@
 
 
 # Java
-- [[etc/Java/Early return\|Early return]] 
-- [[etc/Java/Statement and Expression\|Statement and Expression]]
 - [[etc/Java/Versus Kotlin\|Versus Kotlin]]
-- [[etc/Java/Auto boxing & Unboxing\|Auto boxing & Unboxing]]
+- 📖 terms
+	- [[etc/Java/POJO (Plain Old Java Object)\|POJO (Plain Old Java Object)]]
+	- [[etc/Java/Auto boxing & Unboxing\|Auto boxing & Unboxing]]
+	- [[etc/Java/Statement and Expression\|Statement and Expression]]
+	- [[etc/Java/Early return\|Early return]] 
 
 # Python
 - 파이썬 코딩의 기술
