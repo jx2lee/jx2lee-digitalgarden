@@ -26,5 +26,9 @@
 
 # [[etc/study/think-bayes-2/chapter13-Inference\|chapter13-Inference]]
 # [[etc/study/think-bayes-2/chapter14-Survival-Analysis\|chapter14-Survival-Analysis]]
+
+---
+
 # [[etc/study/think-bayes-2/chapter15-Mark-and-Recapture\|chapter15-Mark-and-Recapture]]
 # [[etc/study/think-bayes-2/chapter16-Logistic-Regression\|chapter16-Logistic-Regression]]
+# [[etc/study/think-bayes-2/chapter17-Regression\|chapter17-Regression]]
