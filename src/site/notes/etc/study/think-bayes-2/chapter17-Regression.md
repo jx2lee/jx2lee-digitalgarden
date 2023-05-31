@@ -289,7 +289,7 @@ posterior_sigma = posterior.marginal(2)
 
 ![](https://i.imgur.com/DQPfcug.png)
 
-- posterior_inter.mean() = 12.5, 1994년 예측한 마라톤 세계 신기록
+- posterior_inter.mean() = 12.5, 1995년 예측한 마라톤 세계 신기록
 
 ![](https://i.imgur.com/0eguYEs.png)
 
