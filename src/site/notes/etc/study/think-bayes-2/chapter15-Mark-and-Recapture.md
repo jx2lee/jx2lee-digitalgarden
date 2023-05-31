@@ -150,7 +150,7 @@ likelihood
 # The Prior
 ```python
 # N 의 prior: prior_N, p 의 prior: uniform
-## prior_N 도 uniform 이긴 함
+## prior_N 도 uniform
 qs = np.linspace(0, 0.99, num=100)
 prior_p = make_uniform(qs, name='p')
 
@@ -195,8 +195,8 @@ joint_posterior = posterior_pmf.unstack()
 ![](https://i.imgur.com/5egWXxn.png)
 
 - 가장 가능성 높은 N 은 이전과 동일하게 대략 100
-- p 는 0.2
-- p 가 가장 낮은 끝 근처일 때 N 은 더 커지고, p 가 높을 때는 N 이 낮아지는 걸 보면 두 변수는 상관관계가 있음
+	- p: 0.2
+- p 가 낮을수록 N 은 커지고, p 가 높을 수록 N 이 낮아지는 걸 보면 두 변수는 상관관계가 있을 것 같은데
 	- check marginal
 
 # Joint and Marginal Dist
@@ -214,7 +214,7 @@ posterior2_N = marginal(joint_posterior, 1)
 > "프로그램에서 20개의 버그를 발견한 테스터가 있다고 가정해 보겠습니다. 실제로 프로그램에 얼마나 많은 버그가 있는지 추정하고 싶습니다. 적어도 20개 이상의 버그가 있다는 것을 알고 있고 테스터에 대한 신뢰도가 매우 높다면 20개 정도의 버그가 있다고 생각할 수 있습니다. 하지만 테스터가 별로 좋지 않을 수도 있습니다. 수백 개의 버그가 있을 수도 있습니다. 버그가 얼마나 많은지 어떻게 알 수 있을까요? 테스터 한 명으로는 알 방법이 없습니다. 하지만 테스터가 두 명이라면 테스터의 숙련도를 모르더라도 좋은 아이디어를 얻을 수 있습니다."
 
 ```python
-# assumption: 첫 검수자가 20개, 두번째 검수자가 15개, 겹치는 건 3개라고 가정하자. 총 버그수를 추정하는 문제를 풀어본다. (갑자기?)
+# assumption: 첫 검수자가 20개, 두번째 검수자가 15개, 겹치는 건 3개라고 가정하자. 총 버그수를 추정하는 문제를 풀어본다.
 k10 = 20 - 3
 k01 = 15 - 3
 k11 = 3
@@ -317,10 +317,10 @@ posterior_pmf.normalize()
 8.941088283758206e-06
 ```
 
-- N posterior
+- N's marginal posterior
 	- ![](https://i.imgur.com/e3diipV.png)
 	- posterior mean: 105
-- p0 & p1 posterior
+- p0 & p1's marginal posterior
 	- ![](https://i.imgur.com/jEoeFpu.png)
 	- posterior mean: 23% & 18%
 
