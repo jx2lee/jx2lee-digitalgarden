@@ -36,4 +36,4 @@
 ---
 
 # [[etc/study/think-bayes-2/chapter18-Conjugate Priors\|chapter18-Conjugate Priors]]
-# [[chapter19-MCMC\|chapter19-MCMC]]
+# [[etc/study/think-bayes-2/chapter19-MCMC\|chapter19-MCMC]]
