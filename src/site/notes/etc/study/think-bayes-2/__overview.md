@@ -32,3 +32,8 @@
 # [[etc/study/think-bayes-2/chapter15-Mark-and-Recapture\|chapter15-Mark-and-Recapture]]
 # [[etc/study/think-bayes-2/chapter16-Logistic-Regression\|chapter16-Logistic-Regression]]
 # [[etc/study/think-bayes-2/chapter17-Regression\|chapter17-Regression]]
+
+---
+
+# [[etc/study/think-bayes-2/chapter18-Conjugate Priors\|chapter18-Conjugate Priors]]
+# [[chapter19-MCMC\|chapter19-MCMC]]
