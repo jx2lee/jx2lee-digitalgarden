@@ -37,3 +37,4 @@
 
 # [[etc/study/think-bayes-2/chapter18-Conjugate-Priors\|chapter18-Conjugate-Priors]]
 # [[etc/study/think-bayes-2/chapter19-MCMC\|chapter19-MCMC]]
+# [[etc/study/think-bayes-2/chapter20-Approximate-Bayesian-Computation\|chapter20-Approximate-Bayesian-Computation]]
