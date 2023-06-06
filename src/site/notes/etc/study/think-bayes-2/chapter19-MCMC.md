@@ -38,23 +38,21 @@ posterior.normalize()
 
 # Prior Predictive Distribution (사전 예측분포)
 ```python
-# 사후 예측분포와 같이 사전 예측분포 추정을 위해 sample 를 추출한다.
-# ret: 가능한 골 득점률 lamda 의 배열
-sample_prior = prior_dist.rvs(1000)
-
 from scipy.stats import poisson
+from empiricaldist import Pmf
 
+# 사후 예측분포와 같이 사전 예측분포 추정을 위해 sample 를 추출한다.
+# ret: 가능한 골 득점률 lamda 배열
+sample_prior = prior_dist.rvs(1000)
 sample_prior_pred = poisson.rvs(sample_prior)
 
 # sample to pmf
-from empiricaldist import Pmf
-
 pmf_prior_pred = Pmf.from_seq(sample_prior_pred)
 ```
 
 ![](https://i.imgur.com/HjVln6i.png)
 
-- 모델이 쓸만한 지 확인하기 위해 prior predictive 분포를 구한다.
+- 모델이 쓸만한 지 확인하기 위해 prior predictive dist 를 구한다.
 - MCMC 방법의 첫 단계이기도 하다.
 
 # Introducing PyMC3
@@ -74,14 +72,14 @@ with pm.Model() as model:
 with model:
     trace = pm.sample_prior_predictive(1000)
 
-# 결과는 lam & goals 를 표본과 연결하는 객체
+# trace 는 lam & goals 를 표본과 연결하는 객체이다. lam의 sample 을 구해보자.
 sample_prior_pymc = trace['lam']
 sample_prior_pymc.shape
 (1000,)
 ```
 
 ![](https://i.imgur.com/4VC2AAr.png)
-sample_prior_pymc vs sample_prior
+sample_prior_pymc vs sample_prior (scipy gamma 분포에서 추추출한 sample)
 
 ```python
 # 이번에는 prior predictive 분포에서 표본을 가져와 비교해본다.
@@ -91,7 +89,7 @@ sample_prior_pred_pymc.shape
 ```
 
 ![](https://i.imgur.com/UO3aYMD.png)
-sample_prior_prd_pymc vs sample_prior_pred
+sample_prior_prd_pymc vs sample_prior_pred (scipy.stats 의 possion 으로 구한 prior predictive dist)
 
 # When Do We Get to Inference?
 ```python
@@ -102,7 +100,7 @@ with pm.Model() as model2:
 options = dict(return_inferencedata=False)
 
 with model2:
-    trace2 = pm.sample(500, **options)
+    trace2 = pm.sample(500, **options) # lam posterior 에서 sample 을 가져오는 함수 이용
 
 sample_post_pymc = trace2['lam']
 ```
@@ -258,3 +256,5 @@ table
 
 ![](https://i.imgur.com/Ac9eGvj.png)
 
+- 행복은 GDP 와 가장 연관성이 있어 보이고, 그다음으로 사회복지/기대수명/자유 순을 갖는다.
+- 나머지 요인은 상대적으로 연관성이 약해보이며, 관용(Generosity)의 credible interval 은 0을 포함하고 있다. 이는 실제로 행복과 상관이 없다고 볼 수 있다.
