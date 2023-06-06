@@ -6,8 +6,7 @@
 
 ---
 
-- 앞장에서 살펴본 그리드 접근 방법의 한계
-	- 매개변수가 증가할 수록 연산량 증가
+- 앞서 bayes update 에 사용한 그리드 접근 방법의 한계는 매개변수가 증가할 수록 연산량이 증가한다.
 - 대안
 	- conjugate prior 이용
 	- (이후 장) MCMC
@@ -44,9 +43,9 @@ conjugate prior 로 위 문제를 풀어보자.
 # The Conjugate Prior
 - 월드컵 문제에서 prior dist 에 gamma 분포를 사용했다.
 	- **이는 포아송 분포의 켤레사전분포가 gamma 분포이기 때문이다.**
-- 두 분포가 어떻게 연결되는지는 이후에 확인해본다.
-
+	- 켤레가 의미하는대로 두 분포가 연결되어 있거나 한 쌍으로 볼 수 있다.
 ```python
+# alpha & beta 두 매개변수를 사용하는 gamma dist 객체를 만드는 함수
 def make_gamma_dist(alpha, beta):
     """Makes a gamma object."""
     dist = gamma(alpha, scale=1/beta)
@@ -73,6 +72,7 @@ def update_gamma(prior, data):
 # update! (1 경기(t) 4 득점(k) 갱신)
 data = 4, 1
 posterior_gamma = update_gamma(prior_gamma, data)
+posterior_conjugate = pmf_from_dist(posterior_gamma, lams)
 ```
 
 ![](https://i.imgur.com/y9Zin3u.png)
@@ -88,7 +88,7 @@ $$\lambda^{\alpha-1} e^{-\lambda \beta}$$
 	- $$\lambda^k e^{-\lambda t}$$
 	- gamma 와 동일하게 정규화 인수는 생략했다.
 - 두 pmf 의 곱은 다음과 같다.
-	- $$\lambda^{\alpha-1+k} e^{-\lambda(\beta + t)}$$
+	- $$\lambda^{\alpha-1+k} e^{-\lambda(\beta + t)} = \lambda^{(\alpha+k)-1} e^{-\lambda(\beta + t)}$$
 	- **이는 $\alpha + k$ and $\beta + t$ 매개변수를 갖는 정규화되지 않은 gamma 분포임을 확인할 수 있다.**
 	- 수식으로 gamma 분포를 유도하는 것을 자세히 보고 싶다면 [링크](https://towardsdatascience.com/gamma-distribution-intuition-derivation-and-examples-55f407423840)를 참고하자.
 
@@ -135,7 +135,7 @@ prior_beta = make_beta(alpha, beta)
 $$x^{\alpha-1} (1-x)^{\beta-1}$$
 $$x^{k} (1-x)^{n-k}$$
 - 두 식을 gamma 분포 유도하는 방법과 동일하게 곱해보면.. (*again, omitted normalizing factor!*)
-	- $$x^{\alpha-1+k} (1-x)^{\beta-1+n-k}$$
+	- $$x^{\alpha-1+k} (1-x)^{\beta-1+n-k} = x^{(\alpha+k)-1} (1-x)^{(\beta+n-k)-1}$$
 	- $\alpha+k$ and $\beta+n-k$ 매개변수를 갖는 beta dist
 
 ```python
@@ -203,7 +203,9 @@ cdfs = [Cdf.from_seq(col)
 
 - column 0: 가장 값이 작은 매개변수 & 가장 낮은 확률값을 갖는다.
 - column 2: 가장 값이 큰 매개변수 & 가장 높은 확률값을 갖는다.
-- 위 그래프를 보고 주변분포가 베타 분포임을 알 수 있다는데, 너무 쉽게 얘기한다. 자세히 설명좀 해주지..
+- 위 그래프를 보고 주변분포가 베타 분포임을 알 수 있다는데, 직접 marginal 분포를 구해보자.
+	- 베타분포의 CDF 는 다음과 같다. (위키)
+	- ![](https://i.imgur.com/tRy24Tn.png)
 ```python
 def marginal_beta(alpha, i):
     """디클레레 분포의 i 번째 주변분포를 구한다"""
