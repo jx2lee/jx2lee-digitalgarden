@@ -167,6 +167,7 @@ ages = interpolate_ages(sims, 15)
 cdf = Cdf.from_seq(ages)
 print(cdf.median(), cdf.credible_interval(0.9))
 22.31854530374061 [13.47056554 34.49632276]
+
 1 - cdf(9.0)
 0.9900990099009901
 ```
