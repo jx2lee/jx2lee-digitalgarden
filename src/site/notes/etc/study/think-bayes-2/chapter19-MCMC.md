@@ -6,7 +6,7 @@
 
 ---
 
-MCMC (Markov chain Monte Carlo, 이하 MCMC) 는 많은 매개변수를 사용하는 경우 사용할 수 있는 도구이다.
+MCMC (Markov Chain Monte Carlo, 이하 MCMC) 는 많은 매개변수를 사용하는 경우 사용할 수 있는 도구이다.
 - monte carlo 는 distribution 에서 임의의 sample 을 만드는 방법이다.
 - grid algorithm 과 달리 posterior distribution 을 구하지 않는다.
 
