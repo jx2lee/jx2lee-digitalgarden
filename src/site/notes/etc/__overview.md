@@ -25,15 +25,13 @@
 - moving-features
 	- [[etc/refactoring/split-loop\|split-loop]]
 
-# Study
+# 📕📗 Study & Books
 - [[etc/study/think-bayes-2/__overview\|스터디: 파이썬을 이용한 베이지안 통계]]
 - [[etc/study/the-secret-life-of-programs\|스터디: 한 권으로 읽는 컴퓨터 구조와 프로그프프로그프로그래밍]]
 
 # Other
 - [[etc/_/gRPC\|gRPC]]
-- [[etc/Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits\|Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits]]
+- [[etc/_/Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits\|Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits]]
 - [[etc/_/Cache\|cache]]
-
-# [[etc/_/Token Store\|Token Store]]
-
-# [[etc/_/Hot-key\|Hot-key]]
+- [[etc/_/Token Store\|Token Store]]
+- [[etc/_/Hot-key\|Hot-key]]
