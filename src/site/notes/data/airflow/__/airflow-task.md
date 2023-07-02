@@ -24,10 +24,12 @@ DAG 개발하던 중 용어가 헷갈려 간단히 정리한다.
 *[참고](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html#task-instances): airflow lifecycle*
 
 # Job
-Airflow 에서 Job 은 일정에 따라 실행되는 작업의 모음이며, 작업 내의 단일 작업 단위를 나타낸다.
+Airflow 에서 Job 은 일정에 따라 실행되는 작업의 모음이며, 작업 내의 단위를 나타낸다.
+
 Airflow의 각 작업은 스케줄 정보를 가진 작업의 모음인 방향성 비순환 그래프(DAG)로 표시된다. DAG는 작업 종속성 또는 관계와 함께 작업이 실행되어야 하는 순서를 지정한다. 중요한 점은 DAG는 작업이 무엇을 하는지에 관심을 두는 것이 아니라, 어**떤 작업을 수행하든 그 작업이 적시에 올바른 순서로 수행되도록 하는 것이 DAG의 역할**이다.
 
-tldr; Airflow 의 Job 은 DAG의 모음이다.
+## tl;dr
+Airflow 의 Job 은 DAG의 모음이다.
 
 # references
 - [Tasks](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html)
