@@ -5,7 +5,7 @@
 
 # Java
 - [[etc/Java/Versus Kotlin\|Versus Kotlin]]
-- 📖 terms
+- terms
 	- [[etc/Java/POJO (Plain Old Java Object)\|POJO (Plain Old Java Object)]]
 	- [[etc/Java/Auto boxing & Unboxing\|Auto boxing & Unboxing]]
 	- [[etc/Java/Statement and Expression\|Statement and Expression]]
@@ -25,15 +25,15 @@
 - moving-features
 	- [[etc/refactoring/split-loop\|split-loop]]
 
-# [[etc/_/Token Store\|Token Store]]
-
-# [[etc/_/Hot-key\|Hot-key]]
-
 # Study
 - [[etc/study/think-bayes-2/__overview\|스터디: 파이썬을 이용한 베이지안 통계]]
-- [[the-secret-life-of-programs\| 스터디: 한 권으로 읽는 컴퓨터 구조와 프로그프프로그프로그래밍]]
+- [[etc/study/the-secret-life-of-programs\|스터디: 한 권으로 읽는 컴퓨터 구조와 프로그프프로그프로그래밍]]
 
 # Other
 - [[etc/_/gRPC\|gRPC]]
-- [[etc/Why I Prefer Regular Merge Commits Over Squash Commits\|Why I Prefer Regular Merge Commits Over Squash Commits]]
+- [[etc/Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits\|Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits]]
 - [[etc/_/Cache\|cache]]
+
+# [[etc/_/Token Store\|Token Store]]
+
+# [[etc/_/Hot-key\|Hot-key]]
