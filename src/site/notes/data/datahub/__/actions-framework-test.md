@@ -15,21 +15,21 @@ column description 에 특정 키워드를 포함하면 tag 를 자동으로 붙
 - ingestion: mssql
 - action yaml: `actions-sample.yml`
 	```yaml
-	name: "hello_world"
-	source:
-	  type: "kafka"
-	  config:
-	    connection:
-	      bootstrap: broker:29092
-	      schema_registry_url: http://schema-registry:8081
-	filter:
-	  event_type: "MetadataChangeLogEvent_v1"
-	  event:
-	    entityType: "dataset"
-	    changeType: ["UPSERT", "DELETE"]
-	    aspectName: "schemaMetadata"
-	action:
-	  type: "hello_world"
+name: "hello_world"
+source:
+  type: "kafka"
+  config:
+    connection:
+      bootstrap: broker:29092
+      schema_registry_url: http://schema-registry:8081
+filter:
+  event_type: "MetadataChangeLogEvent_v1"
+  event:
+    entityType: "dataset"
+    changeType: ["UPSERT", "DELETE"]
+    aspectName: "schemaMetadata"
+action:
+  type: "hello_world"
 	```
 - 실험 순서
 	1. reference 의 테스트 json 을 ingestion 한다.
