@@ -5,7 +5,7 @@
 
 ![](https://i.imgur.com/7dlsgVl.jpg)
 
-# data
+# ⓓⓐⓣⓐ
 - [[data/airflow/__airflow_overview\|airflow]]
 - [[data/datahub/__datahub_overview\|datahub]]
 - [[data/dbt/__dbt_overview\|dbt]]
@@ -13,9 +13,8 @@
 - review
 	- [[data/_review/sqlmesh\|sqlmesh]]
 
-# [[etc/__overview\|etc]]
-
+# [[etc/__overview\|ⓔⓣⓒ]]
 
 --- 
-> [!FAQ]- ?
-> *since 2023.01.21*
+> [!FAQ]- since
+> *2023.01.21*
