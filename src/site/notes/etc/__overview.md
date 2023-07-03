@@ -27,7 +27,7 @@
 
 # 📕📗 Study & Books
 - [[etc/study/think-bayes-2/__overview\|스터디: 파이썬을 이용한 베이지안 통계]]
-- [[etc/study/the-secret-life-of-programs\|스터디: 한 권으로 읽는 컴퓨터 구조와 프로그프프로그프로그래밍]]
+- [[etc/study/the-secret-life-of-programs\|스터디: 한 권으로 읽는 컴퓨터 구조와 프로그래밍]]
 
 # Other
 - [[etc/_/gRPC\|gRPC]]
