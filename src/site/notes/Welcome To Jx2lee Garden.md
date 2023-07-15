@@ -5,7 +5,7 @@
 
 ![|400](https://i.imgur.com/7dlsgVl.jpg|100)
 
-# ⓓⓐⓣⓐ
+# data
 - [[data/airflow/__airflow_overview\|airflow]]
 - [[data/datahub/__datahub_overview\|datahub]]
 - [[data/dbt/__dbt_overview\|dbt]]
@@ -14,7 +14,7 @@
 - review
 	- [[data/_review/sqlmesh\|sqlmesh]]
 
-# [[etc/__overview\|ⓔⓣⓒ]]
+# [[etc/__overview\|etc]]
 
 --- 
 > [!FAQ]- since
