@@ -6,5 +6,5 @@
 
 ---
 
-# 📖 basic
+### basic
 - [[data/bigquery/__/bigquery-partitioning-clustering\|bigquery-partitioning-clustering]]
