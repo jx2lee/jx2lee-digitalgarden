@@ -12,7 +12,7 @@
 - [[data/bigquery/__bigquery_overview\|bigquery]]
 - [[data/rdb/__rdb_overview\|rdb]]
 - review
-	- [[data/_review/sqlmesh\|sqlmesh]]
+	- [[data/__research/sqlmesh\|sqlmesh]]
 
 # [[etc/__overview\|etc]]
 
