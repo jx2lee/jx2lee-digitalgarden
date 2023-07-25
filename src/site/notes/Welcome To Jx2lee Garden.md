@@ -11,8 +11,9 @@
 - [[data/dbt/__dbt_overview\|dbt]]
 - [[data/bigquery/__bigquery_overview\|bigquery]]
 - [[data/rdb/__rdb_overview\|rdb]]
-- review
+- research
 	- [[data/__research/sqlmesh\|sqlmesh]]
+	- [[data/__research/mage\|mage]]
 
 ### [[etc/__overview\|etc]]
 
