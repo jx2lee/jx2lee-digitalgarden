@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-file-tree":false,"dg-show-inline-title":false,"markdownTemplateEngine":false,"permalink":"/data/datahub/__/datahub-ts-unauthorized-when-ingestion/","dgShowInlineTitle":false,"dgShowFileTree":false,"dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"dg-show-file-tree":false,"dg-show-inline-title":false,"dg-pass-frontmatter":false,"permalink":"/data/datahub/__/datahub-ts-unauthorized-when-ingestion/","dgPassFrontmatter":true,"dgShowInlineTitle":false,"dgShowFileTree":false,"noteIcon":"","created":"","updated":""}
 ---
 
 #datahub #troubleshooting 
@@ -61,7 +61,7 @@ data:
 
 - token_service_signing_key 값을 randAlphaNum 32 로 임의로 생성함
 - 이는 어플리케이션을 삭제 후 재설치 한다면 siginig key 값이 변경됨!
-- <u>(가정) 애플리케이션을 삭제 -> 재 배포하면 signing key 가 변경될 것이다.</u>
+- 애플리케이션을 삭제하고 재배포하면 signing key 가 변경될 것이다.
 - result
 	- **helm 차트를 변경할 일이 있어 새로운 브랜치로 재 생성해보니 signing_key & salt 값이 변경됨**
 	- token 생성에 사용하는 키 변경으로 인해 ingestions 이 실패했다.
