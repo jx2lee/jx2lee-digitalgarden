@@ -31,7 +31,7 @@
 	- 메세지로 확인할 수 있는 부분은 없다.
 
 #### datahub-auth-secrets 시크릿을 재성성할 때마다 jwt key 가 변경된다.
-- <u>시크릿을 삭제한 내역이 있는데 이 영향으로 401 오류가 발생했다.</u>
+- 시크릿을 삭제한 내역이 있는데 이 영향으로 401 오류가 발생했다.
 - 삭제 전 datahub-auth-secrets 의 `token_service_signing_key`, `token_service_salt` 값은 다음과 같다.
 	- token_service_signing_key: MSRxxxx...xxxx
 	- token_service_salt: Iwexxxx...xxxx
