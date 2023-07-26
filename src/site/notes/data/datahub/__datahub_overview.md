@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-file-tree":false,"permalink":"/data/datahub/__datahub_overview/","dgShowFileTree":false,"dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"dg-show-file-tree":false,"dg-show-inline-title":false,"permalink":"/data/datahub/__datahub_overview/","dgShowInlineTitle":false,"dgShowFileTree":false,"dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
 ---
 
 #overview #datahub 
