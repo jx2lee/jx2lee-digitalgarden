@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/rdb/__/null vs empty string/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/rdb/__/null vs empty string/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #database #mysql
