@@ -1,20 +1,21 @@
 ---
-{"dg-publish":true,"permalink":"/data/datahub/__/actions-framework-test/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"dg-show-file-tree":false,"dg-show-inline-title":false,"dg-pass-frontmatter":false,"permalink":"/data/datahub/__/actions-framework-test/","dgPassFrontmatter":true,"dgShowInlineTitle":false,"dgShowFileTree":false,"created":"","updated":""}
 ---
 
 #datahub #action #test 
-# background
+
+### background
 column description 에 특정 키워드를 포함하면 tag 를 자동으로 붙이는 기능이 필요하다.
 이를 **[DataHub Action framework](https://datahubproject.io/docs/actions)** 로 구현할 수 있는 실험을 하고자 한다.
 - 확인사항
 	- Action Framework 로 변경된 메타데이터를 확인할 수 있는지
 	- 변경된 메타데이터를 확인하고 이를 커스텀하게 개발할 수 있는지
 
-# experiment
+### experiment
 - env: local (`docker/dev-without-neo4j.sh`)
 - ingestion: mssql
 - action yaml: `actions-sample.yml`
-	```yaml
+```yaml
 name: "hello_world"
 source:
   type: "kafka"
@@ -30,7 +31,7 @@ filter:
     aspectName: "schemaMetadata"
 action:
   type: "hello_world"
-	```
+```
 - 실험 순서
 	1. reference 의 테스트 json 을 ingestion 한다.
 	2. 테스트 json 내 idx 칼럼 description 을 변경한다.
@@ -38,7 +39,7 @@ action:
 	3. 변경한 json 을 재 ingestion 한다.
 	4. action 에 찍힌 이벤트 로그를 확인한다.
 
-## result
+### result
 - 변경된 description || 새로 추가한 entity 의 description 은 MCL(Metadata Change Log) 에서 확인할 수 있다.
 	- 메타데이터가 변경된 경우에는 aspect & previousAspectValue 값으로 변경 전 후 데이터를 확인할 수 있다.
 	- **단, 변경이 일어나지 않은 데이터 주입 시 이벤트에서 description 을 확인할 수 없다.**
@@ -117,7 +118,7 @@ action:
 	- [kafka topic](https://datahubproject.io/docs/how/kafka-config/#topic-configuration): MetadataChangeLog_Versioned_v1
 	- [event_type](https://datahubproject.io/docs/what/mxe): [MetadataChangeLogEvent_v1](https://datahubproject.io/docs/advanced/mcp-mcl/)
 
-# conclusion
+### conclusion
 앞서 확인할 두 가지 사항에 대한 결론은 다음과 같다.
 - ~~Action Framework 로 변경된 메타데이터를 확인할 수 있는지~~
 	- **가능하다.**
@@ -134,7 +135,7 @@ action:
 		- 쉽게 관리할 수 있는 방안이 필요하다. 커뮤니티에 문의해봐도 좋을 듯 싶다.
 	- [develop action](https://datahubproject.io/docs/actions/guides/developing-an-action)
 
-# reference
+### reference
 - 실험에 사용한 ingestion file 예시
 
 <details>
