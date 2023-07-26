@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airflow/__airflow_overview/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/airflow/__airflow_overview/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #airflow #overview 
