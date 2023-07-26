@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-file-tree":false,"dg-show-inline-title":false,"permalink":"/data/datahub/__datahub_overview/","dgShowInlineTitle":false,"dgShowFileTree":false,"dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"dg-show-file-tree":false,"dg-show-inline-title":false,"permalink":"/data/datahub/__datahub_overview/","dgShowInlineTitle":false,"dgShowFileTree":false,"dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #overview #datahub 
@@ -25,7 +25,7 @@
 - [[data/datahub/__/datahub-recipe-example\|datahub-recipe-example]]
 
 ### action framework
-- [[data/datahub/__/actions-framework-test\|Action Framework 실험]]
+- [[data/datahub/__/actions-framework-overview\|Action Framework]]
 	- [[data/datahub/__/datahub-develop-action\|Action 개발기]]
 
 ### graphql
