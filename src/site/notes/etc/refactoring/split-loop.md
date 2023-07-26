@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/refactoring/split-loop/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/refactoring/split-loop/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 
