@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/_/gRPC/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/_/gRPC/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #grpc
