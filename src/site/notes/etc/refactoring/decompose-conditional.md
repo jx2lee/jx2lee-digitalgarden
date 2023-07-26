@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/refactoring/decompose-conditional/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/refactoring/decompose-conditional/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 
