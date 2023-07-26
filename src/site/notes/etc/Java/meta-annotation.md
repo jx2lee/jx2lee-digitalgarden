@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/Java/meta-annotation/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/Java/meta-annotation/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 
