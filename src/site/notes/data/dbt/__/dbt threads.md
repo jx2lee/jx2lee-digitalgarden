@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/dbt threads/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/__/dbt threads/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 
