@@ -35,8 +35,8 @@
 - [[data/datahub/__/datahub-search\|datahub-search]]
 
 ### troubleshooting
-- [[data/datahub/__/ingestion 수행중 aws role 권한 문제\|ingestion 수행중 aws role 권한 문제]]
 - [[data/datahub/__/datahub-ts-unauthorized-when-ingestion\|ingestion 중 GMS 401 unauthorized error]]
+- [[data/datahub/__/ingestion 수행중 aws role 권한 문제\|ingestion 수행중 aws role 권한 문제]]
 
 ### todo
 - [[data/datahub/__/datahub-with-GTM\|datahub-with-GTM]]
