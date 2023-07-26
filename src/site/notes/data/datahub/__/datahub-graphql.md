@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/datahub/__/datahub-graphql/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/datahub/__/datahub-graphql/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #datahub #graphql
