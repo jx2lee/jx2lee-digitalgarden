@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/Java/Early return/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/Java/Early return/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 
