@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/__overview/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/__overview/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 
