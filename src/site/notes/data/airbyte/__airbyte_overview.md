@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airbyte/__airbyte_overview/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/airbyte/__airbyte_overview/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #airbyte #overview 
