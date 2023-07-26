@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/datahub/__/datahub-develop-action/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/datahub/__/datahub-develop-action/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #datahub #action #develop
