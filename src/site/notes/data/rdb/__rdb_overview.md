@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/rdb/__rdb_overview/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/rdb/__rdb_overview/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #rdb #overview 
