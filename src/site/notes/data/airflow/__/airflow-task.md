@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airflow/__/airflow-task/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/airflow/__/airflow-task/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 
