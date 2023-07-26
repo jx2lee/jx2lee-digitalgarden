@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/datahub/docs/datahub-mxe-processing-jobs/","dgPassFrontmatter":true,"noteIcon":"","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/datahub/docs/datahub-mxe-processing-jobs/","dgPassFrontmatter":true,"created":"","updated":""}
 ---
 
 #datahub #glossary #내가헷갈리는용어를정리하자 
