@@ -16,7 +16,7 @@
 
 ### job knowledge
 - [[data/dbt/__/dbt-cicd-overview\|저희가 사용하는 DBT CI/CD 는요 🥲]]
-- [[data/dbt/__/monitoring-dbt\|dbt 모니터링을 개선했어요]]
+- [[data/dbt/__/dbt CICD pipelines with Github Actions\|dbt 모니터링을 개선했어요]]
 
 ### troubleshooting
 - [[data/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리\|merge 전략 incremental 모델의 tmp 테이블 관리]]
