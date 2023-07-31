@@ -16,12 +16,11 @@
 - 파이썬 코딩의 기술
 	- [[etc/파이썬 코딩의 기술/python-better-way-14\|14. None 반환보다는 예외를 일으키자]]
 
-### refactoring
-[https://refactoring.com/catalog/](https://refactoring.com/catalog/)
-
+### [refactoring](https://refactoring.com/catalog/)
 - simplify-conditional-logic
-	- [[etc/refactoring/decompose-conditional\|decompose-conditional]]
+	- [[consolidate-conditional-expression\|Consolidate Conditional Expression]]
 	- [[etc/refactoring/replace-conditional-with-polymorphism\|Replace Conditional with Polymorphism]]
+	- [[etc/refactoring/decompose-conditional\|Decompose Conditional]]
 	- [[replace-control-flag-with-break\|Replace Control Flag with Break]]
 - moving-features
 	- [[etc/refactoring/split-loop\|split-loop]]
