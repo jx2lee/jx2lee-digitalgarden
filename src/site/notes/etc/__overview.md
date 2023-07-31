@@ -21,7 +21,8 @@
 
 - simplify-conditional-logic
 	- [[etc/refactoring/decompose-conditional\|decompose-conditional]]
-	- [[etc/refactoring/replace-conditional-with-polymorphism\|replace-conditional-with-polymorphism]]
+	- [[etc/refactoring/replace-conditional-with-polymorphism\|Replace Conditional with Polymorphism]]
+	- [[replace-control-flag-with-break\|Replace Control Flag with Break]]
 - moving-features
 	- [[etc/refactoring/split-loop\|split-loop]]
 
