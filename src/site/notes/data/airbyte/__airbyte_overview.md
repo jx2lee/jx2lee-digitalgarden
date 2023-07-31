@@ -6,9 +6,10 @@
 
 ---
 
-# basic
+### basic
 - [[data/airbyte/__/airbyte-architecture\|🏢 Architecture]]
-# etc
 
-# reference
+### etc
+
+### reference
 - [Airbyte Document](https://docs.airbyte.com/)
