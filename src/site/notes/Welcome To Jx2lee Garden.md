@@ -11,6 +11,7 @@
 - [[data/dbt/__dbt_overview\|dbt]]
 - [[data/bigquery/__bigquery_overview\|bigquery]]
 - [[data/rdb/__rdb_overview\|rdb]]
+- [[data/airbyte/__airbyte_overview\|airbyte]]
 - research
 	- [[data/__research/sqlmesh\|sqlmesh]]
 	- [[data/__research/mage\|mage]]
