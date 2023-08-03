@@ -18,10 +18,10 @@
 
 ### [refactoring](https://refactoring.com/catalog/)
 - simplify-conditional-logic
-	- [[consolidate-conditional-expression\|Consolidate Conditional Expression]]
+	- [[etc/refactoring/consolidate-conditional-expression\|Consolidate Conditional Expression]]
 	- [[etc/refactoring/replace-conditional-with-polymorphism\|Replace Conditional with Polymorphism]]
 	- [[etc/refactoring/decompose-conditional\|Decompose Conditional]]
-	- [[replace-control-flag-with-break\|Replace Control Flag with Break]]
+	- [[etc/refactoring/replace-control-flag-with-break\|Replace Control Flag with Break]]
 - moving-features
 	- [[etc/refactoring/split-loop\|split-loop]]
 
