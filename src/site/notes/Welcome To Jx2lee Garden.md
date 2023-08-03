@@ -16,6 +16,9 @@
 	- [[data/__research/sqlmesh\|sqlmesh]]
 	- [[data/__research/mage\|mage]]
 
+### cloud
+- [[kubernetes/__kubernetes_overview\|kubernetes]]
+
 ### [[etc/__overview\|etc]]
 
 --- 
