@@ -30,6 +30,43 @@ airbyte 공식 차트와 oauth2-proxy (bitnami) 차트를 조합하여 코인원
 			- `oauth2-proxy.configuration.authenticatedEmailsFile`
 		- commit 후 argo sync 로 인증된 사용자를 담고 있는 secret 을 갱신함
 
+```yaml
+# airbyte root values yaml
+oauth2-proxy:
+  enabled: true
+  image:
+    repository: 883976656071.dkr.ecr.ap-northeast-2.amazonaws.com/bitnami/oauth2-proxy
+    tag: latest
+
+  nodeSelector:
+    node.kubernetes.io/name: mgmt
+
+  service:
+    type: NodePort
+    port: 80
+
+  configuration:
+    clientID: xxx
+    clientSecret: xxx
+    redirectUrl: xxx
+
+    content: |-
+      skip_provider_button = true
+      cookie_secure = false
+      session_store_type = "redis"
+      upstreams = [ "http://airbyte-airbyte-webapp-svc.data.svc.cluster.local:80" ]
+      redis_connection_url = [ "redis://airbyte-redis-master.data.svc.cluster.local:6379/1" ]
+
+    authenticatedEmailsFile:
+      enabled: true
+      content: |-
+        jj.lee@xxx.com
+        ...
+        ...
+        sh.lim@xxx.com
+        yoori@xxx.com
+```
+
 ### default connector 를 제어하고 싶어요
 - 왜 커넥터를 관리하는가
 	- **보안성검토 결과 모든 source/destination 을 이용하지 않도록 설정이 필요함**
@@ -38,6 +75,32 @@ airbyte 공식 차트와 oauth2-proxy (bitnami) 차트를 조합하여 코인원
 - 커넥터를 추가하는 경우
 	- 커넥터를 airbyte-bootloader.manageCatalog 의 source 혹은 destination 에 추가
 	- push 후 argo sync 로 bootloader pod 를 실행함
+```yaml
+# airbyte-bootloader.manageCatalog
+  manageCatalog:
+    enabled: true
+    sources:
+      - "Coin API"
+      - "CoinGecko Coins"
+      - "CoinMarketCap"
+      - "ElasticSearch"
+    destinations:
+      - "BigQuery"
+      - "BigQuery (denormalized typed struct)"
+
+```
+
+```yaml
+# _helpers.tpl
+{{- define "bootloader.connectionList" -}}
+{{- if .Values.manageCatalog.enabled }}
+    {{- $combinedSources := join "', '" .Values.manageCatalog.sources }}
+    {{- $combinedDestinations := join "', '" .Values.manageCatalog.destinations }}
+    {{- printf "('%s', '%s')" $combinedSources $combinedDestinations }}
+{{- else}}
+    {{- printf "('Coin API', 'CoinGecko Coins', 'CoinMarketCap', 'BigQuery', 'BigQuery (denormalized typed struct)')"}}
+{{- end }}
+```
 
 #### 어떻게 조합했냐면요
 - airbyte-bootloader 서브차트를 활용함
@@ -51,7 +114,7 @@ airbyte 공식 차트와 oauth2-proxy (bitnami) 차트를 조합하여 코인원
 - source/destination 의 목록을 쿼리로 변경하기 위해 helm 변수를 활용함
 
 ```yml
-# 추가한 container
+# additional container
   containers:
     - name: airbyte-bootloader-clean
       image: {{ printf "%s:latest" .Values.image.clean.repository }}
