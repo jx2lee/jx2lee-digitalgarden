@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/the-secret-life-of-programs/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/study/the-secret-life-of-programs/"}
 ---
 
 
