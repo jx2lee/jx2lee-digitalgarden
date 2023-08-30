@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/__research/sqlmesh/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/__research/sqlmesh/"}
 ---
 
 
