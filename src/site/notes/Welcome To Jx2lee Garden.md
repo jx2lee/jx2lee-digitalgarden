@@ -1,5 +1,5 @@
 ---
-{"dg-home":true,"dg-publish":true,"dg-show-toc":false,"dg-show-local-graph":false,"dg-link-preview":false,"dg-show-file-tree":false,"dg-show-tags":false,"dg-show-backlinks":false,"permalink":"/Welcome To Jx2lee Garden/","tags":["gardenEntry"],"dgShowBacklinks":false,"dgShowLocalGraph":false,"dgShowFileTree":false,"dgShowToc":false,"dgLinkPreview":false,"dgShowTags":false,"dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/Welcome To Jx2lee Garden/","tags":["gardenEntry"],"dgShowBacklinks":false,"dgShowLocalGraph":false,"dgShowFileTree":false,"dgShowToc":false,"dgLinkPreview":false,"dgShowTags":false}
 ---
 
 
@@ -15,6 +15,7 @@
 - research
 	- [[data/__research/sqlmesh\|sqlmesh]]
 	- [[data/__research/mage\|mage]]
+	- [[apache-arrow\|Apache Arrow 를 빠르게 훑어보자]]
 
 ### cloud
 - [[kubernetes/__kubernetes_overview\|kubernetes]]
