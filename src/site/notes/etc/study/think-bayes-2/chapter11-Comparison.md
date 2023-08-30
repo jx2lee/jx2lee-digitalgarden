@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter11-Comparison/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter11-Comparison/"}
 ---
 
 #think-bayes #probability #study
