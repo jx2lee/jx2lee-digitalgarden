@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter05-Estimating-Counts/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter05-Estimating-Counts/"}
 ---
 
 #think-bayes #probability #study
