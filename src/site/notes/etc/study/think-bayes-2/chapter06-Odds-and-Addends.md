@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter06-Odds-and-Addends/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter06-Odds-and-Addends/"}
 ---
 
 #think-bayes #probability #study
