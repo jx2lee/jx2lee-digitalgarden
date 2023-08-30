@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/rdb/__/mysql privilege/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/rdb/__/mysql privilege/"}
 ---
 
 
