@@ -1,5 +1,5 @@
 ---
-{"author":"jx2lee","aliases":["Actions 을 어떻게 활용하나요 in dbt"],"created":"","last-updated":"2023-08-03 14:25","tags":["dbt, cicd"],"dg-publish":true,"permalink":"/data/dbt/__/github-actions-in-data/","dgPassFrontmatter":true,"updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/__/github-actions-in-data/","tags":["dbt, cicd"]}
 ---
 
 
@@ -7,11 +7,15 @@ https://github.com/features/actions
 Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그레이션한 과정을 소개합니다.
 
 ### diagrams
-![](https://i.imgur.com/wGxBxhi.png)
+![|500](https://i.imgur.com/sDFjU9T.png)
 
-![](https://i.imgur.com/k3BBSy6.png)
+
+![|500](https://i.imgur.com/VbXvLeK.png)
+
 
 ### Github Actions
+
+
 - [변성윤님 포스트](https://zzsza.github.io/development/2020/06/06/github-action/)
 - 현재 코인원 [Github Actions 구조](https://tech.kakao.com/2022/05/06/github-actions/)는 카카오 엔터프라이즈와 유사
 - Actions 작성 시 아래 링크를 적극 활용
@@ -20,6 +24,8 @@ Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그�
 	- [Variables](https://docs.github.com/en/actions/learn-github-actions/variables): GitHub Actions 워크플로 실행에 대한 기본 변수를 설정함. `run` step 으로 사용하지 않고 default 로 제공하는 변수를 사용하면 yml 을 간편하게 작성할 수 있다.
 
 ### shallow dive
+
+
 변경 혹은 추가된 모델만 build 하는 slim-build Action 아래와 같고 라인별로 내용을 살펴본다.
 > 아래 테스트한 내용은 추후 변경될 수 있음
 
@@ -90,10 +96,12 @@ jobs:
             ${{ env.ECR_REGISTRY }}/${{ env.repo-name }}:latest slim
 ```
 
+
 #### name
 - workflow identifier
 - UI 에서 확인할 수 있다.
 	- ![|300](https://i.imgur.com/RZPpmTZ.png)
+
 
 #### on
 - workflow 를 자동으로 트리거하기 위해 사용
@@ -123,6 +131,7 @@ jobs:
 	- runs-on 에 **build** label 을 추가한다.
 	- build 레이블을 추가한 runner 는 service 클러스터의 s3 로 접근이 가능하기 때문에 꼭 추가해야한다.
 
+
 #### steps
 - job 은 step 의 모임인데, 명령을 실행하거나/설정 작업을 실행하거나/리포지토리 & 공용 리포지토리 또는 Docker 레지스트리에 push 하는 작업을 실행할 수 있음
 - [condition (if)](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-only-run-job-for-specific-repository)
@@ -135,7 +144,10 @@ jobs:
 	- 위 변수들과 볼륨은 s3 접근을 위해 IAM Role 토큰이 필요함. 필수적으로 mount & 선언해야하고 없다면 s3 접근이 되지 않을 것이다.
 	- [참고](https://github.com/actions/actions-runner-controller/issues/246)
 
+
 ### 구현해보고 싶었는데 실패 혹은 미진행 기능
+
+
 #### reusable workflow
 [Reusing workflows](https://docs.github.com/ko/actions/using-workflows/reusing-workflows)
 
@@ -154,6 +166,7 @@ jobs:
 	- step.uses 로 사용할 수 있게 Custom Actions 개발하면 되지만,
 		- 그럴만한 가치가 있는가?
 
+
 #### container job
 [Running jobs in a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
 - dbt build 하는 step 가독성이 많이 떨어짐
@@ -163,7 +176,8 @@ jobs:
 - 대안은 없나요?
 	- 네. 동일한 노드에서 진행할 수 없으면 사용이 불가함
 
-#### PR auto labeler
+
+#### PR auto labeler (완료)
 - 오픈소스 기여하면서 PR 생성 시 자동으로 Label 을 달아주는 기능을 보며, 우리 프로젝트에 녹여내면 재밌겠다고 생각함
 - e.g
 	- https://github.com/datahub-project/datahub/pull/7637
@@ -171,9 +185,7 @@ jobs:
 		- github-actions 봇이 label 을 자동으로 attach
 		- ![|500](https://i.imgur.com/8Iv1HnX.png)
 		- [ref](https://github.com/datahub-project/datahub/blob/master/.github/workflows/pr-labeler.yml)
-
-#### custom actions 개발
-TBD
+- [labeler](https://github.com/actions/labeler) 액션으로 구성 완료
 
 ### 팁
 - IDE 플러그인을 적극 활용해보자
