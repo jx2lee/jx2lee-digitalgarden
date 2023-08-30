@@ -1,5 +1,5 @@
 ---
-{"author":"jx2lee","aliases":["oauth2-proxy 를 얹어보자 on Airbyte"],"created":"","last-updated":"2023-08-12 18:04","tags":["airbyte, helm, oauth2-proxy"],"dg-publish":true,"permalink":"/data/airbyte/__/airbyte-with-oauth2-proxy/","dgPassFrontmatter":true,"updated":""}
+{"dg-publish":true,"permalink":"/data/airbyte/__/airbyte-with-oauth2-proxy/","tags":["airbyte, helm, oauth2-proxy"]}
 ---
 
 ### tl;dr
