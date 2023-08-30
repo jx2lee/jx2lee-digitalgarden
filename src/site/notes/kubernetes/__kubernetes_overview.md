@@ -1,5 +1,5 @@
 ---
-{"author":"jx2lee","aliases":["kubernetes overview","kubernetes"],"created":"","last-updated":"2023-08-03 23:28","tags":["overview, kubernetes"],"dg-publish":true,"permalink":"/kubernetes/__kubernetes_overview/","dgPassFrontmatter":true,"updated":""}
+{"dg-publish":true,"permalink":"/kubernetes/__kubernetes_overview/","tags":["overview, kubernetes"]}
 ---
 
 
