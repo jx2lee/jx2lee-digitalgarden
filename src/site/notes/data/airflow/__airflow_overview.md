@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"tags":["airflow, overview"],"permalink":"/data/airflow/__airflow_overview/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/airflow/__airflow_overview/","tags":["airflow, overview"]}
 ---
 
 
