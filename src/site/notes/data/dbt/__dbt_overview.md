@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"tags":["dbt, overview"],"permalink":"/data/dbt/__dbt_overview/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/__dbt_overview/","tags":["dbt, overview"]}
 ---
 
 
