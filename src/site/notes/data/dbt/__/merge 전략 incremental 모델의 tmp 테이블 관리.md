@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-pass-frontmatter":false,"permalink":"/data/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리/","dgPassFrontmatter":true,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리/","dgPassFrontmatter":false}
 ---
 
 
