@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-file-tree":false,"dg-show-inline-title":false,"dg-pass-frontmatter":false,"permalink":"/data/datahub/__/datahub-ts-unauthorized-when-ingestion/","dgPassFrontmatter":true,"dgShowInlineTitle":false,"dgShowFileTree":false,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/datahub/__/datahub-ts-unauthorized-when-ingestion/","dgPassFrontmatter":false,"dgShowInlineTitle":false,"dgShowFileTree":false}
 ---
 
 #datahub #troubleshooting 
