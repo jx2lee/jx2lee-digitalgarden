@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter17-Regression/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter17-Regression/","created":"","updated":""}
 ---
 
 #think-bayes #probability #study 
