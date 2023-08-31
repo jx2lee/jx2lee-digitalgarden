@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/refactoring/replace-conditional-with-polymorphism/"}
+{"dg-publish":true,"permalink":"/etc/refactoring/replace-conditional-with-polymorphism/","created":"","updated":""}
 ---
 
 
