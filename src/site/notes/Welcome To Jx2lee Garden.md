@@ -5,7 +5,7 @@
 
 ![|400](https://i.imgur.com/7dlsgVl.jpg|100)
 
-### data
+### relates to DATA
 - [[data/airflow/__airflow_overview\|airflow]]
 - [[data/datahub/__datahub_overview\|datahub]]
 - [[data/dbt/__dbt_overview\|dbt]]
@@ -15,13 +15,11 @@
 - research
 	- [[data/__research/sqlmesh\|sqlmesh]]
 	- [[data/__research/mage\|mage]]
-	- [[apache-arrow\|Apache Arrow 를 빠르게 훑어보자]]
+	- [[arrow\|Apache Arrow 를 빠르게 훑어보자]]
 
-### cloud
+### relates to CLOUD
 - [[kubernetes/__kubernetes_overview\|kubernetes]]
 
 ### [[etc/__overview\|etc]]
 
---- 
-> [!FAQ]- since
-> *2023.01.21*
+> *since 2023.01.21*
