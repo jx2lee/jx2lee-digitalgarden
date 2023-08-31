@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airflow/__/airflow-task/"}
+{"dg-publish":true,"permalink":"/data/airflow/__/airflow-task/","created":"","updated":""}
 ---
 
 
@@ -8,7 +8,6 @@ DAG 개발하던 중 용어가 헷갈려 간단히 정리한다.
 
 **tl;dr**
 - task 는 DAG 으로 정의한 하나의 작업 단위이다. task instance 는 작업 단위인 task 를 실행할 때 생성하는 인스턴스이다. task 로 정의해놓은 작업을 실행할 때 task instance 가 생성하면서 작업을 수행한다.
-- 
 
 # Task
 
