@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter09-Decision-Analysis/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter09-Decision-Analysis/","created":"","updated":""}
 ---
 
 #think-bayes #probability #study
