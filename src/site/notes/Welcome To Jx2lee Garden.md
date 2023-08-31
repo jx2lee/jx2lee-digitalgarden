@@ -3,10 +3,11 @@
 ---
 
 
-![|400|no-float](https://i.imgur.com/7dlsgVl.jpg|100)
+![|400](https://i.imgur.com/7dlsgVl.jpg|100)
 
 | Category            | Link                                                           |
 | ------------------- | -------------------------------------------------------------- |
+| airbyte overview    | [[data/airbyte/__airbyte_overview\|__airbyte_overview]]     |
 | airflow overview    | [[data/airflow/__airflow_overview\|__airflow_overview]]     |
 | datahub overview    | [[data/datahub/__datahub_overview\|__datahub_overview]]     |
 | dbt overview        | [[data/dbt/__dbt_overview\|__dbt_overview]]                 |
