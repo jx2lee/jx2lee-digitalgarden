@@ -178,14 +178,15 @@ jobs:
 
 
 #### PR auto labeler (완료)
-- 오픈소스 기여하면서 PR 생성 시 자동으로 Label 을 달아주는 기능을 보며, 우리 프로젝트에 녹여내면 재밌겠다고 생각함
+- 오픈소스 기여하면서 PR 생성 시 자동으로 Label 을 달아주는 기능을 보았다.
+- 프로젝트에 녹여내면 재밌겠다고 생각한다.
 - e.g
 	- https://github.com/datahub-project/datahub/pull/7637
-	- docs 폴더 내 파일을 수정하고 PR 을 생성하니
-		- github-actions 봇이 label 을 자동으로 attach
+	- docs 폴더 내 파일을 수정하고 PR 을 생성하니,
+		- github-actions 봇이 label 을 자동으로 할당한다.
 		- ![|500](https://i.imgur.com/8Iv1HnX.png)
 		- [ref](https://github.com/datahub-project/datahub/blob/master/.github/workflows/pr-labeler.yml)
-- [labeler](https://github.com/actions/labeler) 액션으로 구성 완료
+- [labeler](https://github.com/actions/labeler) 액션으로 구성 **완료**했다.
 
 ### 팁
 - IDE 플러그인을 적극 활용해보자
