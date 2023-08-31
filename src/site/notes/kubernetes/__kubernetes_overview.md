@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kubernetes/__kubernetes_overview/","tags":["overview, kubernetes"]}
+{"dg-publish":true,"permalink":"/kubernetes/__kubernetes_overview/","tags":["overview, kubernetes"],"created":"","updated":""}
 ---
 
 
