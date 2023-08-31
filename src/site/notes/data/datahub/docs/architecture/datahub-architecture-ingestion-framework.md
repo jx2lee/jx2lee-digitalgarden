@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/datahub/docs/architecture/datahub-architecture-ingestion-framework/"}
+{"dg-publish":true,"permalink":"/data/datahub/docs/architecture/datahub-architecture-ingestion-framework/","created":"","updated":""}
 ---
 
 #datahub #architecture #ingestion-framework
