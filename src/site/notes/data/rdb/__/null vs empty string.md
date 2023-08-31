@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/rdb/__/null vs empty string/"}
+{"dg-publish":true,"permalink":"/data/rdb/__/null vs empty string/","created":"","updated":""}
 ---
 
 #database #mysql
