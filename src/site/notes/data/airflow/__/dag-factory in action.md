@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airflow/__/dag-factory in action/"}
+{"dg-publish":true,"permalink":"/data/airflow/__/dag-factory in action/","created":"","updated":""}
 ---
 
 
