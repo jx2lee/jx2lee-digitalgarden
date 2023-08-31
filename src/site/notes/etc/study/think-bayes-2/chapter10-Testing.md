@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter10-Testing/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter10-Testing/","created":"","updated":""}
 ---
 
 #think-bayes #probability #study
