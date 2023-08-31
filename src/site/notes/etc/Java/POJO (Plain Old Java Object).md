@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/Java/POJO (Plain Old Java Object)/"}
+{"dg-publish":true,"permalink":"/etc/Java/POJO (Plain Old Java Object)/","created":"","updated":""}
 ---
 
 
