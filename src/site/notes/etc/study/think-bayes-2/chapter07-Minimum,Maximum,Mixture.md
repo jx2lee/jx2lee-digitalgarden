@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter07-Minimum,Maximum,Mixture/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter07-Minimum,Maximum,Mixture/","created":"","updated":""}
 ---
 
 #think-bayes #probability #study
