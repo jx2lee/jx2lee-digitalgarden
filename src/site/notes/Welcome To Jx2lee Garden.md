@@ -3,7 +3,7 @@
 ---
 
 
-![|400](https://i.imgur.com/7dlsgVl.jpg|100)
+![|400|no-float](https://i.imgur.com/7dlsgVl.jpg|100)
 
 | Category            | Link                                                           |
 | ------------------- | -------------------------------------------------------------- |
