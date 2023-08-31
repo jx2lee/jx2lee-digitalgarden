@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__dbt_overview/","tags":["dbt, overview"]}
+{"dg-publish":true,"permalink":"/data/dbt/__dbt_overview/","tags":["dbt, overview"],"created":"","updated":""}
 ---
 
 
