@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter04-Estimating-Proportions/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter04-Estimating-Proportions/","created":"","updated":""}
 ---
 
 #think-bayes #probability #study
