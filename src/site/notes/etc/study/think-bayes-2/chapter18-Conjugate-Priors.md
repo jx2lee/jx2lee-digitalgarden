@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter18-Conjugate-Priors/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter18-Conjugate-Priors/","created":"","updated":""}
 ---
 
 #think-bayes #probability #study 
