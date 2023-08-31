@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/dbt-cicd-pipeline-with-github-actions/"}
+{"dg-publish":true,"permalink":"/data/dbt/__/dbt-cicd-pipeline-with-github-actions/","created":"","updated":""}
 ---
 
 
