@@ -12,7 +12,7 @@
 | datahub overview    | [[data/datahub/__datahub_overview\|__datahub_overview]]     |
 | dbt overview        | [[data/dbt/__dbt_overview\|__dbt_overview]]                 |
 | kubernetes overview | [[kubernetes/__kubernetes_overview\|__kubernetes_overview]] |
-| rdb overview        | [[data/rdb/__rdb_overview\|__rdb_overview]]                 |
+| \-                  | [[data/rdb/__rdb_overview\|__rdb_overview]]                 |
 
 { .block-language-dataview}
 
