@@ -18,7 +18,7 @@ goal! **models.<resource_path> 로 생성된 데이터셋의 prefix 를 지우�
     - default 로 설정되는 매크로가 있다.
 - 더 자세히는 [default macro](https://github.com/dbt-labs/dbt-core/blob/8aaed0e29f9560bc53d9d3e88325a9597318e375/core/dbt/include/global_project/macros/get_custom_name/get_custom_schema.sql#L21) 의 if/else 를 살펴보면
     - custom_schema_name 이 없다면 default_schema 를 (profiles - schema 설정값)
-    - custom_schema_name 이 지정되었다면 `{{ default_schema }}_{{ custom_schema_name | trim }}` prefix 를 붙이도록 구현되었다.
+    - custom\_schema\_name 이 지정되었다면 `{{ default_schema }}_{{ custom_schema_name | trim }}` prefix 를 붙이도록 구현되었다.
  
 ```template
 {% macro generate_schema_name(custom_schema_name, node) -%}
