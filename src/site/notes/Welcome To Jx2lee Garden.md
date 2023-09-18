@@ -26,7 +26,7 @@
 - research
 	- [[data/__research/sqlmesh\|sqlmesh]]
 	- [[data/__research/mage\|mage]]
-	- [[arrow\|Apache Arrow 를 빠르게 훑어보자]]
+	- [[data/__research/arrow\|Apache Arrow 를 빠르게 훑어보자]]
 
 ### relates to CLOUD
 - [[kubernetes/__kubernetes_overview\|kubernetes]]
