@@ -4,9 +4,12 @@
 
 
 https://github.com/features/actions
-Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그레이션한 과정을 소개합니다.
+
+> [!tldr]
+> Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그레이션한 과정을 소개한다.
 
 ### diagrams
+---
 ![|500](https://i.imgur.com/sDFjU9T.png)
 
 
@@ -14,8 +17,7 @@ Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그�
 
 
 ### Github Actions
-
-
+---
 - [변성윤님 포스트](https://zzsza.github.io/development/2020/06/06/github-action/)
 - 현재 코인원 [Github Actions 구조](https://tech.kakao.com/2022/05/06/github-actions/)는 카카오 엔터프라이즈와 유사
 - Actions 작성 시 아래 링크를 적극 활용
@@ -24,8 +26,7 @@ Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그�
 	- [Variables](https://docs.github.com/en/actions/learn-github-actions/variables): GitHub Actions 워크플로 실행에 대한 기본 변수를 설정함. `run` step 으로 사용하지 않고 default 로 제공하는 변수를 사용하면 yml 을 간편하게 작성할 수 있다.
 
 ### shallow dive
-
-
+---
 변경 혹은 추가된 모델만 build 하는 slim-build Action 아래와 같고 라인별로 내용을 살펴본다.
 > 아래 테스트한 내용은 추후 변경될 수 있음
 
@@ -127,7 +128,7 @@ jobs:
 			- `${{ secrets.JIRA_TOKEN }}`
 		- ![|500](https://i.imgur.com/zsptDSG.png)
 			- `${{ vars.KEYFILE_PATH }}`
-- 서비스 클러스터와 ops 클러스터는 분리되어 있기 때문에 만약 ops 클러스터에서 서비스의 s3 로 접근이 필요한 경우
+- 서비스 클러스터와 ci/cd 클러스터는 분리되어 있기 때문에 서비스의 s3 로 접근이 필요했다.
 	- runs-on 에 **build** label 을 추가한다.
 	- build 레이블을 추가한 runner 는 service 클러스터의 s3 로 접근이 가능하기 때문에 꼭 추가해야한다.
 
@@ -145,27 +146,33 @@ jobs:
 	- [참고](https://github.com/actions/actions-runner-controller/issues/246)
 
 
-### 구현해보고 싶었는데 실패 혹은 미진행 기능
-
+### 그 외 추가로 생성한 워크플로우
+---
 
 #### reusable workflow
 [Reusing workflows](https://docs.github.com/ko/actions/using-workflows/reusing-workflows)
 
 - 기존 워크플로를 재사용하여 중복을 피하는 방법 중 하나
-- 테스트 완료한 workflow 에서는
-	- ECR 로그인
-	- GCP credential (dev/prod)
-	- 위 스텝들의 중복이 발생하고 있음
 - DRY 를 따르고자 reusable workflow 를 이용하고 싶었지만 불가능한 환경
 	- job 은 병렬로 실행하며
 	- 지정한 노드에 pod 형태로 배포됨
 		- `runs-on` 라벨링된 노드는 2개 노드이므로
 		- ECR/GCP 인증을 다른 Job 으로 실행하면, 실제 인증이 필요한 Job 에서 인증이 안된채로 실행함
-- 따라서 **현재 구조에서 reusable workflow 는 사용할 수 없음**
-- 대안은 없나요?
-	- step.uses 로 사용할 수 있게 Custom Actions 개발하면 되지만,
-		- 그럴만한 가치가 있는가?
+- 타셀 제공 저장소에는 reusable workflow 를 사용
+    - dbt-build 하는 workflow 를 재사용하게 만들어두고,
+    - daily / by pushing / manual 워크플로우에서 호출하는 구조로 생성
 
+
+#### PR auto labeler
+- 오픈소스 기여하면서 PR 생성 시 자동으로 Label 을 달아주는 기능을 보았다.
+- 프로젝트에 녹여내면 재밌겠다고 생각한다.
+- e.g
+	- https://github.com/datahub-project/datahub/pull/7637
+	- docs 폴더 내 파일을 수정하고 PR 을 생성하니,
+		- github-actions 봇이 label 을 자동으로 할당한다.
+		- ![|500](https://i.imgur.com/8Iv1HnX.png)
+		- [ref](https://github.com/datahub-project/datahub/blob/master/.github/workflows/pr-labeler.yml)
+- [labeler](https://github.com/actions/labeler) 액션으로 구성 **완료**했다.
 
 #### container job
 [Running jobs in a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
@@ -177,18 +184,17 @@ jobs:
 	- 네. 동일한 노드에서 진행할 수 없으면 사용이 불가함
 
 
-#### PR auto labeler (완료)
-- 오픈소스 기여하면서 PR 생성 시 자동으로 Label 을 달아주는 기능을 보았다.
-- 프로젝트에 녹여내면 재밌겠다고 생각한다.
-- e.g
-	- https://github.com/datahub-project/datahub/pull/7637
-	- docs 폴더 내 파일을 수정하고 PR 을 생성하니,
-		- github-actions 봇이 label 을 자동으로 할당한다.
-		- ![|500](https://i.imgur.com/8Iv1HnX.png)
-		- [ref](https://github.com/datahub-project/datahub/blob/master/.github/workflows/pr-labeler.yml)
-- [labeler](https://github.com/actions/labeler) 액션으로 구성 **완료**했다.
+### SQL linter
+- 보푸라기를 제거하는 린트 롤러(Lint roller)처럼 코드의 오류나 버그, 스타일 따위를 점검하는 것을 [린트(Lint) 혹은 린터(Linter)](https://en.wikipedia.org/wiki/Lint_(software))라고 부름
+- SQL linter 로 많이 사용되는 sqlfluff 활용
+- 오픈된 액션이 존재하여 조금 수정해서 사용
+
+> [!todo]
+> docker container 형태로 실행되는 구조라 이미지를 빌드함. 워크플로우 실행시간이 길어 javascript 로 변환해서 사용하면 효율적
+
 
 ### 팁
+---
 - IDE 플러그인을 적극 활용해보자
 	- JetBrains 에서는 자동완성 기능 및 설명을 보여주는 기능을 제공함
 	- ![|500](https://i.imgur.com/xP1Jdxh.png)
@@ -198,5 +204,5 @@ jobs:
 	- 또한, usecase 도 많아 (오픈소스에서 사용하는 actions 들) 레퍼런스가 많으니 검색을 해보고 적용해보자.
 
 ### reference
-https://tech.kakaoenterprise.com/180
-https://tech.kakao.com/2022/05/06/github-actions/
+- https://tech.kakaoenterprise.com/180
+- https://tech.kakao.com/2022/05/06/github-actions/
