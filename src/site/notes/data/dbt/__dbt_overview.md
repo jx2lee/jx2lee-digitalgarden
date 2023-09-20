@@ -8,14 +8,20 @@
 - [[data/dbt/__/dbt-metric\|metric in dbt]]
 - [[data/dbt/__/dbt-thread\|thread in dbt]]
 
+
 ### job knowledge
-- [[data/dbt/__/dbt-cicd-overview\|저희가 사용하는 DBT CI/CD 는요 🥲]]
-- [[data/dbt/__/dbt-cicd-pipeline-with-github-actions\|dbt 모니터링을 개선했어요]]
+- [[data/dbt/__/dbt-cicd-pipeline\|dbt-cicd-pipeline]]
 - [[data/dbt/__/dbt-custom-schemas\|dbt_projects.yml 에 설정한 schema 이름 변경하기]]
 - [[data/dbt/__/dbt snapshot 모델 과정 뜯어보기\|dbt snapshot 모델 과정 뜯어보기]]
 
+
 ### troubleshooting
 - [[data/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리\|merge 전략 incremental 모델의 tmp 테이블 관리]]
+
+
+### archive
+- [[data/dbt/__/dbt-cicd-overview\|Atlassian bamboo & Airflow 를 이용한 dbt CI/CD]]
+
 
 ### reference
 - [dbt로 ELT 파이프라인 효율적으로 관리하기](https://www.humphreyahn.dev/blog/efficient-elt-pipelines-with-dbt)
