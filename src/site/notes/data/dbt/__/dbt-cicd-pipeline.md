@@ -8,7 +8,7 @@
 
 ### 배경
 ---
-- 사내 github 이 도입되었다.
+- github enterprise(ghe) 를 사용하기 시작했다.
 - Atlassian bamboo & Airflow 를 조합한 ci/cd 파이프라인에 불필요한 단계들이 많다. 이를 개선하고 Github Actions 로 마이그레이션이 필요하다.
 
 
