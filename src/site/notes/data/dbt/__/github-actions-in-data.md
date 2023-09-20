@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/github-actions-in-data/","tags":["dbt, cicd"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/__/github-actions-in-data/","tags":["dbt","cicd"],"created":"","updated":""}
 ---
 
 
