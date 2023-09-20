@@ -1,6 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/dbt-cicd-pipeline/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/__/dbt-cicd-pipeline/","tags":["dbt","cicd"],"created":"","updated":""}
 ---
+
+> [!tldr]
+> dbt CI/CD 를 개선한 경험을 공유한다.
+
 
 ### 배경
 ---
