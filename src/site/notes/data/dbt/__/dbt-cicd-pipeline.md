@@ -38,4 +38,4 @@
 
 ### 더보기
 ---
-[[data/dbt/__/dbt-cicd-pipeline\|dbt cicd pipelines with Github Actions]]
+[[data/dbt/__/github-actions-in-data\|Improvement dbt CI/CD with Github Actions]]
