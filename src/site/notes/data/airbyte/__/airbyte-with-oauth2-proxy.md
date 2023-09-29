@@ -2,10 +2,8 @@
 {"dg-publish":true,"permalink":"/data/airbyte/__/airbyte-with-oauth2-proxy/","tags":["airbyte, helm, oauth2-proxy"],"created":"","updated":""}
 ---
 
-### tl;dr
-Airbyte 접근제어를 위해 oauth2-proxy 를 사용했고 chart 를 변경하여 default connector 를 제어했다. 접근제어는 이메일 또는 source/dest 커넥터를 차트에 추가하고 argo sync (auto sync 는 off 인 경우) 를 실행한다.
-
-airbyte 공식 차트와 oauth2-proxy (bitnami) 차트를 조합하여 코인원에서 제공할 Airbyte helm 차트를 구성한다.
+> [!tldr]
+> Airbyte 접근제어를 위해 oauth2-proxy 를 사용했고 chart 를 변경하여 default connector 를 제어했다. 접근제어는 이메일 또는 source/dest 커넥터를 차트에 추가하고 argo sync (auto sync 는 off 인 경우) 를 실행한다.
 
 ### official chart info
 #### Airbyte
@@ -19,10 +17,10 @@ airbyte 공식 차트와 oauth2-proxy (bitnami) 차트를 조합하여 코인원
 
 ### oauth 를 적용해보자
 - 접근제어를 위해 oauth2-proxy 를 이용함
-- 역할 별 작업 프로세스는 다음과 같음
+- 작업 과정은 다음과 같다.
     - 요청자
-		- 티켓을 생성하고 슬랙으로 공유함
-		- 권한 설정 후 airbyte 에 접근함
+		- 티켓을 생성하고 슬랙으로 공유
+		- 권한 설정 후 airbyte 접근
 	- 작업자
 		- 요청자 email 을 차트에 기입한다.
 			- `oauth2-proxy.configuration.authenticatedEmailsFile`
@@ -33,7 +31,7 @@ airbyte 공식 차트와 oauth2-proxy (bitnami) 차트를 조합하여 코인원
 oauth2-proxy:
   enabled: true
   image:
-    repository: 883976656071.dkr.ecr.ap-northeast-2.amazonaws.com/bitnami/oauth2-proxy
+    repository: {xxxx}/bitnami/oauth2-proxy
     tag: latest
 
   nodeSelector:
@@ -65,11 +63,11 @@ oauth2-proxy:
         yoori@xxx.com
 ```
 
-### default connector 를 제어하고 싶어요
+### default connector 를 제어하는 방법
 - 왜 커넥터를 관리하는가
-	- **보안성검토 결과 모든 source/destination 을 이용하지 않도록 설정이 필요함**
-- bootloader 차트를 수정하여 커넥터를 관리함
-- manageCatalog custom 값으로 source/destination 을 관리함
+	- **보안성 검토 결과 모든 source/destination 을 이용하지 않도록 설정해야함**
+- bootloader 차트를 수정하여 커넥터 관리함
+- `manageCatalog` custom 값으로 source/destination 을 관리함
 - 커넥터를 추가하는 경우
 	- 커넥터를 airbyte-bootloader.manageCatalog 의 source 혹은 destination 에 추가
 	- push 후 argo sync 로 bootloader pod 를 실행함
@@ -104,12 +102,12 @@ oauth2-proxy:
 - airbyte-bootloader 서브차트를 활용함
 - 작성한 source / destination 을 읽어 bootloader initContainer 이후 기입한 커넥터를 제외한 나머지를 삭제하는 컨테이너가 동작함
 	- 원래 metadb(postgresql) 의 모든 default connector 를 삽입하는 컨테이너는 initContainer 가 아님.
-	- **inint 후 커넥터를 삭제하는 작업을 추가하기 위해 container → initContainer 로 변경함**
+	- **inint 후 커넥터를 삭제하는 작업을 추가하기 위해 container → initContainer 로 변경**
 		- 기존: bootloader container(A라고 한다면)
 		- 변경: A -> initContainer 로 설정, 필요한 커넥터만 남기고 삭제하는 작업을 하는 container 추가
-	- 쿼리 실행을 위한 이미지가 필요했음
-	- ECR 에 psql-client 이미지를 업로드함
-- source/destination 의 목록을 쿼리로 변경하기 위해 helm 변수를 활용함
+	- 쿼리 실행을 위한 이미지가 필요
+	- ECR 에 psql-client 이미지를 업로드하고, client 에서 쿼리를 실행하는 방법으로 구현
+- source/destination 의 목록을 쿼리로 변경하기 위해 helm 변수 활용
 
 ```yml
 # additional container
@@ -143,6 +141,6 @@ oauth2-proxy:
 ```
 
 ### 후기
-- 처음으로 두 차트를 혼용해본 경험
-- 접근제어가 불가능한 도구는 oauth2-proxy 를 활용할 수 있어 좋았음. 특히 어렵지 않게 설정이 가능하여 추후에 쓸 일이 있을 것 같은 느낌을 받음
-- 이 작업에서는 데이터엔지니어 보다 클라우드엔지니어가 된 기분이었음. 그만큼 컨테이너 환경을 이해할 수 있었음
+- 처음으로 서로 다른 두 차트를 섞어봤다.
+- 접근제어가 불가능한 도구는 oauth2-proxy 를 활용할 수 있어 좋았다. 특히 어렵지 않게 설정이 가능하고 추후 다양한 도구에서 사용할 수 있을 것이라 기대한다.
+- 데이터엔지니어 보다 클라우드엔지니어가 된 작업이었다. 그만큼 컨테이너 환경을 이해할 수 있었다.
