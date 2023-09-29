@@ -2,9 +2,6 @@
 {"dg-publish":true,"permalink":"/data/dbt/__/github-actions-in-data/","tags":["dbt","cicd"],"created":"","updated":""}
 ---
 
-
-https://github.com/features/actions
-
 > [!tldr]
 > Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그레이션한 과정을 소개한다.
 
