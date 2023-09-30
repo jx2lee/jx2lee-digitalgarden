@@ -1,12 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/data/rdb/__rdb_overview/","tags":["rdb, overview"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/rdb/__rdb_overview/","tags":["rdb","overview"],"created":"","updated":""}
 ---
 
 
 ### job knowledge
-- mysql
-    - [[data/rdb/__/mysql privilege\|mysql privilege]]
-    - 
+- [[data/rdb/__/mysql privilege\|mysql privilege]]
 - [[data/rdb/__/null vs empty string\|null vs empty string]]
 - [[data/rdb/__/explain\|explain]]
 - [[data/rdb/__/auto incremental vs identity\|auto incremental vs identity]]
