@@ -51,6 +51,3 @@
 | rdb        | [[data/rdb/__rdb_overview\|__rdb_overview]]                 |
 
 { .block-language-dataview}
-
----
-
