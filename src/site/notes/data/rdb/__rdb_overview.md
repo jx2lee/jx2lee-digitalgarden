@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/rdb/__rdb_overview/","tags":["rdb","overview"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/rdb/__rdb_overview/","tags":["rdb","overview"],"dgShowBacklinks":false,"created":"","updated":""}
 ---
 
 
