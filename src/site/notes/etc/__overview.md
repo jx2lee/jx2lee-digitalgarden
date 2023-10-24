@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/__overview/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/__overview/","dgShowBacklinks":false,"created":"","updated":""}
 ---
 
 
