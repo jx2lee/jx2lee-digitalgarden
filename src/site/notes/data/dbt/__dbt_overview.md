@@ -1,9 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__dbt_overview/","tags":["dbt, overview"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/__dbt_overview/","tags":["dbt, overview"],"dgShowBacklinks":false,"dgShowToc":false,"created":"","updated":""}
 ---
 
+
 > [!tip] dbt 를  나만의 문장으로 표현하면
-> > **ELT 의 Transform 을 유연(sql)하게 관리(vcs)해주는 워크플로우 도구**
+> > **ELT 의 Transform 을 유연(sql)하게 관리해주는 워크플로우 도구**
 
 ### base
 - [[data/dbt/__/run-results-json-means\|run_results.json in dbt]]
