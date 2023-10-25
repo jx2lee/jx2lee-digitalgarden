@@ -1,3 +1,32 @@
+body {
+  .content {
+    font-size: 22px;
+  }
+  .content.cm-s-obsidian {
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    h3 {
+      font-size: 1.37em;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    h4 {
+      font-size: 1.25em;
+    }
+
+    h5 {
+      font-size: 1.12em;
+    }
+  }
+}
+
 //body {
 //  p, li, a, div.foldername-wrapper {
 //    font-family: "JetBrains Mono", monospace;
@@ -38,6 +67,7 @@
 //  }
 //}
 //
+
 //@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 //@font-face {
 //  font-family: 'D2Coding';
