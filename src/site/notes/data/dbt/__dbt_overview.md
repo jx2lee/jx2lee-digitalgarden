@@ -15,7 +15,7 @@
 ### job knowledge
 - [[data/dbt/__/dbt-cicd-pipeline\|dbt-cicd-pipeline]]
 - [[data/dbt/__/dbt-custom-schemas\|dbt_projects.yml 에 설정한 schema 이름 변경하기]]
-- [[data/dbt/__/dbt snapshot 모델 과정 뜯어보기\|dbt snapshot 모델 과정 뜯어보기]]
+- [[data/dbt/__/dbt-snapshot-query\|dbt snapshot 모델 과정 뜯어보기]]
 
 
 ### troubleshooting
