@@ -19,7 +19,7 @@
 
 
 ### troubleshooting
-- [[data/dbt/__/merge 전략 incremental 모델의 tmp 테이블 관리\|merge 전략 incremental 모델의 tmp 테이블 관리]]
+- [[data/dbt/__/dbt-tmp-table-of-incremental-merge\|merge 전략 incremental 모델의 임시 테이블 관리]]
 
 
 ### archive
