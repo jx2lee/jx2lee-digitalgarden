@@ -19,7 +19,7 @@
 
 ---
 
-### [[data/dbt/__dbt_overview\|dbt]]
+### [[data/dbt/dbt-overview\|dbt]]
 
 
 ### [[data/airflow/__airflow_overview\|airflow]]
@@ -37,9 +37,11 @@
 ### [[etc/__overview\|etc]]
 
 
-- 슬쩍 탐구
+- 슬(쩍)탐(구)
     - [[data/__research/sqlmesh\|sqlmesh]]
     - [[data/__research/mage\|mage]]
+- [[daily/thinking\|thinking]]
+
 
 ---
 
@@ -48,8 +50,8 @@
 | airbyte    | [[data/airbyte/__airbyte_overview\|__airbyte_overview]]     |
 | airflow    | [[data/airflow/__airflow_overview\|__airflow_overview]]     |
 | datahub    | [[data/datahub/__datahub_overview\|__datahub_overview]]     |
-| dbt        | [[data/dbt/__dbt_overview\|__dbt_overview]]                 |
 | kubernetes | [[kubernetes/__kubernetes_overview\|__kubernetes_overview]] |
 | rdb        | [[data/rdb/__rdb_overview\|__rdb_overview]]                 |
+| dbt        | [[data/dbt/dbt-overview\|dbt-overview]]                     |
 
 { .block-language-dataview}
