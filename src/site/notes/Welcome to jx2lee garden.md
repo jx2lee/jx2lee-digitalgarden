@@ -25,7 +25,7 @@
 ### [[data/airflow/__airflow_overview\|airflow]]
 
 
-### [[data/datahub/__datahub_overview\|datahub]]
+### [[data/datahub/datahub-overview\|datahub]]
 
 
 ### [[data/airbyte/__airbyte_overview\|airbyte]]
@@ -49,9 +49,9 @@
 | ---------- | -------------------------------------------------------------- |
 | airbyte    | [[data/airbyte/__airbyte_overview\|__airbyte_overview]]     |
 | airflow    | [[data/airflow/__airflow_overview\|__airflow_overview]]     |
-| datahub    | [[data/datahub/__datahub_overview\|__datahub_overview]]     |
 | kubernetes | [[kubernetes/__kubernetes_overview\|__kubernetes_overview]] |
 | rdb        | [[data/rdb/__rdb_overview\|__rdb_overview]]                 |
+| datahub    | [[data/datahub/datahub-overview\|datahub-overview]]         |
 | dbt        | [[data/dbt/dbt-overview\|dbt-overview]]                     |
 
 { .block-language-dataview}
