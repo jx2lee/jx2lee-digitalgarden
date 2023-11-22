@@ -23,6 +23,11 @@
 - [[data/dbt/__/dbt 사용량 절약하기 - override declare_dbt_max_partition marco\|dbt 사용량 절약하기 - override declare_dbt_max_partition marco]]
 
 
+### project
+
+
+- [[data/dbt/__/metricstore-root\|metricstore-root]]
+
 ### troubleshooting
 
 
