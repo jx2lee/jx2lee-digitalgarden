@@ -7,6 +7,7 @@
 
 
 ### 배경
+
 ---
 
 - github enterprise(ghe) 를 사용하기 시작했다.
