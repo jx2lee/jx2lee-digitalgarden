@@ -30,8 +30,8 @@
 - [[etc/study/the-secret-life-of-programs\|스터디: 한 권으로 읽는 컴퓨터 구조와 프로그래밍]]
 
 ### Other
-- [[etc/_/gRPC\|gRPC]]
-- [[etc/_/Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits\|Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits]]
-- [[etc/_/Cache\|cache]]
-- [[etc/_/Token Store\|Token Store]]
-- [[etc/_/Hot-key\|Hot-key]]
+- [[etc/__/gRPC\|gRPC]]
+- [[etc/__/Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits\|Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits]]
+- [[etc/__/Cache\|cache]]
+- [[etc/__/Token Store\|Token Store]]
+- [[etc/__/Hot-key\|Hot-key]]
