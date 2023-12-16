@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/dbt-overview/","tags":["dbt, overview"],"dgShowBacklinks":false,"dgShowToc":false,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt/dbt-overview/","tags":["dbt","overview"]}
 ---
 
 
@@ -45,6 +45,11 @@
 
 - [dbt로 ELT 파이프라인 효율적으로 관리하기](https://www.humphreyahn.dev/blog/efficient-elt-pipelines-with-dbt)
 - slim ci
-	- [데이터에 신뢰성과 재사용성까지, Analytics Engineering with dbt](https://tech.socarcorp.kr/data/2022/07/25/analytics-engineering-with-dbt.html)
-	- [Setup a Slim CI for dbt with BigQuery and Docker](https://medium.com/teads-engineering/setup-a-slim-ci-for-dbt-with-bigquery-and-docker-ce8e0a1a38f)
-	- [How to use Slim CI with dbt Core](https://www.vantage-ai.com/blog/how-to-use-slim-ci-with-dbt-core)
+    - [데이터에 신뢰성과 재사용성까지, Analytics Engineering with dbt](https://tech.socarcorp.kr/data/2022/07/25/analytics-engineering-with-dbt.html)
+    - [Setup a Slim CI for dbt with BigQuery and Docker](https://medium.com/teads-engineering/setup-a-slim-ci-for-dbt-with-bigquery-and-docker-ce8e0a1a38f)
+    - [How to use Slim CI with dbt Core](https://www.vantage-ai.com/blog/how-to-use-slim-ci-with-dbt-core)
+- [Developer Blog](https://docs.getdbt.com/blog)
+    - 흥미롭게 읽은 글감들
+        - [Building a Kimball dimensional model with dbt](https://docs.getdbt.com/blog/kimball-dimensional-model)
+        - [Surrogate keys in dbt: Integers or hashes?](https://docs.getdbt.com/blog/managing-surrogate-keys)
+        - [Strategies for change data capture in dbt](https://docs.getdbt.com/blog/change-data-capture)
