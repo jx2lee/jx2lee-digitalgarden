@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Welcome to jx2lee garden/","tags":["gardenEntry"],"dgShowBacklinks":false,"dgShowLocalGraph":false,"dgShowFileTree":false,"dgShowToc":false,"dgLinkPreview":false,"dgShowTags":false,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/Welcome to jx2lee garden/","tags":["gardenEntry"]}
 ---
 
 
@@ -20,20 +20,11 @@
 ---
 
 ### [[data/dbt/dbt-overview\|dbt]]
-
-
-### [[data/airflow/__airflow_overview\|airflow]]
-
-
+### [[data/airflow/airflow-overview\|airflow]]
 ### [[data/datahub/datahub-overview\|datahub]]
-
-
-### [[data/airbyte/__airbyte_overview\|airbyte]]
-
-
-### [[data/rdb/__rdb_overview\|rdb]]
-
-
+### [[data/kafka/kafka-overview\|kafka]]
+### [[data/airbyte/airbyte-overview\|airbyte]]
+### [[data/rdb/rdb-overview\|rdb]]
 ### [[etc/__overview\|etc]]
 
 
@@ -45,13 +36,14 @@
 
 ---
 
-| Category   | Link                                                           |
-| ---------- | -------------------------------------------------------------- |
-| airbyte    | [[data/airbyte/__airbyte_overview\|__airbyte_overview]]     |
-| airflow    | [[data/airflow/__airflow_overview\|__airflow_overview]]     |
-| kubernetes | [[kubernetes/__kubernetes_overview\|__kubernetes_overview]] |
-| rdb        | [[data/rdb/__rdb_overview\|__rdb_overview]]                 |
-| datahub    | [[data/datahub/datahub-overview\|datahub-overview]]         |
-| dbt        | [[data/dbt/dbt-overview\|dbt-overview]]                     |
+| Category   | Link                                                       |
+| ---------- | ---------------------------------------------------------- |
+| airbyte    | [[data/airbyte/airbyte-overview\|airbyte-overview]]     |
+| airflow    | [[data/airflow/airflow-overview\|airflow-overview]]     |
+| datahub    | [[data/datahub/datahub-overview\|datahub-overview]]     |
+| dbt        | [[data/dbt/dbt-overview\|dbt-overview]]                 |
+| kafka      | [[data/kafka/kafka-overview\|kafka-overview]]           |
+| kubernetes | [[kubernetes/kubernetes-overview\|kubernetes-overview]] |
+| rdb        | [[data/rdb/rdb-overview\|rdb-overview]]                 |
 
 { .block-language-dataview}
