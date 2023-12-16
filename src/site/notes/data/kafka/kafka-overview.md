@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/kafka/kafka-overview/","tags":["kafka"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/kafka/kafka-overview/","tags":["kafka","overview"]}
 ---
 
 
@@ -7,7 +7,7 @@
 ### project & work to share
 
 
-[[data/kafka/__/migrate-to-kafka-connect\|서버로그 마이그레이션 (kafka connect)]]
+[[data/kafka/__/migration-to-kakfa-connect\|서버로그 마이그레이션 (kafka connect)]]
 
 
 ### job knowledge
