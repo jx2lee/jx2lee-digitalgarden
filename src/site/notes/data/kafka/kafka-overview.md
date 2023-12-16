@@ -13,7 +13,7 @@
 ### job knowledge
 
 
-[[data/kafka/__/kafka-ack\|ack 의 정의를 다양한 곳에서 살펴본다]]
+[[data/kafka/__/who-are-ack\|ack 의 정의를 다양한 곳에서 살펴본다]]
 
 
 ### research
