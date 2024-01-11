@@ -1,0 +1,22 @@
+---
+{"dg-publish":true,"permalink":"/data/rdb/__/auto-incremental-versus-identity/","tags":["rdb","autoincremental","identity"]}
+---
+
+
+
+### similarity
+
+
+특정 정수 유형 열의 값을 자동으로 증가시킨다.
+
+### difference
+
+
+DB 로 나눌 수 있다.
+- auto incremental: MySQL
+- identity: MSSQL
+
+### reference
+
+
+[What is the difference between identity and auto_increment in MySQL?](https://www.quora.com/What-is-the-difference-between-identity-and-auto_increment-in-MySQL)
