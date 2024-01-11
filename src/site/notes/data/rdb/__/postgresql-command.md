@@ -1,14 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/data/rdb/__/postgresql-command/","tags":["rdb, postgre"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/rdb/__/postgresql-command/","tags":["rdb","postgres"]}
 ---
 
 
 ### `\x on`
-- display 이쁘게 보이기
+
+
+- pretty display
+
 
 ### `\dt`
 - 테이블 목록
-- show tables;
+- `show tables` in mysql
+
 
 ### `\c {relation}`
-- like `use {database}`
+- `use {database}` in mysql
+
+
+### `\d {table}`
+- `describe table` in mysql
