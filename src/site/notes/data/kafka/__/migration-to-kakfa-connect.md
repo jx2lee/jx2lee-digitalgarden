@@ -43,4 +43,44 @@ TBD
 - [[data/kafka/__/migration-used-packages\|[migrate-to-kafka-connect] 사용중인 커넥터 & 트랜스폼]]
 - [[data/kafka/__/migration-error-handling\|[migrate-to-kafka-connect] 적재 실패 메세지의 처리 방안]]
 - [[data/kafka/__/migration-connector-cicd\|[migrate-to-kafka-connect] 커넥터 CI/CD]]
-- [[migration-connector-properties\|[migrate-to-kafka-connect] Connector Properties]]
+- [[data/kafka/__/migration-connector-properties\|[migrate-to-kafka-connect] Connector Properties]]
+
+
+<details>
+    <summary>일별 이벤트 수 비교 쿼리</summary>
+    <pre>
+    WITH kafka AS (
+      SELECT
+        lower(SPLIT(ce_subject, '.')[SAFE_OFFSET(2)]) AS event_type,
+        COUNT(ce_subject) AS cnt
+      FROM
+        `coinone-data-dev.serverlog.serverlog_kafka`
+      WHERE
+        TIMESTAMP_TRUNC(ce_time, DAY) = '2023-11-27'
+      GROUP BY
+        1
+    ),
+    
+    lambda AS (
+      SELECT
+        event_type,
+        COUNT(event_type) AS cnt
+      FROM
+        `coinone-data-dev.dbt_metric.stg_serverlog_lambda`
+      WHERE
+        TIMESTAMP_TRUNC(approximate_arrival_timestamp, DAY) = '2023-11-27'
+      GROUP BY
+        event_type
+    )
+    
+    SELECT
+      COALESCE(kafka.event_type, lambda.event_type) AS event_type,
+      COALESCE(kafka.cnt, 0) AS count_kafka,
+      COALESCE(lambda.cnt, 0) AS count_lambda
+    FROM
+      kafka
+    FULL OUTER JOIN
+      lambda
+    USING (event_type);
+    </pre>
+</details>
