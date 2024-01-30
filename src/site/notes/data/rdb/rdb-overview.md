@@ -11,4 +11,5 @@
 - [[data/rdb/__/explain\|explain]]
 - [[data/rdb/__/rdb-auto-incremental-versus-identity\|auto incremental vs identity]]
 - [[data/rdb/__/trigger\|trigger]]
+- [[data/rdb/__/rdb-mysql-numeric-type-attributes\|Signed/Unsigned in Numeric Type Attributes]]
 - [[data/rdb/__/postgresql-command\|자주 사용하는 postgresql 커맨드 정리]]
