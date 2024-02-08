@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter15-Mark-and-Recapture/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter15-mark-and-recapture/"}
 ---
 
 #think-bayes #probability #study 
