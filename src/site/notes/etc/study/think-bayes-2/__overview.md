@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/__overview/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/overview/"}
 ---
 
 
