@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/refactoring/decompose-conditional/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/refactoring/decompose-conditional/"}
 ---
 
 
