@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/the-secret-life-of-programs/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/study/the-secret-life-of-programs/"}
 ---
 
 
