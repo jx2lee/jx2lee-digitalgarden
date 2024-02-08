@@ -1,0 +1,11 @@
+---
+{"dg-publish":true,"permalink":"/etc//opensource-incident-management/","tags":["dispatch","incident","opensource"]}
+---
+
+
+
+
+### reference
+- [github](https://github.com/Netflix/dispatch)
+- [document](https://netflix.github.io/dispatch/)
+- [netflix tech blog](https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072)
