@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/refactoring/split-loop/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/etc/refactoring/split-loop/"}
 ---
 
 
