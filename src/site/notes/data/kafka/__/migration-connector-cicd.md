@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/kafka/__/migration-connector-cicd/","tags":["kafka","connect","github","cicd"]}
+{"dg-publish":true,"permalink":"/data/kafka//migration-connector-cicd/","tags":["kafka","connect","github","cicd"]}
 ---
 
 
