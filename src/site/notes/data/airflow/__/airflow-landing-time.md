@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airflow/__/airflow-landing-time/","created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/airflow//airflow-landing-time/"}
 ---
 
 
