@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/dbt-cicd-pipeline/","tags":["dbt","cicd"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt//dbt-cicd-pipeline/","tags":["dbt","cicd"]}
 ---
 
 > [!tldr]
