@@ -20,7 +20,7 @@
 - [[data/dbt/__/dbt-cicd-pipeline\|dbt-cicd-pipeline]]
 - [[data/dbt/__/dbt-custom-schemas\|dbt_projects.yml 에 설정한 schema 이름 변경하기]]
 - [[data/dbt/__/dbt-snapshot-query\|dbt snapshot 모델 과정 뜯어보기]]
-- [[data/dbt/__/dbt 사용량 절약하기 - override declare_dbt_max_partition marco\|dbt 사용량 절약하기 - override declare_dbt_max_partition marco]]
+- [[data/dbt/__/declare_dbt_max_partition marco\|declare_dbt_max_partition marco]]
 
 
 ### project
