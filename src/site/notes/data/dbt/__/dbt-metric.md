@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/dbt-metric/","tags":["dbt, metric"],"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt//dbt-metric/","tags":["dbt","metric"]}
 ---
 
 ### overview
