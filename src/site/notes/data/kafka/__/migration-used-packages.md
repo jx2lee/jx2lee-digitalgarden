@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/kafka/__/migration-used-packages/","tags":["kafka","connect"]}
+{"dg-publish":true,"permalink":"/data/kafka//migration-used-packages/","tags":["kafka","connect"]}
 ---
 
 
@@ -9,7 +9,7 @@
 
 
 ### connector
----
+
 
 **kafka-connect-bigquery**
 - https://github.com/confluentinc/kafka-connect-bigquery
@@ -27,19 +27,22 @@
 
 
 ### transforms
----
-
-**kafka-connect-transform-tojsonstring**
-- https://github.com/an0r0c/kafka-connect-transform-tojsonstring
-- 메시지의 key 혹은 value 값을 jsontring 으로 변환하는 smt
-- 변경사항
-    - 메세지 key 혹은 value 값의 스키마가 없는 경우 transform 을 무시한다.
-    - 이에 스키마가 없는 경우에도 transform 할 수 있도록 변경 요청하였다([PR](https://github.com/an0r0c/kafka-connect-transform-tojsonstring/pull/18)).
 
 
-**kafka-connect-transform-common**
-- https://github.com/jcustenborder/kafka-connect-transform-common
-- 컨플루언트에서 제공하는, 자주 사용되는 smt 묶음
+[ReplaceField](https://docs.confluent.io/platform/current/connect/transforms/replacefield.html#replacefield)
+- kafka 바이너리에 포함된 디폴트 smt 패키지다.
+- 특정 필드를 제외할 수 있는(exclude 옵션) 기능을 제공하여 수집하지 않아도 될 필드를 제외할 때 사용했다.
+
+
+[kafka-connect-transform-tojsonstring](https://github.com/an0r0c/kafka-connect-transform-tojsonstring)
+- 메시지의 key 혹은 value 값을 jsontring 으로 변환하는 smt 패키지다.
+- 기능추가
+    - 기존 코드에서는 메세지 key 혹은 value 값의 스키마가 없는 경우 패스한다.
+    - 스키마가 없는 경우에도 transform 할 수 있도록 변경 요청하였다([PR](https://github.com/an0r0c/kafka-connect-transform-tojsonstring/pull/18)).
+
+
+[kafka-connect-transform-common](https://github.com/jcustenborder/kafka-connect-transform-common)
+- 컨플루언트에서 제공하는, 자주 사용되는 smt 패키지다.
 - 메세지 헤더값을 field 로 추가해주는 [HeaderToField](https://jcustenborder.github.io/kafka-connect-documentation/projects/kafka-connect-transform-common/transformations/HeaderToField.html) 사용했다.
 
 
