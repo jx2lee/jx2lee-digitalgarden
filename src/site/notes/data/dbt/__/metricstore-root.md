@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/metricstore-root/"}
+{"dg-publish":true,"permalink":"/data/dbt//metricstore-root/"}
 ---
 
 
@@ -35,7 +35,8 @@ TBD
 ### 더보기
 
 - Software Architecture Documentation
-    - [[data/dbt/__/metricstore-sda-current-status\|SDA - Current status]]
-    - [[data/dbt/__/metricstore-sda-system-overview\|SDA - System Overview]]
-    - [[data/dbt/__/metricstore-sda-toplevel-module-view\|SDA - Top Level Module Veiw]]
-    - [[data/dbt/__/metricstore-sda-cnc-view\|SDA - C&C View]]
+    - [[data/dbt/__/metricstore-sad-current-status\|SDA - Current status]]
+    - [[data/dbt/__/metricstore-sad-system-overview\|SDA - System Overview]]
+    - [[data/dbt/__/metricstore-sad-toplevel-module-uses-view\|SDA - Top Level Module Veiw]]
+    - [[data/dbt/__/metricstore-sad-cnc-view\|SDA - C&C View]]
+    - [[data/dbt/__/metricstore-deployment-view\|SDA - Deployment View]]
