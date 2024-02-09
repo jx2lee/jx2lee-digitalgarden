@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/kafka/__/migration-error-handling/","tags":["kafka","connect"]}
+{"dg-publish":true,"permalink":"/data/kafka//migration-error-handling/","tags":["kafka","connect"]}
 ---
 
 
