@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/data/kafka/__/migration-target-schema/","tags":["kafka","connect","bigquery"]}
+{"dg-publish":true,"permalink":"/data/kafka//migration-target-schema/","tags":["kafka","connect","bigquery"]}
 ---
 
 
 > [!tldr] 서버로그 이벤트 메세지를 적재할 테이블을 정의한다.
 
-### ddl
+### DDL
 
 
 ```sql
@@ -24,7 +24,7 @@ PARTITION BY
 ```
 
 
-### info
+### notice
 
 - 이벤트 헤더에 저장된 메세지 메타정보를 풀어 저장한다. (ce_ prefix columns)
     - [BigQuery Sink Connector](https://docs.confluent.io/kafka-connectors/bigquery/current/overview.html) 는 At least once delivery 를 보장한다.
