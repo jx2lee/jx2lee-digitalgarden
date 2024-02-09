@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airbyte/airbyte-overview/","tags":["overview","airbyte"]}
+{"dg-publish":true,"permalink":"/data/airbyte/airbyte-overview/","tags":["overview","airbyte"],"dgShowLocalGraph":true}
 ---
 
 
