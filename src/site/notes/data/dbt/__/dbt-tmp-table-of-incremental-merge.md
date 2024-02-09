@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/__/dbt-tmp-table-of-incremental-merge/","tags":["dbt","troubleshooting"],"dgPassFrontmatter":false,"dgShowBacklinks":false,"created":"","updated":""}
+{"dg-publish":true,"permalink":"/data/dbt//dbt-tmp-table-of-incremental-merge/","tags":["dbt","troubleshooting"]}
 ---
 
 
