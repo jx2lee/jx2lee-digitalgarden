@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Welcome to jx2lee garden/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/welcome-to-jx2lee-garden/","tags":["gardenEntry"]}
 ---
 
 
@@ -25,7 +25,7 @@
 ### [[data/kafka/kafka-overview\|kafka]]
 ### [[data/airbyte/airbyte-overview\|airbyte]]
 ### [[data/rdb/rdb-overview\|rdb]]
-### [[etc/__overview\|etc]]
+### [[etc/etc-overview\|etc]]
 
 
 - 슬(쩍)탐(구)
@@ -42,6 +42,7 @@
 | airflow    | [[data/airflow/airflow-overview\|airflow-overview]]     |
 | datahub    | [[data/datahub/datahub-overview\|datahub-overview]]     |
 | dbt        | [[data/dbt/dbt-overview\|dbt-overview]]                 |
+| etc        | [[etc/etc-overview\|etc-overview]]                      |
 | kafka      | [[data/kafka/kafka-overview\|kafka-overview]]           |
 | kubernetes | [[kubernetes/kubernetes-overview\|kubernetes-overview]] |
 | rdb        | [[data/rdb/rdb-overview\|rdb-overview]]                 |
