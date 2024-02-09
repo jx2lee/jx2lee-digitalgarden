@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/kafka/__/migration-to-kakfa-connect/","tags":["kafka","connect"]}
+{"dg-publish":true,"permalink":"/data/kafka//migration-to-kakfa-connect/","tags":["kafka","connect"]}
 ---
 
 
