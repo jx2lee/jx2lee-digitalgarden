@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc//quality-attribute-example/"}
+{"dg-publish":true,"permalink":"/etc/__/quality-attribute-example/"}
 ---
 
 |                            |     |
