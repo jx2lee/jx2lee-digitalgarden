@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter16-logistic-regression/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter16-Logistic-Regression/"}
 ---
 
 #think-bayes #probability #study 
