@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc//g-rpc/"}
+{"dg-publish":true,"permalink":"/etc/__/gRPC/"}
 ---
 
 #grpc
