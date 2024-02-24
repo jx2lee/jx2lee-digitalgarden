@@ -4,8 +4,6 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
 <!DOCTYPE html>
 <html lang="{{ meta.mainLanguage }}">
   <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6606849584554242"
-         crossorigin="anonymous"></script>
     <title>{% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}</title>
     {%include "components/pageheader.njk"%}
     {% for imp in dynamics.common.head %}
@@ -14,7 +12,6 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     {% for imp in dynamics.notes.head %}
       {% include imp %}
     {% endfor %}
-    <meta name="google-site-verification" content="opmZNCq8TEulCIbUTFKmDMz1uVomJbmpiD-IMTgTlvM" />
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {{meta.bodyClasses}}">
     {%include "components/notegrowthhistory.njk"%}
@@ -95,14 +92,5 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {% include imp %}
     {% endfor %}
     {%include "components/lucideIcons.njk"%}
-    <footer>
-          <script src="https://utteranc.es/client.js"
-                  repo="jx2lee/jx2lee-digitalgarden"
-                  issue-term="title"
-                  theme="github-dark"
-                  crossorigin="anonymous"
-                  async>
-          </script>
-    </footer>
   </body>
 </html>
