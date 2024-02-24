@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/datahub//datahub-graphql/"}
+{"dg-publish":true,"permalink":"/data/datahub/__/datahub-graphql/"}
 ---
 
 #datahub #graphql
