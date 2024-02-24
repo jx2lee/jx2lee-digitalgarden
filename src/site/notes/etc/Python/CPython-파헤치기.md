@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/python/c-python/"}
+{"dg-publish":true,"permalink":"/etc/Python/CPython-파헤치기/"}
 ---
 
 
