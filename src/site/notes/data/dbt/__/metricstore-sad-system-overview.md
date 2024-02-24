@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt//metricstore-sad-system-overview/"}
+{"dg-publish":true,"permalink":"/data/dbt/__/metricstore-sad-system-overview/"}
 ---
 
 
