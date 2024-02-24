@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/java/versus-kotlin/"}
+{"dg-publish":true,"permalink":"/etc/Java/versus-kotlin/"}
 ---
 
 
