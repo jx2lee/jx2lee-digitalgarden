@@ -26,7 +26,7 @@
 ### project
 
 
-- [[data/dbt/__/metricstore-root\|metricstore-root]]
+- [[data/dbt/__/metricstore-root\|SAD - Metric Store]]
 
 ### troubleshooting
 
