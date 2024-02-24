@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter03-distribution/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter03-Distribution/"}
 ---
 
 #think-bayes #probability #study
