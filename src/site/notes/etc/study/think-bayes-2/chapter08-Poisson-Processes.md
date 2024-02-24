@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter08-poisson-processes/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter08-Poisson-Processes/"}
 ---
 
 #think-bayes #probability #study
