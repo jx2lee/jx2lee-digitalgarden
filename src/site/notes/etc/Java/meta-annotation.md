@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/java/meta-annotation/"}
+{"dg-publish":true,"permalink":"/etc/Java/meta-annotation/"}
 ---
 
 
