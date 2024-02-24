@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter13-inference/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter13-Inference/"}
 ---
 
 #think-bayes #probability #study
