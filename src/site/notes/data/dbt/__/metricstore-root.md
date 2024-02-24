@@ -35,8 +35,7 @@ TBD
 ### 더보기
 
 - Software Architecture Documentation
-    - [[data/dbt/__/metricstore-sad-current-status\|SDA - Current status]]
-    - [[data/dbt/__/metricstore-sad-system-overview\|SDA - System Overview]]
-    - [[data/dbt/__/metricstore-sad-toplevel-module-uses-view\|SDA - Top Level Module Veiw]]
-    - [[data/dbt/__/metricstore-sad-cnc-view\|SDA - C&C View]]
-    - [[data/dbt/__/metricstore-deployment-view\|SDA - Deployment View]]
+    - [[data/dbt/__/metricstore-sad-current-status\|SAD - Current status]]
+    - [[data/dbt/__/metricstore-sad-toplevel-module-uses-view\|SAD - Top Level Module Veiw]]
+    - [[data/dbt/__/metricstore-sad-cnc-view\|SAD - C&C View]]
+    - [[data/dbt/__/metricstore-deployment-view\|SAD - Deployment View]]
