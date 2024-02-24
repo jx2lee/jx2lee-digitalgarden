@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter14-survival-analysis/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter14-Survival-Analysis/"}
 ---
 
 #think-bayes #probability #study 
