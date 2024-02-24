@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter02-bayes-s-theorem/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter02-Bayes's-Theorem/"}
 ---
 
 #think-bayes #probability #study
