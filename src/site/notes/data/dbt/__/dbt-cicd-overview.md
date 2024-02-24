@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt//dbt-cicd-overview/"}
+{"dg-publish":true,"permalink":"/data/dbt/__/dbt-cicd-overview/"}
 ---
 
 #dbt #airflow 
