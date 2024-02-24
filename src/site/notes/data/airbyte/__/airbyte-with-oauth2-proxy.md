@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airbyte//airbyte-with-oauth2-proxy/","tags":["airbyte","helm","oauth2-proxy"]}
+{"dg-publish":true,"permalink":"/data/airbyte/__/airbyte-with-oauth2-proxy/","tags":["airbyte","helm","oauth2-proxy"]}
 ---
 
 > [!tldr]
