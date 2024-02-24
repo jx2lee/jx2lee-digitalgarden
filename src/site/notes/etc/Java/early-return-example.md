@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/java/early-return-example/"}
+{"dg-publish":true,"permalink":"/etc/Java/early-return-example/"}
 ---
 
 
