@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc//cache/"}
+{"dg-publish":true,"permalink":"/etc/__/Cache/"}
 ---
 
 
