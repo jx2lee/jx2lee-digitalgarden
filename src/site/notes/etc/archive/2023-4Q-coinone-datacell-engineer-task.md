@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/archive/2023-4-q-coinone-datacell-engineer-task/"}
+{"dg-publish":true,"permalink":"/etc/archive/2023-4Q-coinone-datacell-engineer-task/"}
 ---
 
 
