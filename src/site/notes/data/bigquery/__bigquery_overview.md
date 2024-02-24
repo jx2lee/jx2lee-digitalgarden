@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/bigquery/bigquery-overview/"}
+{"dg-publish":true,"permalink":"/data/bigquery/__bigquery_overview/"}
 ---
 
 #bigquery
