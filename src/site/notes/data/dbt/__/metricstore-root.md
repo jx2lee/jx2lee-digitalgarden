@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt//metricstore-root/"}
+{"dg-publish":true,"permalink":"/data/dbt/__/metricstore-root/"}
 ---
 
 
