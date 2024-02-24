@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter20-approximate-bayesian-computation/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter20-Approximate-Bayesian-Computation/"}
 ---
 
 #think-bayes #probability #study 
