@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airbyte//airbyte-cdk-elasticsearch-rest/","tags":["airbyte","connector"]}
+{"dg-publish":true,"permalink":"/data/airbyte/__/airbyte-cdk-elasticsearch-rest/","tags":["airbyte","connector"]}
 ---
 
 > [!tldr]
