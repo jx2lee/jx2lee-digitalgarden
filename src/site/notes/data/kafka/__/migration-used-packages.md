@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/kafka//migration-used-packages/","tags":["kafka","connect"]}
+{"dg-publish":true,"permalink":"/data/kafka/__/migration-used-packages/","tags":["kafka","connect"]}
 ---
 
 
