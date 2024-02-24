@@ -10,7 +10,7 @@
 
 
 - [[data/dbt/__/run-results-json-means\|run_results.json in dbt]]
-- [[data/dbt/__/dbt-metric\|metric in dbt]]
+- [[data/dbt/__/__DEPRECATED__dbt-metric\|DEPRECATED: metric in dbt]]
 - [[data/dbt/__/dbt-thread\|thread in dbt]]
 
 
@@ -26,7 +26,7 @@
 ### project
 
 
-- [[data/dbt/__/metricstore-root\|SAD - Metric Store]]
+- [[data/dbt/__/dbt-metricstore\|SAD - Metric Store]]
 
 ### troubleshooting
 
