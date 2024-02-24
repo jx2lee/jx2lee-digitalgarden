@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt//metricstore-sad-current-status/"}
+{"dg-publish":true,"permalink":"/data/dbt/__/metricstore-sad-current-status/"}
 ---
 
 
