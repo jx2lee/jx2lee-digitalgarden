@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/research/sqlmesh/"}
+{"dg-publish":true,"permalink":"/data/__research/sqlmesh/"}
 ---
 
 
