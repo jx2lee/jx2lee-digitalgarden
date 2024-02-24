@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/java/statement-and-expression/"}
+{"dg-publish":true,"permalink":"/etc/Java/statement-and-expression/"}
 ---
 
 
