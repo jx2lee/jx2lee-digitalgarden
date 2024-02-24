@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt//metricstore-sad-cnc-view/"}
+{"dg-publish":true,"permalink":"/data/dbt/__/metricstore-sad-cnc-view/"}
 ---
 
 
