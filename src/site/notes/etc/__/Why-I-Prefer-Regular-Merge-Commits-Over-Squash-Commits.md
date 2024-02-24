@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc//why-i-prefer-regular-merge-commits-over-squash-commits/"}
+{"dg-publish":true,"permalink":"/etc/__/Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits/"}
 ---
 
 
