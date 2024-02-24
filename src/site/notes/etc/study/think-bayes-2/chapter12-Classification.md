@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter12-classification/"}
+{"dg-publish":true,"permalink":"/etc/study/think-bayes-2/chapter12-Classification/"}
 ---
 
 #think-bayes #probability #study
