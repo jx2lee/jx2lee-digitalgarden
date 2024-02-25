@@ -1,6 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/data/dbt/dbt-overview/","tags":["dbt","overview"]}
+{"dg-publish":true,"permalink":"/data/dbt/dbt-overview/","tags":["dbt","overview"],"dgShowBacklinks":true,"dgShowLocalGraph":true,"dgShowInlineTitle":true,"dgEnableSearch":true,"dgLinkPreview":true}
 ---
+
+
+
+### job knowledge
+
+
+
+### job knowledge
 
 
 > [!tip] dbt 를  나만의 문장으로 표현하면
