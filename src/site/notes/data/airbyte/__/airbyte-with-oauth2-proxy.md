@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/data/airbyte/__/airbyte-with-oauth2-proxy/","tags":["airbyte","helm","oauth2-proxy"]}
 ---
 
+
+
 > [!tldr]
 > Airbyte 접근제어를 위해 oauth2-proxy 를 사용했고 chart 를 변경하여 default connector 를 제어했다. 접근제어는 이메일 또는 source/dest 커넥터를 차트에 추가하고 argo sync (auto sync 는 off 인 경우) 를 실행한다.
 
