@@ -4,17 +4,17 @@
 
 
 ### Java
-- [[etc/Java/versus-kotlin\|versus-kotlin]]
+- [[versus-kotlin\|versus-kotlin]]
 - terms
-	- [[etc/Java/plain-old-java-object\|plain-old-java-object]]
-	- [[etc/Java/Auto boxing & Unboxing\|Auto boxing & Unboxing]]
-	- [[etc/Java/statement-and-expression\|statement-and-expression]]
-	- [[etc/Java/early-return-example\|early-return-example]] 
-	- [[etc/Java/meta-annotation\|meta annotation]]
+	- [[etc/__/language/java-plain-old-java-object\|java-plain-old-java-object]]
+	- [[etc/__/language/java-auto-unboxing\|java-auto-unboxing]]
+	- [[etc/__/language/common-statement-and-expression\|common-statement-and-expression]]
+	- [[etc/__/language/common-early-return-example\|common-early-return-example]] 
+	- [[etc/__/language/java-meta-annotation\|meta annotation]]
 
 ### Python
 - 파이썬 코딩의 기술
-	- [[etc/effective-python/python-better-way-14\|14. None 반환보다는 예외를 일으키자]]
+	- [[etc/__/effective-python/python-better-way-14\|14. None 반환보다는 예외를 일으키자]]
 
 ### [refactoring](https://refactoring.com/catalog/)
 - simplify-conditional-logic
@@ -26,12 +26,14 @@
 	- [[etc/refactoring/split-loop\|split-loop]]
 
 ### Study & Books
-- [[etc/study/think-bayes-2/__overview\|스터디: 파이썬을 이용한 베이지안 통계]]
-- [[etc/study/the-secret-life-of-programs\|스터디: 한 권으로 읽는 컴퓨터 구조와 프로그래밍]]
+- [[etc/__/study/think-bayes-2/__overview\|스터디: 파이썬을 이용한 베이지안 통계]]
+- [[etc/__/study/the-secret-life-of-programs\|스터디: 한 권으로 읽는 컴퓨터 구조와 프로그래밍]]
+- inflearn
+
 
 ### Other
-- [[etc/__/gRPC\|gRPC]]
-- [[etc/__/Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits\|Why-I-Prefer-Regular-Merge-Commits-Over-Squash-Commits]]
-- [[etc/__/Cache\|cache]]
-- [[etc/__/Token Store\|Token Store]]
-- [[etc/__/Hot-key\|Hot-key]]
+- [[etc/__/grpc\|grpc]]
+- [[etc/__/prefer-regular-merge-commits-over-squash-commits\|prefer-regular-merge-commits-over-squash-commits]]
+- [[etc/__/bytebytego-cache\|cache]]
+- [[etc/__/my-tokens\|my-tokens]]
+- [[etc/__/my-hotkeys\|my-hotkeys]]
