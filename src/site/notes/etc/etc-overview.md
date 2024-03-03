@@ -18,12 +18,12 @@
 
 ### [refactoring](https://refactoring.com/catalog/)
 - simplify-conditional-logic
-	- [[etc/refactoring/consolidate-conditional-expression\|Consolidate Conditional Expression]]
-	- [[etc/refactoring/replace-conditional-with-polymorphism\|Replace Conditional with Polymorphism]]
-	- [[etc/refactoring/decompose-conditional\|Decompose Conditional]]
-	- [[etc/refactoring/replace-control-flag-with-break\|Replace Control Flag with Break]]
+	- [[etc/__/refactoring/consolidate-conditional-expression\|Consolidate Conditional Expression]]
+	- [[etc/__/refactoring/replace-conditional-with-polymorphism\|Replace Conditional with Polymorphism]]
+	- [[etc/__/refactoring/decompose-conditional\|Decompose Conditional]]
+	- [[etc/__/refactoring/replace-control-flag-with-break\|Replace Control Flag with Break]]
 - moving-features
-	- [[etc/refactoring/split-loop\|split-loop]]
+	- [[etc/__/refactoring/split-loop\|split-loop]]
 
 ### Study & Books
 - [[etc/__/study/think-bayes-2/__overview\|스터디: 파이썬을 이용한 베이지안 통계]]
