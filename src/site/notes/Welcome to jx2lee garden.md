@@ -47,7 +47,6 @@
 | etc        | [[etc/etc-overview\|etc-overview]]                      |
 | kafka      | [[data/kafka/kafka-overview\|kafka-overview]]           |
 | kubernetes | [[kubernetes/kubernetes-overview\|kubernetes-overview]] |
-| \-         | [[templates/overview-template\|overview-template]]      |
 | rdb        | [[data/rdb/rdb-overview\|rdb-overview]]                 |
 
 { .block-language-dataview}
