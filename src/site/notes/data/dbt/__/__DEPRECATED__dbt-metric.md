@@ -5,6 +5,8 @@
 
 
 ### overview
+
+
 metric은 0개 이상의 차원(dimension)을 지원하는 테이블에 대한 집계다.
 - 활성 사용자 수
 - 월별 반복 수익(MRR)
@@ -15,6 +17,8 @@ metric은 0개 이상의 차원(dimension)을 지원하는 테이블에 대한 �
 
 
 ### metric profit
+
+
 **다운스트림 도구(downstream tool)에서 메트릭 사양 사용**
 
 dbt 컴파일 컨텍스트는 graph.metrics 변수를 통해 메트릭에 접근할 수 있다. manifest 에는 다운스트림 메타데이터 사용에 대한 메트릭을 포함한다.
@@ -23,8 +27,14 @@ dbt 컴파일 컨텍스트는 graph.metrics 변수를 통해 메트릭에 접근
 
 `exposure` 와 마찬가지로 메트릭으로 롤업되는 모든 것을 확인하고(`dbt ls -s +metric:*`) dbt docs 에서 시각화할 수 있다.
 - [자세한 내용](https://docs.getdbt.com/reference/node-selection/methods#the-metric-method)
+
+
 ### metric 이용
+
+
 #### `metrics:` in `.yml`
+
+
 metrics: 아래로 파일에 정의할 수 있다. metric 네이밍 제약사항은
 - 문자, 숫자 및 밑줄만 포함해야 한다(*공백이나 특수 문자 제외*).
 - 문자로 시작해야 한다.
@@ -84,9 +94,13 @@ metrics:
     meta: {team: Finance}
 ```
 
+
 ### dynamic query
 
+
 ### dbt_metrics package
+
+
 - dbt 패키지 중 하나
 - dbt 모델의 실행 결과에 대한 메트릭을 생성하고 모니터링할 수 있도록 도와주는 패키지
 - dbt 실행 결과에서 중요한 측정 지표를 추출하고, 해당 측정 지표를 이용하여 알림을 설정하거나 대시보드를 구성할 수 있음
@@ -96,6 +110,9 @@ metrics:
 - `dbt run` 명령을 실행할 때마다 계산
 - `dbt docs generate` 명령을 실행하여 생성된 메트릭에 대한 문서를 자동으로 생성
 
+
 ### reference
+
+
 [Document: Metrics](https://docs.getdbt.com/docs/build/metrics#defining-a-metric)
 [package: dbt_metrics](https://github.com/dbt-labs/dbt_metrics)
