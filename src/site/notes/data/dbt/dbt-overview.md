@@ -10,8 +10,8 @@
 ### basic
 
 
-- [[data/dbt/__/run-results-json-means\|run_results.json in dbt]]
 - [[data/dbt/__/__DEPRECATED__dbt-metric\|DEPRECATED: metric in dbt]]
+- [[data/dbt/__/run-results-json-means\|run_results.json in dbt]]
 - [[data/dbt/__/dbt-thread\|thread in dbt]]
 
 
