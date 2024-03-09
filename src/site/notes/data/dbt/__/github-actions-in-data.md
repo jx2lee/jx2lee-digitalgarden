@@ -7,8 +7,10 @@
 > [!tldr;]
 > Atlassian Bamboo 에 구성한 dbt pipeline 을 Github Actions 으로 마이그레이션한 과정을 소개한다.
 
+
 ### diagrams
----
+
+
 ![|500](https://i.imgur.com/sDFjU9T.png)
 
 
@@ -16,7 +18,8 @@
 
 
 ### Github Actions
----
+
+
 - [변성윤님 포스트](https://zzsza.github.io/development/2020/06/06/github-action/)
 - 현재 코인원 [Github Actions 구조](https://tech.kakao.com/2022/05/06/github-actions/)는 카카오 엔터프라이즈와 유사
 - Actions 작성 시 아래 링크를 적극 활용
@@ -24,8 +27,10 @@
 	- [Events that trigger workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows): github 이벤트에 따른 트리거를 설정할 수 있는데, 각 이벤트에 대해 설명하고 이를 활용할 수 있는 예시들이 있어 yml 작성 시 참고하면 좋다.
 	- [Variables](https://docs.github.com/en/actions/learn-github-actions/variables): GitHub Actions 워크플로 실행에 대한 기본 변수를 설정함. `run` step 으로 사용하지 않고 default 로 제공하는 변수를 사용하면 yml 을 간편하게 작성할 수 있다.
 
+
 ### shallow dive
----
+
+
 변경 혹은 추가된 모델만 build 하는 slim-build Action 아래와 같고 라인별로 내용을 살펴본다.
 > 아래 테스트한 내용은 추후 변경될 수 있음
 
@@ -98,12 +103,16 @@ jobs:
 
 
 #### name
+
+
 - workflow identifier
 - UI 에서 확인할 수 있다.
 	- ![|300](https://i.imgur.com/RZPpmTZ.png)
 
 
 #### on
+
+
 - workflow 를 자동으로 트리거하기 위해 사용
 - 위 예시는 [`push`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpushbranchestagsbranches-ignoretags-ignore) 이벤트가 발생하면 trigger
 	- dev/main 에 push 이벤트가 발생하는 경우 변경된 모델들만 빌드하기 위함
@@ -114,6 +123,8 @@ jobs:
 	- 이 외에도 다양한 이벤트 기반으로 트리거할 수 있는 기능들이 제공할 수 있기 때문에 [링크](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on) 참고
 
 #### jobs
+
+
 - 워크플로 실행은 기본적으로 병렬로 실행되는 하나 이상의 job 으로 구성
 - 위 예시는 하나의 build_model job 이 존재하고,
 	- 7 step 으로 구성됨
@@ -133,6 +144,8 @@ jobs:
 
 
 #### steps
+
+
 - job 은 step 의 모임인데, 명령을 실행하거나/설정 작업을 실행하거나/리포지토리 & 공용 리포지토리 또는 Docker 레지스트리에 push 하는 작업을 실행할 수 있음
 - [condition (if)](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-only-run-job-for-specific-repository)
 	- 특정 조건을 만족하는 경우에만 step 을 실행
@@ -146,9 +159,11 @@ jobs:
 
 
 ### 그 외 추가로 생성한 워크플로우
----
+
 
 #### reusable workflow
+
+
 [Reusing workflows](https://docs.github.com/ko/actions/using-workflows/reusing-workflows)
 
 - 기존 워크플로를 재사용하여 중복을 피하는 방법 중 하나
@@ -163,6 +178,8 @@ jobs:
 
 
 #### PR auto labeler
+
+
 - 오픈소스 기여하면서 PR 생성 시 자동으로 Label 을 달아주는 기능을 보았다.
 - 프로젝트에 녹여내면 재밌겠다고 생각한다.
 - e.g
@@ -173,7 +190,10 @@ jobs:
 		- [ref](https://github.com/datahub-project/datahub/blob/master/.github/workflows/pr-labeler.yml)
 - [labeler](https://github.com/actions/labeler) 액션으로 구성 **완료**했다.
 
+
 #### container job
+
+
 [Running jobs in a container](https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container)
 - dbt build 하는 step 가독성이 많이 떨어짐
 - env, volume 등을 깔끔하게 건네줄 수 있지만, reusable workflow 을 사용하지 못하는 이유와 동일함
@@ -184,6 +204,8 @@ jobs:
 
 
 ### SQL linter
+
+
 - 보푸라기를 제거하는 린트 롤러(Lint roller)처럼 코드의 오류나 버그, 스타일 따위를 점검하는 것을 [린트(Lint) 혹은 린터(Linter)](https://en.wikipedia.org/wiki/Lint_(software))라고 부름
 - SQL linter 로 많이 사용되는 sqlfluff 활용
 - 오픈된 액션이 존재하여 조금 수정해서 사용
@@ -193,7 +215,8 @@ jobs:
 
 
 ### 팁
----
+
+
 - IDE 플러그인을 적극 활용해보자
 	- JetBrains 에서는 자동완성 기능 및 설명을 보여주는 기능을 제공함
 	- ![|500](https://i.imgur.com/xP1Jdxh.png)
@@ -202,6 +225,9 @@ jobs:
 	- bamboo 보다는 보기도 편하고 예시도 많음
 	- 또한, usecase 도 많아 (오픈소스에서 사용하는 actions 들) 레퍼런스가 많으니 검색을 해보고 적용해보자.
 
+
 ### reference
+
+
 - https://tech.kakaoenterprise.com/180
 - https://tech.kakao.com/2022/05/06/github-actions/
