@@ -21,23 +21,6 @@
 
 ---
 
-### [[data/dbt/dbt-overview\|dbt]]
-### [[data/airflow/airflow-overview\|airflow]]
-### [[data/datahub/datahub-overview\|datahub]]
-### [[data/kafka/kafka-overview\|kafka]]
-### [[data/airbyte/airbyte-overview\|airbyte]]
-### [[data/rdb/rdb-overview\|rdb]]
-### [[etc/etc-overview\|etc]]
-
-
-- 슬(쩍)탐(구)
-    - [[data/__research/sqlmesh\|sqlmesh]]
-    - [[data/__research/mage\|mage]]
-- [[daily/thinking\|thinking]]
-
-
----
-
 | Category   | Link                                                       |
 | ---------- | ---------------------------------------------------------- |
 | airbyte    | [[data/airbyte/airbyte-overview\|airbyte-overview]]     |
