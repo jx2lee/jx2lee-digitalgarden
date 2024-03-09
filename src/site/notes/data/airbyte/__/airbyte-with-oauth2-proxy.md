@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/airbyte/__/airbyte-with-oauth2-proxy/","tags":["airbyte","helm","oauth2-proxy"],"dgHomeLink":true,"dgShowBacklinks":true,"dgShowLocalGraph":true,"dgEnableSearch":true,"dgLinkPreview":true,"dgShowTags":true}
+{"author":"jx2lee","aliases":["oauth2-proxy 를 얹어보자 on Airbyte"],"created":"2023-08-03 13:59","last-updated":"2023-08-12 18:04","tags":["airbyte","helm","oauth2-proxy"],"dg-publish":true,"dg-home-link":true,"dg-show-local-graph":true,"dg-show-backlinks":true,"dg-show-toc":false,"dg-show-inline-title":false,"dg-show-file-tree":false,"dg-enable-search":true,"dg-link-preview":true,"dg-show-tags":true,"dg-pass-frontmatter":true,"permalink":"/data/airbyte/__/airbyte-with-oauth2-proxy/","dgHomeLink":true,"dgPassFrontmatter":true,"dgShowBacklinks":true,"dgShowLocalGraph":true,"dgEnableSearch":true,"dgLinkPreview":true,"dgShowTags":true}
 ---
 
 
