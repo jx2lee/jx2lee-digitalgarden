@@ -1,12 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/data/airbyte/airbyte-overview/","tags":["overview","airbyte"],"dgShowLocalGraph":true}
+{"dg-publish":true,"permalink":"/data/airbyte/airbyte-overview/","tags":["overview","airbyte"],"dgHomeLink":true,"dgShowBacklinks":"ture","dgShowLocalGraph":"ture","dgShowInlineTitle":"ture","dgEnableSearch":true,"dgLinkPreview":"ture","dgShowTags":"ture"}
 ---
 
 
+
 ### job knowledge
-
-
-- 
 
 
 ### project
