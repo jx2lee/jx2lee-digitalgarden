@@ -24,19 +24,19 @@
 ```properties
 name=ServerlogBigquerySinkConnector  
 connector.class=com.wepay.kafka.connect.bigquery.BigQuerySinkConnector  
-consumer.override.group.id=BIGQUERY-SINK-CONNECTOR.CONSUMER-GROUP  
+consumer.override.group.id={PROTECTED}
 tasks.max=1  
 errors.tolerance = none  
 errors.log.enable = true  
 errors.log.include.message = true  
-topics=EVENT.USER.SIGNUP_COMPLETE,EVENT.USER.BANK_ACCOUNT_REGISTRATION,EVENT.USER.BANK_ACCOUNT_DEREGISTRATION,EVENT.AML.KYC_PHONE_AUTH,EVENT.AML.KYC_IDCARD_AUTH,EVENT.AML.KYC_BANK_ACCOUNT_AUTH,EVENT.AML.KYC_CDD_EDD_AUTH,EVENT.AML.KYC_COMPLETE,EVENT.AML.KYC_SAVEPOINT_RESET,EVENT.AML.REVISION_REQUEST_CDD_EDD_AUTH,EVENT.AML.REKYC_CDD_EDD_AUTH,EVENT.USER.BALANCE_TRANSFER_COMPLETE
+topics={PROTECTED}
 
 transforms=tojson,headerToField,TimestampConverter
 transforms.tojson.type=com.github.cedelsb.kafka.connect.smt.Record2JsonStringConverter$Value
 transforms.tojson.json.string.field.name=value
 
 transforms.headerToField.type=com.github.jcustenborder.kafka.connect.transform.common.HeaderToField$Value
-transforms.headerToField.header.mappings=ce_type:STRING,ce_source:STRING,ce_specversion:STRING,ce_time:STRING,ce_id:STRING,ce_subject:STRING
+transforms.headerToField.header.mappings={PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING
 
 transforms.TimestampConverter.type=org.apache.kafka.connect.transforms.TimestampConverter$Value
 transforms.TimestampConverter.field=ce_time
@@ -44,13 +44,13 @@ transforms.TimestampConverter.target.type=Timestamp
 transforms.TimestampConverter.format=yyyy-MM-dd'T'HH:mm:ss.SSS
 
 ########################################### Fill me in! ###########################################
-project=coinone-data-dev
-defaultDataset=serverlog
+project={PROTECTED}
+defaultDataset={PROTECTED}
 
-keyfile=/mnt/secret-manager/KRDEV-SVA-BIGQUERY-MSK
-topic2TableMap=EVENT.USER.SIGNUP_COMPLETE:serverlog_kafka,EVENT.USER.BANK_ACCOUNT_REGISTRATION:serverlog_kafka,EVENT.USER.BANK_ACCOUNT_DEREGISTRATION:serverlog_kafka,EVENT.AML.KYC_PHONE_AUTH:serverlog_kafka,EVENT.AML.KYC_IDCARD_AUTH:serverlog_kafka,EVENT.AML.KYC_BANK_ACCOUNT_AUTH:serverlog_kafka,EVENT.AML.KYC_CDD_EDD_AUTH:serverlog_kafka,EVENT.AML.KYC_COMPLETE:serverlog_kafka,EVENT.AML.KYC_SAVEPOINT_RESET:serverlog_kafka,EVENT.AML.REVISION_REQUEST_CDD_EDD_AUTH:serverlog_kafka,EVENT.AML.REKYC_CDD_EDD_AUTH:serverlog_kafka,EVENT.USER.BALANCE_TRANSFER_COMPLETE:serverlog_kafka
+keyfile={PROTECTED}
+topic2TableMap={PROTECTED}
 bigQueryPartitionDecorator=false
-timestampPartitionFieldName=ce_time
+timestampPartitionFieldName={PROTECTED}
 bigQueryRetry=5
 bigQueryRetryWait=10000
 ```
@@ -61,12 +61,12 @@ bigQueryRetryWait=10000
 ```properties
 name=ServerlogBigquerySinkConnector  
 connector.class=com.wepay.kafka.connect.bigquery.BigQuerySinkConnector  
-consumer.override.group.id=BIGQUERY-SINK-CONNECTOR.CONSUMER-GROUP  
+consumer.override.group.id={PROTECTED}
 tasks.max=1  
 errors.tolerance = none  
 errors.log.enable = true  
 errors.log.include.message = true  
-topics=EVENT.USER.SIGNUP_COMPLETE,EVENT.USER.BANK_ACCOUNT_REGISTRATION,EVENT.USER.BANK_ACCOUNT_DEREGISTRATION,EVENT.AML.KYC_PHONE_AUTH,EVENT.AML.KYC_IDCARD_AUTH,EVENT.AML.KYC_BANK_ACCOUNT_AUTH,EVENT.AML.KYC_CDD_EDD_AUTH,EVENT.AML.KYC_COMPLETE,EVENT.AML.KYC_SAVEPOINT_RESET,EVENT.AML.REVISION_REQUEST_CDD_EDD_AUTH,EVENT.AML.REKYC_CDD_EDD_AUTH,EVENT.USER.BALANCE_TRANSFER_COMPLETE
+topics={PROTECTED}
   
 transforms=tojson,headerToField,TimestampConverter  
   
@@ -74,7 +74,7 @@ transforms.tojson.type=com.github.cedelsb.kafka.connect.smt.Record2JsonStringCon
 transforms.tojson.json.string.field.name=value  
   
 transforms.headerToField.type=com.github.jcustenborder.kafka.connect.transform.common.HeaderToField$Value  
-transforms.headerToField.header.mappings=ce_type:STRING,ce_source:STRING,ce_specversion:STRING,ce_time:STRING,ce_id:STRING,ce_subject:STRING  
+transforms.headerToField.header.mappings={PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING,{PROTECTED}:STRING  
   
 transforms.TimestampConverter.type=org.apache.kafka.connect.transforms.TimestampConverter$Value  
 transforms.TimestampConverter.field=ce_time  
@@ -82,12 +82,12 @@ transforms.TimestampConverter.target.type=Timestamp
 transforms.TimestampConverter.format=yyyy-MM-dd'T'HH:mm:ss  
   
 ########################################### Fill me in! ###########################################  
-project=coinone-data  
-defaultDataset=serverlog  
-keyfile=/mnt/secret-manager/KRPRD-SVA-BIGQUERY-MSK  
-topic2TableMap=EVENT.USER.SIGNUP_COMPLETE:serverlog_kafka,EVENT.USER.BANK_ACCOUNT_REGISTRATION:serverlog_kafka,EVENT.USER.BANK_ACCOUNT_DEREGISTRATION:serverlog_kafka,EVENT.AML.KYC_PHONE_AUTH:serverlog_kafka,EVENT.AML.KYC_IDCARD_AUTH:serverlog_kafka,EVENT.AML.KYC_BANK_ACCOUNT_AUTH:serverlog_kafka,EVENT.AML.KYC_CDD_EDD_AUTH:serverlog_kafka,EVENT.AML.KYC_COMPLETE:serverlog_kafka,EVENT.AML.KYC_SAVEPOINT_RESET:serverlog_kafka,EVENT.AML.REVISION_REQUEST_CDD_EDD_AUTH:serverlog_kafka,EVENT.AML.REKYC_CDD_EDD_AUTH:serverlog_kafka,EVENT.USER.BALANCE_TRANSFER_COMPLETE:serverlog_kafka
+project={PROTECTED}
+defaultDataset={PROTECTED}  
+keyfile={PROTECTED}
+topic2TableMap={PROTECTED}
 bigQueryPartitionDecorator=false  
-timestampPartitionFieldName=ce_time
+timestampPartitionFieldName={PROTECTED}
 bigQueryRetry=5
 bigQueryRetryWait=10000
 ```
