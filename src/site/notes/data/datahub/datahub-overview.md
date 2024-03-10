@@ -1,12 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/data/datahub/datahub-overview/"}
+{"dg-publish":true,"permalink":"/data/datahub/datahub-overview/","tags":["overview","datahub"],"dgHomeLink":true,"dgShowBacklinks":true,"dgShowLocalGraph":true,"dgEnableSearch":true,"dgLinkPreview":true,"dgShowTags":true}
 ---
 
-#overview #datahub 
-
----
-
-### Knowledge
 
 
 #### concept
