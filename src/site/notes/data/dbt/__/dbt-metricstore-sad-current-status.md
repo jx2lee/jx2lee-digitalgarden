@@ -17,7 +17,7 @@
 3. 지표를 요청자에게 전달한다. (lightdash 대시보드 등)
 
 
-### Step-by-Step
+### Step-by-Step,
 
 
 ```mermaid
