@@ -8,6 +8,7 @@
 
 
 [[data/kafka/__/migration-to-kakfa-connect\|서버로그 마이그레이션 (kafka connect)]]
+- 
 
 
 ### job knowledge
@@ -35,3 +36,5 @@
     - [배달의민족: 클라우드 환경에서의 Kafka 운영기](https://www.youtube.com/watch?v=XyuqoWUCdGA)
     - [카프카 커넥트를 데이터 파이프라인으로 사용하는 이유? kafka-sink-connector 오픈소스 언빡싱!](https://tech.kakao.com/2023/01/12/introduce-kafka-sink-connector/)
 - [kafka helm chart by bitnami](https://console.cloud.google.com/marketplace/details/bitnami-launchpad/kafka-cluster?project=coinone-data-dev)
+- [Single-partition Kafka topics](https://mikemybytes.com/2021/01/11/single-partition-kafka-topics/)
+- [11번가 - Live11 과 Schema Registry](https://11st-tech.github.io/2022/06/28/schema-registry-in-live11/)
