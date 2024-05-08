@@ -122,9 +122,9 @@ flowchart TB
     
     bigquery[(coinone-data)]
 
-    D --> fail --> |alerting| slack
-    fail --> |insert| bigquery
+    D --> |failed| slack
     E --> |success| bigquery
+    E --> |failed| slack
 ```
 
 
@@ -137,7 +137,7 @@ flowchart TB
 - 알람 발생과 동시에 실패한 메세지를 빅쿼리로 재적재한다.
     - 에러로그에는 처리에 실패한 메세지 원본을 남긴다.
     - 알람 발생은 kibana alerting 기능을 이용한다.
-    - 2339_데이터_모니터링 채널로 발송한다.
+    - `2339_데이터_모니터링` 채널로 발송한다.
 
 
 ### reference
