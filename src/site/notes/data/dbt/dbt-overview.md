@@ -57,3 +57,6 @@
         - [Building a Kimball dimensional model with dbt](https://docs.getdbt.com/blog/kimball-dimensional-model)
         - [Surrogate keys in dbt: Integers or hashes?](https://docs.getdbt.com/blog/managing-surrogate-keys)
         - [Strategies for change data capture in dbt](https://docs.getdbt.com/blog/change-data-capture)
+- dbt cloud 계정
+    - https://cloud.getdbt.com
+    - ID: dev.jaejun.lee.1991@gmail.com (github 연동 완료)
