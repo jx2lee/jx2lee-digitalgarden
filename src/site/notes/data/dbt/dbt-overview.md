@@ -53,7 +53,7 @@
     - [Setup a Slim CI for dbt with BigQuery and Docker](https://medium.com/teads-engineering/setup-a-slim-ci-for-dbt-with-bigquery-and-docker-ce8e0a1a38f)
     - [How to use Slim CI with dbt Core](https://www.vantage-ai.com/blog/how-to-use-slim-ci-with-dbt-core)
 - [Developer Blog](https://docs.getdbt.com/blog)
-    - 흥미롭게 읽은 글감들
+    - 흥미롭게 읽은 글감
         - [Building a Kimball dimensional model with dbt](https://docs.getdbt.com/blog/kimball-dimensional-model)
         - [Surrogate keys in dbt: Integers or hashes?](https://docs.getdbt.com/blog/managing-surrogate-keys)
         - [Strategies for change data capture in dbt](https://docs.getdbt.com/blog/change-data-capture)
