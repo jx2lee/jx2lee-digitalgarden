@@ -21,10 +21,6 @@
   - Oauth2 프록시를 제공하는 oauth2-proxy 프로젝트를 발견하였고 이를 기존 Airbyte 차트에 녹여 배포하기로 결정하였습니다.
   - **Airbyte 공식 차트 + oauth2-proxy 차트를 subchart 로 추가하여 배포**
 
-```mermaid
-
-```
-
 
 ### background
 
