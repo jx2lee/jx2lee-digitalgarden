@@ -4,11 +4,9 @@
 
 
 
-### job knowledge
+> [!tldr;]
+> **ELT 의 Transform 을 유연(sql)하게 관리해주는 워크플로우 도구
 
-
-> [!tip] dbt 를  한 문장으로 표현하면..
-> **ELT 의 Transform 을 유연(sql)하게 관리해주는 워크플로우 도구**
 
 ### basic
 
