@@ -4,6 +4,12 @@
 
 
 
+>[!SUMMARY]- Table of Contents
+>  - [[data/kafka/__/debezium-mysql-connector#Environments\|Environments]]
+>  - [[data/kafka/__/debezium-mysql-connector#Mysql Source Connector (debezium)\|Mysql Source Connector (debezium)]]
+>  - [[data/kafka/__/debezium-mysql-connector#BigQuery Sink Connector\|BigQuery Sink Connector]]
+>  - [[data/kafka/__/debezium-mysql-connector#result\|result]]
+
 ### Environments
 
 ```mermaid
