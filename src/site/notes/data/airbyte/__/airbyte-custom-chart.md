@@ -9,7 +9,7 @@
 
 ---
 
-### Why I did it..
+### Why I did it
 
 
 - Airbyte 0.44.2 기준 접근 제한 기능을 제공하지 않았습니다. ([참고](https://github.com/airbytehq/airbyte/issues/768)) 
